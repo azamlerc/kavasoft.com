@@ -1,0 +1,325 @@
+<HTML> 
+<HEAD> 
+   <TITLE>KRPS Test Page</TITLE> 
+</HEAD> 
+<BODY> 
+<P><FONT SIZE="+2" FACE="Arial">ACG test page</FONT></P> 
+<!--                                                                                                                           --> 
+<!--    MODIFY THE ACTION BELOW                                       --> 
+<!--    FOR YOUR SERVER ADDRESS AND CGI-BIN DIRECTORY                   --> 
+<!--                                                                                                                            --> 
+<!--                                                                                                                            --> 
+<P><!-***************************************************--> 
+<!--* Modify the line below to point to the correct ACG or External CGI to test *--> 
+<!--*****************************************************--></P> 
+<P><FORM ACTION="kagi.php" METHOD=POST> 
+<P><!--***************************************************--> 
+<!--***************************************************-><HTML> 
+</P> 
+   <P><TABLE> 
+      <TR> 
+         <TD> 
+            <P></P> 
+         </TD> 
+         <TD> 
+            <P>The seed parameters are comma separated. Internal 
+            commas come escaped with a comma. The maximum length of 
+            the value for a given seed is 256 bytes</P> 
+         </TD> 
+      </TR> 
+       <TR> 
+         <TD> 
+            <P>ACG:Flags</P> 
+         </TD> 
+         <TD> 
+            <P><INPUT TYPE=text NAME="ACG:F<!-*****************************************************--> 
+</P> 
+   <P><TABLE> 
+      <TR> 
+         <TD> 
+            <P></P> 
+         </TD> 
+         <TD> 
+            <P>The seed parameters are comma separated. Internal 
+            commas come escaped with a comma. The maximum length of 
+            the value for a given seed is 256 bytes</P> 
+         </TD> 
+      </TR> 
+       <TR> 
+         <TD> 
+            <P>ACG:Flags</P> 
+         </TD> 
+         <TD> 
+            <P><INPUT TYPE=text NAME="ACG:Flags" VALUE="Test=1" 
+SIZE=55><BR> 
+            </P> 
+         </TD> 
+      </TR> 
+     <TR> 
+         <TD> 
+            <P>ACG:UserName</P> 
+         </TD> 
+         <TD> 
+            <P><INPUT TYPE=text NAME="ACG:UserName" 
+VALUE="enter value if needed" SIZE=55><BR> 
+            </P> 
+         </TD> 
+      </TR> 
+      <TR> 
+         <TD> 
+            <P>ACG:Password</P> 
+         </TD> 
+         <TD> 
+            <P><INPUT TYPE=text NAME="ACG:Password" 
+VALUE="myTestPassword" SIZE=55><BR> 
+            </P> 
+         </TD>
+      </TR> 
+      <TR> 
+         <TD> 
+            <P>ACG:CustomerSeed</P> 
+         </TD> 
+         <TD> 
+            <P><INPUT TYPE=text NAME="ACG:CustomerSeed" 
+VALUE="Keyword: Computer-number - 5368-4402-3780-6581" SIZE=255><BR> 
+            </P> 
+         </TD> 
+      </TR> 
+      <TR> 
+         <TD> 
+            <P>ACG:OEMSeed</P> 
+         </TD> 
+         <TD> 
+            <P><INPUT TYPE=text NAME="ACG:OEMSeed" 
+VALUE="Clear-Text=Password" SIZE=256><BR> 
+            </P> 
+         </TD> 
+      </TR> 
+      <TR> 
+         <TD> 
+            <P>ACG:DebugFlag</P> 
+         </TD> 
+         <TD> 
+            <P><INPUT TYPE=text NAME="ACG:DebugFlag" 
+VALUE="1" SIZE=30> Value 0 or 1 
+</P> 
+         </TD> 
+      </TR> 
+      <TR> 
+         <TD> 
+            <P>ACG:InputVersion</P> 
+         </TD> 
+         <TD> 
+            <P><INPUT TYPE=text NAME="ACG:InputVersion" 
+VALUE="0200" SIZE=30> Value 0200<BR> 
+            </P> 
+         </TD> 
+      </TR>
+      <TR> 
+         <TD> 
+            <P>ACG:Request</P> 
+         </TD> 
+         <TD> 
+            <P><SELECT NAME="ACG:Request"> 
+               <OPTION VALUE=Generate>Generate 
+               <OPTION VALUE=Information>Information 
+               <OPTION>NULL 
+            </SELECT>Value is 'Generate' and 'Information'. See 
+            specification for meanings</P> 
+         </TD> 
+      </TR> 
+      <TR> 
+         <TD> 
+            <P>ACG:CardName</P> 
+         </TD> 
+         <TD> 
+            <P><INPUT TYPE=text NAME="ACG:CardName" 
+VALUE="Card Name Here" SIZE=30><BR> 
+            </P> 
+         </TD> 
+      </TR> 
+      <TR> 
+         <TD> 
+            <P>ACG:CardName-8bit</P> 
+         </TD> 
+         <TD> 
+            <P><INPUT TYPE=text NAME="ACG:CardName-8bit" 
+VALUE="CARD NAME HERE" SIZE=30><BR> 
+            </P> 
+         </TD> 
+      </TR> 
+      <TR> 
+         <TD> 
+            <P>ACG:PurchaserName</P> 
+         </TD> 
+         <TD> 
+            <P><INPUT TYPE=text NAME="ACG:PurchaserName" 
+VALUE="Andrew Zamler-Carhart" SIZE=30><BR> 
+            </P> 
+         </TD>
+      </TR> 
+      <TR> 
+         <TD> 
+            <P>ACG:PurchaserName-8bit</P> 
+         </TD> 
+         <TD> 
+            <P><INPUT TYPE=text NAME="ACG:PurchaserName-8bit" 
+VALUE="Andrew Zamler-Carhart" SIZE=30><BR> 
+            </P> 
+         </TD> 
+      </TR> 
+      <TR> 
+         <TD> 
+            <P>ACG:PurchaserEmail</P> 
+         </TD> 
+         <TD> 
+            <P><INPUT TYPE=text NAME="ACG:PurchaserEmail" 
+VALUE="andrew@zamler-carhart.com" SIZE=30><BR> 
+            </P> 
+         </TD> 
+      </TR> 
+      <TR> 
+         <TD> 
+            <P>ACG:SQNM</P> 
+         </TD> 
+         <TD> 
+            <P><INPUT TYPE=text NAME="ACG:SQNM" 
+VALUE="9999" SIZE=30>Value 
+            0000 to 9999<BR> 
+            </P> 
+         </TD> 
+      </TR> 
+      <TR> 
+         <TD> 
+            <P>ACG:QuantityOrdered</P> 
+         </TD> 
+         <TD> 
+            <P><INPUT TYPE=text NAME="ACG:QuantityOrdered" 
+VALUE="1" SIZE=30><BR> 
+            </P> 
+         </TD> 
+      </TR>
+      <TR> 
+         <TD> 
+            <P>ACG:LicenseType</P> 
+         </TD> 
+         <TD> 
+            <P><SELECT NAME="ACG:LicenseType"> 
+               <OPTION VALUE=single>single 
+               <OPTION VALUE=site>site 
+               <OPTION VALUE=world>world 
+               <OPTION VALUE=upgrade>upgrade 
+               <OPTION VALUE=bonus>bonus 
+               <!-- --> 
+               <!-- Edit the value below for you special license type--> 
+               <!-- --> 
+               <OPTION VALUE="special=">special=(you must edit form and supply value) 
+               <OPTION>null 
+            </SELECT>See specification for meanings</P> 
+         </TD> 
+      </TR> 
+      <TR> 
+         <TD> 
+            <P>ACG:UnitPayment</P> 
+         </TD> 
+         <TD> 
+            <P><INPUT TYPE=text NAME="ACG:UnitPayment" 
+VALUE="24.990" SIZE=30><BR> 
+            </P> 
+         </TD> 
+      </TR> 
+      <TR> 
+         <TD> 
+            <P>ACG:TransactionID</P> 
+         </TD> 
+         <TD> 
+            <P><INPUT TYPE=text NAME="ACG:TransactionID" 
+VALUE="CH0123456789" SIZE=30><BR> 
+            </P> 
+         </TD> 
+      </TR> 
+      <TR> 
+         <TD> 
+            <P>ACG:Postal-8bit</P>
+         </TD> 
+         <TD> 
+            <P><INPUT TYPE=text NAME="ACG:Postal-8bit" 
+VALUE="POSTAL-8BIT 12134 Center St. Boston CA 87654" 
+SIZE=60><BR> 
+            </P> 
+         </TD> 
+      </TR> 
+      <TR> 
+         <TD> 
+            <P>ACG:Postal</P> 
+         </TD> 
+         <TD> 
+            <P><INPUT TYPE=text NAME="ACG:Postal" 
+VALUE="Postal 12134 Center St. Boston CA 87654" SIZE=60><BR> 
+            </P> 
+         </TD> 
+      </TR> 
+      <TR> 
+         <TD> 
+            <P>ACG:ProductName-8bit</P> 
+         </TD> 
+         <TD> 
+            <P><INPUT TYPE=text NAME="ACG:ProductName-8bit" 
+VALUE="iTunes_Catalog_2" SIZE=30><BR> 
+            </P> 
+         </TD> 
+      </TR> 
+      <TR> 
+         <TD> 
+            <P>ACG:ProductName</P> 
+         </TD> 
+         <TD> 
+            <P><INPUT TYPE=text NAME="ACG:ProductName" 
+VALUE="iTunes_Catalog_2" SIZE=30><BR> 
+            </P> 
+         </TD> 
+      </TR> 
+      <TR> 
+         <TD> 
+            <P>ACG:UserPurchaseDate</P> 
+         </TD>
+         <TD> 
+            <P><INPUT TYPE=text NAME="ACG:UserPurchaseDate" 
+VALUE="2000-12-31" SIZE=30><BR> 
+            </P> 
+         </TD> 
+      </TR> 
+      <TR> 
+         <TD> 
+            <P>ACG:DateProcessed</P> 
+         </TD> 
+         <TD> 
+            <P><INPUT TYPE=text NAME="ACG:DateProcessed" 
+VALUE="2000-12-31" SIZE=30><BR> 
+            </P> 
+         </TD> 
+      </TR> 
+      <TR> 
+         <TD> 
+            <P>ACG:TimeStamp</P> 
+         </TD> 
+         <TD> 
+            <P><INPUT TYPE=text NAME="ACG:TimeStamp" 
+VALUE="49388234823" SIZE=30><BR> 
+            </P> 
+         </TD> 
+      </TR> 
+      <TR> 
+         <TD> 
+            <P>Submit</P> 
+         </TD> 
+         <TD> 
+            <P><INPUT TYPE=submit NAME=Submit 
+VALUE="Do your ACG test"><BR> 
+            </P> 
+         </TD> 
+      </TR></FORM> 
+   </TABLE> 
+</FORM></P> 
+</BODY> 
+</HTML>

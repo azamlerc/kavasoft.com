@@ -1,0 +1,55 @@
+/Dates/Holidays
+
+# Variable-Date Holidays
+
+[0122] Chinese New Year
+	4705* (Chinese New Year, 4705) -> /Dates/2007/02/09
+[0220] Mardi Gras
+	2007* (Mardi Gras, 2007) -> /Dates/2007/02/20
+[0408] Easter
+	2007* (Easter, 2007) -> /Dates/2007/04/08
+[0513] Mother's Day
+	2007* (Mother's Day, 2007) -> /Dates/2007/05/13
+[0528] Memorial Day
+	2007* (Memorial Day, 2007) -> /Dates/2007/05/28
+[0617] Father's Day
+	2007* (Father's Day, 2007) -> /Dates/2007/06/17
+[0903] Labor Day
+	2007* (Labor Day, 2007) -> /Dates/2007/09/03
+[1122] Thanksgiving
+	2007* (Thanksgiving, 2007)*
+		[1122] Thanksgiving Day* (Thanksgiving Day, 2007) -> /Dates/2007/11/22
+		[1123] Thanksgiving Friday* (Thanksgiving Friday, 2007) -> /Dates/2007/11/23
+
+# Fixed-Date Holidays
+
+[0101] New Year's
+	2007* (New Year's, 2007)*
+		[1] New Year's Day* (New Year's Day, 2007) -> /Dates/2007/1/1
+	2008* (New Year's, 2008)*
+		[-1] New Year's Eve* (New Year's Eve, 2008) -> /Dates/2007/12/31
+[0202] Groundhog Day
+	2007* (Groundhog Day, 2007) -> /Dates/2007/02/02
+[0214] Valentine's Day
+	2007* (Valentine's Day, 2007) -> /Dates/2007/02/14
+[0317] St. Patrick's Day
+	2007* (St. Patrick's Day, 2007) -> /Dates/2007/03/17
+[0401] April Fool's Day
+	2007* (April Fool's Day, 2007) -> /Dates/2007/04/01
+[0501] May Day
+	2007* (May Day, 2007) -> /Dates/2007/05/01
+[0505] Cinco de Mayo
+	2007* (Cinco de Mayo, 2007) -> /Dates/2007/05/05
+[0704] Independence Day
+	2007* (Independence Day, 2007) -> /Dates/2007/07/04
+[0714] Bastille Day
+	2007* (Bastille Day, 2007) -> /Dates/2007/07/14
+[1031] Halloween
+	2007* (Halloween, 2007) -> /Dates/2007/10/31
+[1111] Veteran's Day
+	2007* (Veteran's Day, 2007) -> /Dates/2007/11/11
+[1225] Christmas
+	2007* (Christmas, 2007) 
+		[1224] Christmas Eve* (Christmas Eve, 2007) -> /Dates/2007/12/24
+		[1225] Christmas Day* (Christmas Day, 2007) -> /Dates/2007/12/25
+		[1226] Boxing Day* (Boxing Day, 2007) -> /Dates/2007/12/26

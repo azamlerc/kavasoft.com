@@ -1,0 +1,128 @@
+Thu Jun 15 01:06:26 2006 Error: Undefined variable: req in /Volumes/Media/Web Sites/kavasoft.com/licenses/kagi/kagi.php:17
+Thu Jun 15 01:06:26 2006 Error: Wrong parameter count for strpos() in /Volumes/Media/Web Sites/kavasoft.com/licenses/kagi/kagi.php:43
+Thu Jun 15 01:06:26 2006 Error: strftime() [<a href='function.strftime'>function.strftime</a>]: It is not safe to rely on the system's timezone settings. Please use the date.timezone setting, the TZ environment variable or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'Europe/Berlin' for 'CEST/2.0/DST' instead in /Volumes/Media/Web Sites/kavasoft.com/licenses/kagi/kagi.php:12
+Thu Jun 15 01:06:26 2006 Invalid computer number: 
+Thu Jun 15 01:09:05 2006 Error: Undefined variable: req in /Volumes/Media/Web Sites/kavasoft.com/licenses/kagi/kagi.php:18
+Thu Jun 15 01:09:05 2006 Error: Wrong parameter count for strpos() in /Volumes/Media/Web Sites/kavasoft.com/licenses/kagi/kagi.php:44
+Thu Jun 15 01:09:05 2006 Error: strftime() [<a href='function.strftime'>function.strftime</a>]: It is not safe to rely on the system's timezone settings. Please use the date.timezone setting, the TZ environment variable or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'Europe/Berlin' for 'CEST/2.0/DST' instead in /Volumes/Media/Web Sites/kavasoft.com/licenses/kagi/kagi.php:13
+Thu Jun 15 01:09:05 2006 Invalid computer number: 
+Thu Jun 15 01:09:37 2006 Error: Undefined variable: req in /Volumes/Media/Web Sites/kavasoft.com/licenses/kagi/kagi.php:18
+Thu Jun 15 01:09:37 2006 Error: Wrong parameter count for strpos() in /Volumes/Media/Web Sites/kavasoft.com/licenses/kagi/kagi.php:44
+Thu Jun 15 01:09:37 2006 Error: strftime() [<a href='function.strftime'>function.strftime</a>]: It is not safe to rely on the system's timezone settings. Please use the date.timezone setting, the TZ environment variable or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'Europe/Berlin' for 'CEST/2.0/DST' instead in /Volumes/Media/Web Sites/kavasoft.com/licenses/kagi/kagi.php:13
+Thu Jun 15 01:09:37 2006 Invalid computer number: 
+Thu Jun 15 01:10:52 2006 Error: Undefined variable: req in /Volumes/Media/Web Sites/kavasoft.com/licenses/kagi/kagi.php:18
+Thu Jun 15 01:10:52 2006 Error: Wrong parameter count for strpos() in /Volumes/Media/Web Sites/kavasoft.com/licenses/kagi/kagi.php:44
+Thu Jun 15 01:10:52 2006 Invalid computer number: 
+Thu Jun 15 01:12:01 2006     ACG:Flags: Test=1
+Thu Jun 15 01:12:01 2006     ACG:UserName: enter value if needed
+Thu Jun 15 01:12:01 2006     ACG:Password: myTestPassword
+Thu Jun 15 01:12:01 2006     ACG:CustomerSeed: Keyword: Computer-number - 5368-4402-3780-6581
+Thu Jun 15 01:12:01 2006     ACG:OEMSeed: Clear-Text=Password
+Thu Jun 15 01:12:01 2006     ACG:DebugFlag: 1
+Thu Jun 15 01:12:01 2006     ACG:InputVersion: 0200
+Thu Jun 15 01:12:01 2006     ACG:Request: Generate
+Thu Jun 15 01:12:01 2006     ACG:CardName: Card Name Here
+Thu Jun 15 01:12:01 2006     ACG:CardName-8bit: CARD NAME HERE
+Thu Jun 15 01:12:01 2006     ACG:PurchaserName: Andrew Zamler-Carhart
+Thu Jun 15 01:12:01 2006     ACG:PurchaserName-8bit: Andrew Zamler-Carhart
+Thu Jun 15 01:12:01 2006     ACG:PurchaserEmail: andrew@zamler-carhart.com
+Thu Jun 15 01:12:01 2006     ACG:SQNM: 9999
+Thu Jun 15 01:12:01 2006     ACG:QuantityOrdered: 1
+Thu Jun 15 01:12:01 2006     ACG:LicenseType: single
+Thu Jun 15 01:12:01 2006     ACG:UnitPayment: 24.990
+Thu Jun 15 01:12:01 2006     ACG:TransactionID: CH0123456789
+Thu Jun 15 01:12:01 2006     ACG:Postal-8bit: POSTAL-8BIT 12134 Center St. Boston CA 87654
+Thu Jun 15 01:12:01 2006     ACG:Postal: Postal 12134 Center St. Boston CA 87654
+Thu Jun 15 01:12:01 2006     ACG:ProductName-8bit: iTunes_Catalog_2
+Thu Jun 15 01:12:01 2006     ACG:ProductName: iTunes_Catalog_2
+Thu Jun 15 01:12:01 2006     ACG:UserPurchaseDate: 2000-12-31
+Thu Jun 15 01:12:01 2006     ACG:DateProcessed: 2000-12-31
+Thu Jun 15 01:12:01 2006     ACG:TimeStamp: 49388234823
+Thu Jun 15 01:12:01 2006     Submit: Do your ACG test
+Thu Jun 15 01:12:01 2006 Error: Undefined variable: payer_email in /Volumes/Media/Web Sites/kavasoft.com/licenses/kagi/kagi.php:80
+Thu Jun 15 01:12:01 2006 Error: Undefined variable: payer_email in /Volumes/Media/Web Sites/kavasoft.com/licenses/kagi/kagi.php:83
+Thu Jun 15 01:12:01 2006 Error: Undefined variable: payer_email in /Volumes/Media/Web Sites/kavasoft.com/licenses/kagi/kagi.php:85
+Thu Jun 15 01:12:01 2006 Sent iTunes Catalog 2 license to Andrew Zamler-Carhart <>.
+Thu Jun 15 01:12:53 2006     ACG:Flags: Test=1
+Thu Jun 15 01:12:53 2006     ACG:UserName: enter value if needed
+Thu Jun 15 01:12:53 2006     ACG:Password: myTestPassword
+Thu Jun 15 01:12:53 2006     ACG:CustomerSeed: Keyword: Computer-number - 5368-4402-3780-6581
+Thu Jun 15 01:12:53 2006     ACG:OEMSeed: Clear-Text=Password
+Thu Jun 15 01:12:53 2006     ACG:DebugFlag: 1
+Thu Jun 15 01:12:53 2006     ACG:InputVersion: 0200
+Thu Jun 15 01:12:53 2006     ACG:Request: Generate
+Thu Jun 15 01:12:53 2006     ACG:CardName: Card Name Here
+Thu Jun 15 01:12:53 2006     ACG:CardName-8bit: CARD NAME HERE
+Thu Jun 15 01:12:53 2006     ACG:PurchaserName: Andrew Zamler-Carhart
+Thu Jun 15 01:12:53 2006     ACG:PurchaserName-8bit: Andrew Zamler-Carhart
+Thu Jun 15 01:12:53 2006     ACG:PurchaserEmail: andrew@zamler-carhart.com
+Thu Jun 15 01:12:53 2006     ACG:SQNM: 9999
+Thu Jun 15 01:12:53 2006     ACG:QuantityOrdered: 1
+Thu Jun 15 01:12:53 2006     ACG:LicenseType: single
+Thu Jun 15 01:12:53 2006     ACG:UnitPayment: 24.990
+Thu Jun 15 01:12:53 2006     ACG:TransactionID: CH0123456789
+Thu Jun 15 01:12:53 2006     ACG:Postal-8bit: POSTAL-8BIT 12134 Center St. Boston CA 87654
+Thu Jun 15 01:12:53 2006     ACG:Postal: Postal 12134 Center St. Boston CA 87654
+Thu Jun 15 01:12:53 2006     ACG:ProductName-8bit: iTunes_Catalog_2
+Thu Jun 15 01:12:53 2006     ACG:ProductName: iTunes_Catalog_2
+Thu Jun 15 01:12:53 2006     ACG:UserPurchaseDate: 2000-12-31
+Thu Jun 15 01:12:53 2006     ACG:DateProcessed: 2000-12-31
+Thu Jun 15 01:12:53 2006     ACG:TimeStamp: 49388234823
+Thu Jun 15 01:12:53 2006     Submit: Do your ACG test
+Thu Jun 15 01:12:53 2006 Sent iTunes Catalog 2 license to Andrew Zamler-Carhart <andrew@zamler-carhart.com>.
+Thu Jun 15 01:13:08 2006 Sent iTunes Catalog 2 license to Andrew Zamler-Carhart <andrew@zamler-carhart.com>.
+Thu Jun 15 01:38:34 2006 Sent iTunes Catalog 2 license to Andrew Zamler-Carhart <andrew@zamler-carhart.com>.
+Thu Jun 15 01:39:21 2006     ACG:Flags: Test=1
+Thu Jun 15 01:39:21 2006     ACG:UserName: enter value if needed
+Thu Jun 15 01:39:21 2006     ACG:Password: myTestPassword
+Thu Jun 15 01:39:21 2006     ACG:CustomerSeed: Keyword: Computer-number - 5368-4402-3780-6581
+Thu Jun 15 01:39:21 2006     ACG:OEMSeed: Clear-Text=Password
+Thu Jun 15 01:39:21 2006     ACG:DebugFlag: 1
+Thu Jun 15 01:39:21 2006     ACG:InputVersion: 0200
+Thu Jun 15 01:39:21 2006     ACG:Request: Generate
+Thu Jun 15 01:39:21 2006     ACG:CardName: Card Name Here
+Thu Jun 15 01:39:21 2006     ACG:CardName-8bit: CARD NAME HERE
+Thu Jun 15 01:39:21 2006     ACG:PurchaserName: Andrew Zamler-Carhart
+Thu Jun 15 01:39:21 2006     ACG:PurchaserName-8bit: Andrew Zamler-Carhart
+Thu Jun 15 01:39:21 2006     ACG:PurchaserEmail: andrew@zamler-carhart.com
+Thu Jun 15 01:39:21 2006     ACG:SQNM: 9999
+Thu Jun 15 01:39:21 2006     ACG:QuantityOrdered: 1
+Thu Jun 15 01:39:21 2006     ACG:LicenseType: single
+Thu Jun 15 01:39:21 2006     ACG:UnitPayment: 24.990
+Thu Jun 15 01:39:21 2006     ACG:TransactionID: CH0123456789
+Thu Jun 15 01:39:21 2006     ACG:Postal-8bit: POSTAL-8BIT 12134 Center St. Boston CA 87654
+Thu Jun 15 01:39:21 2006     ACG:Postal: Postal 12134 Center St. Boston CA 87654
+Thu Jun 15 01:39:21 2006     ACG:ProductName-8bit: iTunes_Catalog_2
+Thu Jun 15 01:39:21 2006     ACG:ProductName: iTunes_Catalog_2
+Thu Jun 15 01:39:21 2006     ACG:UserPurchaseDate: 2000-12-31
+Thu Jun 15 01:39:21 2006     ACG:DateProcessed: 2000-12-31
+Thu Jun 15 01:39:21 2006     ACG:TimeStamp: 49388234823
+Thu Jun 15 01:39:21 2006     Submit: Do your ACG test
+Thu Jun 15 01:39:21 2006 Sent iTunes Catalog 2 license to Andrew Zamler-Carhart <andrew@zamler-carhart.com>.
+Thu Jun 15 01:41:26 2006     ACG:Flags: Test=1
+Thu Jun 15 01:41:26 2006     ACG:UserName: enter value if needed
+Thu Jun 15 01:41:26 2006     ACG:Password: myTestPassword
+Thu Jun 15 01:41:26 2006     ACG:CustomerSeed: Keyword: Computer-number - 5368-4402-3780-6581
+Thu Jun 15 01:41:26 2006     ACG:OEMSeed: Clear-Text=Password
+Thu Jun 15 01:41:26 2006     ACG:DebugFlag: 1
+Thu Jun 15 01:41:26 2006     ACG:InputVersion: 0200
+Thu Jun 15 01:41:26 2006     ACG:Request: Generate
+Thu Jun 15 01:41:26 2006     ACG:CardName: Card Name Here
+Thu Jun 15 01:41:26 2006     ACG:CardName-8bit: CARD NAME HERE
+Thu Jun 15 01:41:26 2006     ACG:PurchaserName: Andrew Zamler-Carhart
+Thu Jun 15 01:41:26 2006     ACG:PurchaserName-8bit: Andrew Zamler-Carhart
+Thu Jun 15 01:41:26 2006     ACG:PurchaserEmail: andrew@zamler-carhart.com
+Thu Jun 15 01:41:26 2006     ACG:SQNM: 9999
+Thu Jun 15 01:41:26 2006     ACG:QuantityOrdered: 1
+Thu Jun 15 01:41:26 2006     ACG:LicenseType: single
+Thu Jun 15 01:41:26 2006     ACG:UnitPayment: 24.990
+Thu Jun 15 01:41:26 2006     ACG:TransactionID: CH0123456789
+Thu Jun 15 01:41:26 2006     ACG:Postal-8bit: POSTAL-8BIT 12134 Center St. Boston CA 87654
+Thu Jun 15 01:41:26 2006     ACG:Postal: Postal 12134 Center St. Boston CA 87654
+Thu Jun 15 01:41:26 2006     ACG:ProductName-8bit: iTunes_Catalog_2
+Thu Jun 15 01:41:26 2006     ACG:ProductName: iTunes_Catalog_2
+Thu Jun 15 01:41:26 2006     ACG:UserPurchaseDate: 2000-12-31
+Thu Jun 15 01:41:26 2006     ACG:DateProcessed: 2000-12-31
+Thu Jun 15 01:41:26 2006     ACG:TimeStamp: 49388234823
+Thu Jun 15 01:41:26 2006     Submit: Do your ACG test
+Thu Jun 15 01:41:26 2006 Sent iTunes Catalog 2 license to Andrew Zamler-Carhart <andrew@zamler-carhart.com>.

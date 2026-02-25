@@ -1,0 +1,21 @@
+/Dates/Jewish Holidays
+[50] Tu B'Shvat
+	5764* (Tu B'Shvat, 5764) -> /Dates/2004/02/07
+[60] Purim
+	5764* (Purim, 5764) -> /Dates/2004/03/7
+[70] Passover
+	5764* (Passover, 5764)
+		[0] Erev Passover*         (Erev Passover, 5764) -> /Dates/2004/04/05
+		[1] First Day*     (First Day of Passover, 5764) -> /Dates/2004/04/06		
+		[2] Second Day*   (Second Day of Passover, 5764) -> /Dates/2004/04/07
+		[3] Third Day*     (Third Day of Passover, 5764) -> /Dates/2004/04/08
+		[4] Fourth Day*   (Fourth Day of Passover, 5764) -> /Dates/2004/04/09
+		[5] Fifth Day*     (Fifth Day of Passover, 5764) -> /Dates/2004/04/10
+		[6] Sixth Day*     (Sixth Day of Passover, 5764) -> /Dates/2004/04/11
+		[7] Seventh Day* (Seventh Day of Passover, 5764) -> /Dates/2004/04/12
+		[8] Eighth Day*   (Eighth Day of Passover, 5764) -> /Dates/2004/05/13
+[80] Shavuot
+	5764* (Shavuot, 5764)
+		[0] Erev Shavuot*          (Erev Shavuot, 5764) -> /Dates/2004/05/25
+		[1] First Day*     (First Day of Shavuot, 5764) -> /Dates/2004/05/26		
+		[2] Second Day*   (Second Day of Shavuot, 5764) -> /Dates/2004/05/27

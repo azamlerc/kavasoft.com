@@ -1,0 +1,39 @@
+/Things/Sports/Hockey/NHL
+Eastern
+	Atlantic
+		Devils -> /Places/North America/United States/New Jersey/East Rutherford/Devils
+		Islanders -> /Places/North America/United States/New York/Uniondale/Islanders
+		Rangers -> /Places/North America/United States/New York/New York/Rangers
+		Flyers -> /Places/North America/United States/Pennsylvania/Philadelphia/Flyers
+		Penguins -> /Places/North America/United States/Pennsylvania/Pittsburgh/Penguins
+	Northeast
+		Bruins -> /Places/North America/United States/Massachusetts/Boston/Bruins
+		Sabres -> /Places/North America/United States/New York/Buffalo/Sabres
+		Canadiens -> /Places/North America/Canada/QuŽbec/MontrŽal/Canadiens
+		Senators -> /Places/North America/Canada/Ontario/Ottawa/Senators
+		Maple Leafs -> /Places/North America/Canada/Ontario/Toronto/Maple Leafs
+	Southeast
+		Thrashers -> /Places/North America/United States/Georgia/Atlanta/Thrashers
+		Hurricanes -> /Places/North America/United States/North Carolina/Raleigh/Hurricanes
+		Panthers -> /Places/North America/United States/Florida/Sunrise/Panthers
+		Lightning -> /Places/North America/United States/Florida/Tampa/Lightning
+		Capitals -> /Places/North America/United States/District of Columbia/Capitals
+Western
+	Central
+		Blackhawks -> /Places/North America/United States/Illinois/Chicago/Blackhawks
+		Blue Jackets -> /Places/North America/United States/Ohio/Columbus/Blue Jackets
+		Red Wings -> /Places/North America/United States/Michigan/Detroit/Red Wings
+		Predators -> /Places/North America/United States/Tennessee/Nashville/Predators
+		Blues -> /Places/North America/United States/Missouri/St. Louis/Blues
+	Northwest
+		Flames -> /Places/North America/Canada/Alberta/Calgary/Flames
+		Avalanche -> /Places/North America/United States/Colorado/Denver/Avalanche
+		Oilers -> /Places/North America/Canada/Alberta/Edmonton/Oilers
+		Wild -> /Places/North America/United States/Minnesota/Minneapolis/Wild
+		Canucks -> /Places/North America/Canada/British Columbia/Vancouver/Canucks
+	Pacific
+		Mighty Ducks -> /Places/North America/United States/California/Anaheim/Mighty Ducks
+		Stars -> /Places/North America/United States/Texas/Dallas/Stars
+		Kings -> /Places/North America/United States/California/Los Angeles/Kings
+		Coyotes -> /Places/North America/United States/Arizona/Phoenix/Coyotes
+		Sharks -> /Places/North America/United States/California/San Jose/Sharks

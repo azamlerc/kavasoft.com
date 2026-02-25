@@ -1,0 +1,5 @@
+Invalid transaction
+
+Begin transaction
+Error: Invalid argument supplied for foreach() in /Volumes/Media/Web Sites/kavasoft.com/licenses/licenses.php:146
+Invalid transaction

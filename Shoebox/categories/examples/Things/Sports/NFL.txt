@@ -1,0 +1,43 @@
+/Things/Sports/Football/NFL
+American League
+	East
+		Bills -> /Places/North America/United States/New York/Buffalo/Bills
+		Dolphins -> /Places/North America/United States/Florida/Miami/Dolphins
+		Patriots -> /Places/North America/United States/Massachusetts/Boston/Patriots
+		Jets -> /Places/North America/United States/New York/New York/Jets
+	North
+		Ravens -> /Places/North America/United States/Maryland/Baltimore/Ravens
+		Bengals -> /Places/North America/United States/Ohio/Cincinnati/Bengals
+		Browns -> /Places/North America/United States/Ohio/Cleveland/Browns
+		Steelers -> /Places/North America/United States/Pennsylvania/Pittsburgh/Steelers
+	South
+		Colts -> /Places/North America/United States/Indiana/Indianapolis/Colts
+		Jaguars -> /Places/North America/United States/Florida/Jacksonville/Jaguars
+		Texans -> /Places/North America/United States/Texas/Houston/Texans
+		Titans -> /Places/North America/United States/Tennessee/Nashville/Titans
+	West
+		Broncos -> /Places/North America/United States/Colorado/Denver/Broncos
+		Chiefs -> /Places/North America/United States/Missouri/Kansas City/Chiefs
+		Raiders -> /Places/North America/United States/California/Oakland/Raiders
+		Chargers -> /Places/North America/United States/California/San Diego/Chargers
+National League
+	East
+		Cowboys -> /Places/North America/United States/Texas/Dallas/Cowboys
+		Giants -> /Places/North America/United States/New York/New York/Giants
+		Eagles -> /Places/North America/United States/Pennsylvania/Philadelphia/Eagles
+		Redskins -> /Places/North America/United States/District of Columbia/Redskins 
+	North
+		Bears -> /Places/North America/United States/Illinois/Chicago/Bears
+		Lions -> /Places/North America/United States/Michigan/Detroit/Lions
+		Packers -> /Places/North America/United States/Wisconsin/Green Bay/Packers
+		Vikings -> /Places/North America/United States/Minnesota/Minneapolis/Vikings
+	South
+		Falcons -> /Places/North America/United States/Georgia/Atlanta/Falcons
+		Panthers -> /Places/North America/United States/North Carolina/Charlotte/Panthers
+		Saints -> /Places/North America/United States/Louisiana/New Orleans/Saints
+		Buccaneers -> /Places/North America/United States/Florida/Tampa/Buccaneers
+	West
+		Cardinals -> /Places/North America/United States/Arizona/Tempe/Cardinals
+		Seahawks -> /Places/North America/United States/Washington/Seattle/Seahawks
+		Rams -> /Places/North America/United States/Missouri/St. Louis/Rams
+		49ers -> /Places/North America/United States/California/Bay Area/San Francisco/49ers

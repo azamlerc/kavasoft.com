@@ -1,0 +1,541 @@
+<HTML><HEAD><TITLE>iConquer - Developer - Documentation - ICGame</TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+<a href="index.html"><img src="iConquer_logo.jpg" alt="" width="203" height="55"></a>
+
+<FONT COLOR="#000066"><H1><A NAME="//apple_ref/occ/cl/ICGame">ICGame</A></H1></FONT><BR>
+
+
+
+	<blockquote><DL><DT><B>Inherits From:</B></DT>  
+	<DD>NSObject</DD>
+</DL></blockquote>
+
+
+
+	<blockquote><DL><DT><B>Conforms To:</B></DT>
+	<DD>ICGameProtocol</DD><DD>NSCoding</DD>
+</DL></blockquote>
+
+
+	<blockquote><DL><DT><B>Declared In:</B></DT>
+	<DD>ICGame.h</DD>
+	</DL></blockquote>
+
+<BR><BR>
+
+
+<H2>Class Description</H2>
+The ICGame class stores the game state.<P>
+
+The <I>players</I> array contains between 2 and 6 ICPlayer objects. The <I>currentPlayer</I> object represents the player whose turn it is.<P>
+
+The <I>countries</I> array contains a number of ICCountry objects. The <I>currentCountry</I> object represents the currently selected country. The <I>continents</I> dictionary organizes the countries into separate continents.<P>
+
+The <I>gameState</I> variable stores the overall state of the game: <CODE>GameStatePickCountries</CODE>, <CODE>GameStateInitializeArmies</CODE>, <CODE>GameStatePlay</CODE>, or <CODE>GameStateVictory</CODE>. The <I>turnState</I> variable stores the state of the turn: <CODE>TurnStateAssignArmies</CODE>, <CODE>TurnStateAttack</CODE>, <CODE>TurnStateFortify</CODE>, or <CODE>TurnStateDone</CODE>.<P>
+
+The <I>timer</I> controls the pace of the game. When it is a computer player's turn, the <I>timer</I> tells the player when to place armies or attack.
+
+
+<!--
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Defined Types</H2>
+	<blockquote>
+	
+		
+		<H4>Synopsis:</H4>
+		
+			<CODE><A NAME="//apple_ref/c/tdef/ICGameState">
+			typedef enum _ICGameState {&nbsp;&nbsp;&nbsp;&nbsp;GameStatePickCountries, GameStateInitializeArmies, <BR>
+GameStatePlay, GameStateVictory} <B>ICGameState</B>;</A></CODE><BR>
+		
+			<CODE><A NAME="//apple_ref/c/tdef/ICTurnState">
+			typedef enum _ICTurnState {&nbsp;&nbsp;&nbsp;&nbsp;TurnStateAssignArmies, TurnStateAttack, <BR>
+TurnStateFortify, TurnStateDone} <B>ICTurnState</B>;</A></CODE><BR>
+		
+		
+	
+	</blockquote>
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Variables</H2>
+	<blockquote>
+	
+		<CODE>NSMutableArray *<B>gameControllers</B>;</CODE><BR>
+		<CODE>id <B>gameServer</B>;</CODE><BR>
+		<CODE>NSData *<B>savedGameState</B>;</CODE><BR>
+		<CODE>NSUserDefaults *<B>defaults</B>;</CODE><BR>
+		<CODE>NSTimer *<B>timer</B>;</CODE><BR>
+		<CODE>NSMutableArray *<B>players</B>;</CODE><BR>
+		<CODE>ICPlayer *<B>currentPlayer</B>;</CODE><BR>
+		<CODE>NSArray *<B>countries</B>;</CODE><BR>
+		<CODE>NSMutableDictionary *<B>continents</B>;</CODE><BR>
+		<CODE>NSMutableDictionary *<B>continentValues</B>;</CODE><BR>
+		<CODE>NSMutableArray *<B>unallocatedCountries</B>;</CODE><BR>
+		<CODE>ICCountry *<B>currentCountry</B>;</CODE><BR>
+		<CODE>ICDeck *<B>deck</B>;</CODE><BR>
+		<CODE>ICGameState <B>gameState</B>;</CODE><BR>
+		<CODE>ICTurnState <B>turnState</B>;</CODE><BR>
+		<CODE>int <B>cardValues</B>;</CODE><BR>
+		<CODE>int <B>currentCardSetValue</B>;</CODE><BR>
+		<CODE>BOOL <B>hasMovedThisTurn</B>;</CODE><BR>
+		<CODE>BOOL <B>allowTurningInCards</B>;</CODE><BR>
+		<CODE>BOOL <B>mustTurnInCards</B>;</CODE><BR>
+		<CODE>BOOL <B>isNetworkGame</B>;</CODE><BR>
+		<CODE>NSString *<B>mapIdentifier</B>;</CODE><BR>
+	<P><TABLE>
+	
+		<TR><TD>gameControllers</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>gameServer</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>savedGameState</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>defaults</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>timer</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>players</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>currentPlayer</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>countries</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>continents</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>continentValues</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>unallocatedCountries</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>currentCountry</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>deck</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>gameState</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>turnState</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>cardValues</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>currentCardSetValue</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>hasMovedThisTurn</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>allowTurningInCards</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>mustTurnInCards</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>isNetworkGame</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>mapIdentifier</TD><TD>No description.</TD></TR>
+	
+	</TABLE>
+	</blockquote>
+
+-->
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Method Types</H2>
+	<blockquote>
+	
+		
+			Players
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- players">- players</A></DD>
+		
+			<DD> <A HREF="#- currentPlayer">- currentPlayer</A></DD>
+		
+			<DD> <A HREF="#- nextPlayer">- nextPlayer</A></DD>
+		
+		</DL>
+	
+		
+			Countries
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- countries">- countries</A></DD>
+		
+			<DD> <A HREF="#- unallocatedCountries">- unallocatedCountries</A></DD>
+		
+			<DD> <A HREF="#- currentCountry">- currentCountry</A></DD>
+		
+			<DD> <A HREF="#- setCurrentCountry:">- setCurrentCountry:</A></DD>
+		
+			<DD> <A HREF="#- incomeForCountries:">- incomeForCountries:</A></DD>
+		
+			<DD> <A HREF="#- continents">- continents</A></DD>
+		
+			<DD> <A HREF="#- continentValues">- continentValues</A></DD>
+		
+		</DL>
+	
+		
+			Game State
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- gameState">- gameState</A></DD>
+		
+			<DD> <A HREF="#- pickCountries">- pickCountries</A></DD>
+		
+			<DD> <A HREF="#- isPickingCountries">- isPickingCountries</A></DD>
+		
+			<DD> <A HREF="#- donePickingCountries">- donePickingCountries</A></DD>
+		
+			<DD> <A HREF="#- isAllocatingArmies">- isAllocatingArmies</A></DD>
+		
+			<DD> <A HREF="#- doneAllocatingArmies">- doneAllocatingArmies</A></DD>
+		
+			<DD> <A HREF="#- isPlaying">- isPlaying</A></DD>
+		
+			<DD> <A HREF="#- victory">- victory</A></DD>
+		
+			<DD> <A HREF="#- isVictory">- isVictory</A></DD>
+		
+		</DL>
+	
+		
+			Turn State
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- turnState">- turnState</A></DD>
+		
+			<DD> <A HREF="#- beginTurn">- beginTurn</A></DD>
+		
+			<DD> <A HREF="#- isAssigningArmies">- isAssigningArmies</A></DD>
+		
+			<DD> <A HREF="#- attack">- attack</A></DD>
+		
+			<DD> <A HREF="#- isAttacking">- isAttacking</A></DD>
+		
+			<DD> <A HREF="#- fortify">- fortify</A></DD>
+		
+			<DD> <A HREF="#- isFortifying">- isFortifying</A></DD>
+		
+			<DD> <A HREF="#- done">- done</A></DD>
+		
+			<DD> <A HREF="#- isDone">- isDone</A></DD>
+		
+		</DL>
+	
+		
+			Timer
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- startTimer">- startTimer</A></DD>
+		
+			<DD> <A HREF="#- stopTimer">- stopTimer</A></DD>
+		
+			<DD> <A HREF="#- pauseTimer">- pauseTimer</A></DD>
+		
+			<DD> <A HREF="#- unpauseTimer">- unpauseTimer</A></DD>
+		
+			<DD> <A HREF="#- takeAction">- takeAction</A></DD>
+		
+		</DL>
+	
+		
+			Miscellaneous
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- updateStatistics">- updateStatistics</A></DD>
+		
+			<DD> <A HREF="#- currentCardSetValue">- currentCardSetValue</A></DD>
+		
+			<DD> <A HREF="#- allowTurningInCards">- allowTurningInCards</A></DD>
+		
+		</DL>
+	
+	</blockquote>
+
+
+
+
+ 
+
+	<HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Methods</H2>
+ 
+	
+		
+		<A NAME="- allowTurningInCards"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/allowTurningInCards">allowTurningInCards</A></H3><P>
+		<CODE>- (BOOL)<B>allowTurningInCards</B>
+		</CODE><P>
+		Returns whether the player is allowed to turn in cards after eliminating another player.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- attack"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/attack">attack</A></H3><P>
+		<CODE>- (void)<B>attack</B>
+		</CODE><P>
+		Called when the current player is done placing armies. 
+Sets the turn state to <CODE>TurnStateAttack</CODE>. 
+If the current player is a computer, starts the timer.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- beginTurn"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/beginTurn">beginTurn</A></H3><P>
+		<CODE>- (void)<B>beginTurn</B>
+		</CODE><P>
+		Starts the turn by setting the turn state to <CODE>TurnStateAssignArmies</CODE>. 
+Sends the <B>assignArmiesFromIncome</B> message to the current player. 
+If the current player is a computer, starts the timer.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- continentValues"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/continentValues">continentValues</A></H3><P>
+		<CODE>- (NSMutableDictionary *)<B>continentValues</B>
+		</CODE><P>
+		A dictionary of continents, where the key is the continent's name 
+and the value is the number of bonus armies for that continent.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- continents"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/continents">continents</A></H3><P>
+		<CODE>- (NSMutableDictionary *)<B>continents</B>
+		</CODE><P>
+		A dictionary of continents, where the key is the continent's name 
+and the value is an array of countries in the continent.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- countries"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/countries">countries</A></H3><P>
+		<CODE>- (NSArray *)<B>countries</B>
+		</CODE><P>
+		The array of all countries in the game.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- currentCardSetValue"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/currentCardSetValue">currentCardSetValue</A></H3><P>
+		<CODE>- (int)<B>currentCardSetValue</B>
+		</CODE><P>
+		The number of armies that a set of cards is worth. Every time cards are turned in, this value increases.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- currentCountry"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/currentCountry">currentCountry</A></H3><P>
+		<CODE>- (ICCountry *)<B>currentCountry</B>
+		</CODE><P>
+		The currently selected country.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- currentPlayer"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/currentPlayer">currentPlayer</A></H3><P>
+		<CODE>- (ICPlayer *)<B>currentPlayer</B>
+		</CODE><P>
+		The player whose turn it is.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- done"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/done">done</A></H3><P>
+		<CODE>- (void)<B>done</B>
+		</CODE><P>
+		Called when the current player is done fortifying. 
+Sets the turn state to <CODE>TurnStateDone</CODE>. 
+If the current player has won this turn, gives them a card. 
+Stops the timer, selects the next player, and begins a turn again.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- doneAllocatingArmies"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/doneAllocatingArmies">doneAllocatingArmies</A></H3><P>
+		<CODE>- (void)<B>doneAllocatingArmies</B>
+		</CODE><P>
+		Call this method when the last player has finished placing initial armies. 
+Sets the game state to <CODE>GameStatePlay</CODE>, stops the timer, 
+selects the first player, and starts the first turn.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- donePickingCountries"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/donePickingCountries">donePickingCountries</A></H3><P>
+		<CODE>- (void)<B>donePickingCountries</B>
+		</CODE><P>
+		Call this method when the last player has finished picking countries. 
+Sets the game state to <CODE>GameStateInitializeArmies</CODE>. 
+Selects the first player, and starts the timer.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- fortify"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/fortify">fortify</A></H3><P>
+		<CODE>- (void)<B>fortify</B>
+		</CODE><P>
+		Called when the current player is done attacking. 
+Sets the turn state to <CODE>TurnStateFortify</CODE>. 
+Sends the <B>fortify</B> message to the current player.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- gameState"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/gameState">gameState</A></H3><P>
+		<CODE>- (ICGameState)<B>gameState</B>
+		</CODE><P>
+		Returns an integer that represents the game state. Possible values are <CODE>GameStatePickCountries</CODE>, <CODE>GameStateInitializeArmies</CODE>, <CODE>GameStatePlay</CODE>, and <CODE>GameStateVictory</CODE>.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- incomeForCountries:"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/incomeForCountries:">incomeForCountries:</A></H3><P>
+		<CODE>- (int)<B>incomeForCountries:</B>(NSArray *)<EM>playerCountries</EM>
+			
+		</CODE><P>
+		Given an array of countries that a player owns, 
+returns the number of armies that they should receive at the beginning of a turn. 
+That value is one army for every three countries owned, plus bonus armies for each continent. 
+Players will always earn at least three armies.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- isAllocatingArmies"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/isAllocatingArmies">isAllocatingArmies</A></H3><P>
+		<CODE>- (BOOL)<B>isAllocatingArmies</B>
+		</CODE><P>
+		Returns whether the game state is <CODE>GameStateInitializeArmies</CODE>.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- isAssigningArmies"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/isAssigningArmies">isAssigningArmies</A></H3><P>
+		<CODE>- (BOOL)<B>isAssigningArmies</B>
+		</CODE><P>
+		Returns whether the turn state is <CODE>TurnStateAssignArmies</CODE>.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- isAttacking"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/isAttacking">isAttacking</A></H3><P>
+		<CODE>- (BOOL)<B>isAttacking</B>
+		</CODE><P>
+		Returns whether the turn state is <CODE>TurnStateAttack</CODE>.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- isDone"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/isDone">isDone</A></H3><P>
+		<CODE>- (BOOL)<B>isDone</B>
+		</CODE><P>
+		Returns whether the turn state is <CODE>TurnStateDone</CODE>.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- isFortifying"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/isFortifying">isFortifying</A></H3><P>
+		<CODE>- (BOOL)<B>isFortifying</B>
+		</CODE><P>
+		Returns whether the turn state is <CODE>TurnStateFortify</CODE>.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- isPickingCountries"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/isPickingCountries">isPickingCountries</A></H3><P>
+		<CODE>- (BOOL)<B>isPickingCountries</B>
+		</CODE><P>
+		Returns whether the game state is <CODE>GameStatePickCountries</CODE>.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- isPlaying"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/isPlaying">isPlaying</A></H3><P>
+		<CODE>- (BOOL)<B>isPlaying</B>
+		</CODE><P>
+		Returns whether the game state is <CODE>GameStatePlay</CODE>.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- isVictory"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/isVictory">isVictory</A></H3><P>
+		<CODE>- (BOOL)<B>isVictory</B>
+		</CODE><P>
+		Returns whether the game state is <CODE>GameStateVictory</CODE>.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- nextPlayer"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/nextPlayer">nextPlayer</A></H3><P>
+		<CODE>- (ICPlayer *)<B>nextPlayer</B>
+		</CODE><P>
+		Returns the player after the current player in the players array.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- pauseTimer"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/pauseTimer">pauseTimer</A></H3><P>
+		<CODE>- (void)<B>pauseTimer</B>
+		</CODE><P>
+		Stops the timer but doesn't set it to <B>nil</B>. 
+To resume, call <B>unpauseTimer</B>.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- pickCountries"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/pickCountries">pickCountries</A></H3><P>
+		<CODE>- (void)<B>pickCountries</B>
+		</CODE><P>
+		Sets the game state to <CODE>GameStatePickCountries</CODE>. 
+Initializes the game board so that all countries are unowned, and selects the first player. 
+Depending on the user's assign countries preference, randomly picks countries or tells the first player to pick a country.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- players"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/players">players</A></H3><P>
+		<CODE>- (NSMutableArray *)<B>players</B>
+		</CODE><P>
+		The players in the game.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setCurrentCountry:"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/setCurrentCountry:">setCurrentCountry:</A></H3><P>
+		<CODE>- (void)<B>setCurrentCountry:</B>(ICCountry *)<EM>value</EM>
+			
+		</CODE><P>
+		Sets the currently selected country.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- startTimer"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/startTimer">startTimer</A></H3><P>
+		<CODE>- (void)<B>startTimer</B>
+		</CODE><P>
+		Called when a computer player's turn begins. 
+Repeatedly calls <B>takeAction</B> until <B>stopTimer</B> is called. 
+As the <I>animationSpeed</I> preference ranges from 0 (slow) to 4 (fast), 
+the time interval will be 1.0 to 0.0 seconds.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- stopTimer"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/stopTimer">stopTimer</A></H3><P>
+		<CODE>- (void)<B>stopTimer</B>
+		</CODE><P>
+		Stops the timer (and sets it to <B>nil</B>). 
+If the timer should be resumed, use <B>pauseTimer</B>.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- takeAction"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/takeAction">takeAction</A></H3><P>
+		<CODE>- (void)<B>takeAction</B>
+		</CODE><P>
+		The game's main timer calls this method. 
+If assigning armies, sends <B>assignInitialArmies</B> to the current player. 
+If attacking, sends <B>attack</B> to the current player.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- turnState"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/turnState">turnState</A></H3><P>
+		<CODE>- (ICTurnState)<B>turnState</B>
+		</CODE><P>
+		Returns an integer representing the turn state. Possible values are: 
+<CODE>TurnStateAssignArmies</CODE>, 
+<CODE>TurnStateAttack</CODE>, 
+<CODE>TurnStateFortify</CODE>, and 
+<CODE>TurnStateDone</CODE>.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- unallocatedCountries"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/unallocatedCountries">unallocatedCountries</A></H3><P>
+		<CODE>- (NSMutableArray *)<B>unallocatedCountries</B>
+		</CODE><P>
+		The countries in the game that have not been picked yet.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- unpauseTimer"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/unpauseTimer">unpauseTimer</A></H3><P>
+		<CODE>- (void)<B>unpauseTimer</B>
+		</CODE><P>
+		If the timer is paused, unpauses it.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- updateStatistics"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/updateStatistics">updateStatistics</A></H3><P>
+		<CODE>- (void)<B>updateStatistics</B>
+		</CODE><P>
+		Invalidates the statistics, causing the data to be reloaded.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- victory"></A><H3><A NAME="//apple_ref/occ/instm/ICGame/victory">victory</A></H3><P>
+		<CODE>- (void)<B>victory</B>
+		</CODE><P>
+		Call this method when only one player remains. 
+Sets the game state to <CODE>GameStateVictory</CODE>, stops the timer, and beeps.
+	
+
+
+
+
+<P><HR>
+Version 1.1 Copyright &copy;2003 by KavaSoft.  All Rights Reserved.  
+<P>
+</BODY></HTML>

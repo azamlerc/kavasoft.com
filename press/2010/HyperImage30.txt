@@ -1,0 +1,23 @@
+HyperImage 3 searches the web for images, downloads photo blogs
+
+FOR IMMEDIATE RELEASE
+
+June 1, 2010 - KavaSoft has released HyperImage 3, an application for downloading web photo galleries. HyperImage 3 adds an image search feature, and is optimized for the most popular photo blogs.
+
+There are millions of images on the web, but how do you find and download them without clicking on them one at a time? HyperImage is an industrial-strength tool for searching the web and downloading entire websites worth of pictures. Just enter an address or keyword, and watch as thousands of pictures stream down to your computer.
+
+HyperImage 3 will change the way you find images on the web. Why look at page after page of tiny thumbnails in your web browser? Just type a few keywords into the search field, and HyperImage will download all the image search results to your computer, so you can browse through them at full size. When you've found a website that has what you're looking for, HyperImage can download every image from the site. 
+
+HyperImage 3 lets you fine-tune your searches. You can set a minimum image size for high-resolution photographs, and look for photos, clip art, line drawings, or even people's faces! Search in black and white for that artsy look, or choose any color of the rainbow. Safe search lets you choose whether to include adult content in search results.
+
+HyperImage 3 is optimized for the most popular photo blogs, such as Blogger, WordPress, Tumblr and deviantArt. It automatically downloads the highest-resolution user-submitted content, while ignoring the stuff you don't want. You can download every photo from blog after blog, creating your own mirror of your favorite part of the blogosphere. 
+
+HyperImage includes a built-in image browser with infinitely resizable thumbnails, and can show a a full-screen slideshow of images as they are being downloaded. It's hyperthreaded, so it downloads images with blinding speed. The activity viewer lets you see what the web crawler is doing, and the preferences let you precisely control where it goes. 
+
+HyperImage 3 smartly follows RSS feeds, and makes downloading consecutively numbered images a snap. It knows how to deal with gallery websites that require a login, such as pay-per-content and adult-themed sites, using passwords from your keychain and cookies from your browser. 
+
+HyperImage is available for $25. You can try it for free, and images downloaded with an unlicensed copy will contain a watermark. HyperImage is a universal binary and is optimized for Mac OS X Snow Leopard.
+
+Our affiliate program lets webmasters promote HyperImage, offer their readers a discount, and receive a portion of sales. It's a great way for webmasters and bloggers to help readers download their content. 
+
+###

@@ -1,0 +1,27 @@
+KavaSoft releases KavaServices, utilities to translate, calculate, convert and more
+
+FOR IMMEDIATE RELEASE
+
+November 30, 2007 - KavaSoft today released KavaServices, a utility that adds five useful commands to the Services menu. KavaServices lets you translate text back and forth between several languages, calculate mathematical expressions, convert currencies and other units, encode special characters into HTML entities, and execute terminal commands. These commands can replace the selected text in any Mac OS X application. You don’t need to switch to a different program, or to copy and paste.
+
+KavaServices allows you to select a paragraph on a web page and translate it right in your browser. You can also translate text in incoming or outgoing Mail messages. KavaServices translates English, French, German, Japanese, Italian, Spanish, Chinese, Dutch, Greek, Korean, Portuguese, and Russian.
+
+KavaServices can also convert currencies, as well as area, energy, power, pressure, speed, temperature, time, volume and weight.
+
+KavaServices can calculate any mathematical expression in any program. It can calculate basic arithmetic, trigonometry, arithmetic with scientific units, base conversions, and more.
+
+KavaServices also helps webmasters prepare content for the web by encoding special characters into HTML entities. With one keystroke, KavaServices can convert accented characters, characters in other alphabets and special punctuation marks for display on the web.
+
+KavaServices also offers a gateway to the Terminal in any application. Select a command, hit a keystroke, and the command will be replaced by its result as if you had typed it in the Terminal. 
+
+KavaServices costs $20, and can be purchased using PayPal or Kagi. You can try all of the features for free for seven days. 
+
+KavaSoft today also announced KavaTunes and released new versions of Shoebox, iConquer, HyperImage and Curator. More information is available on the all-new KavaSoft website.
+	
+	http://www.kavasoft.com/
+
+Visit the Press Info page for press releases, high-resolution icons, screenshots, and a form to request an evaluation license. 
+
+	http://www.kavasoft.com/press/
+
+###

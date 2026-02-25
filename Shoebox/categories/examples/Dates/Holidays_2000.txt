@@ -1,0 +1,55 @@
+/Dates/Holidays
+
+# Variable-Date Holidays
+
+[0122] Chinese New Year
+	4698* (Chinese New Year, 4698) -> /Dates/2000/02/12
+[0208] Mardi Gras
+	2000* (Mardi Gras, 2000) -> /Dates/2000/03/07
+[0327] Easter
+	2000* (Easter, 2000) -> /Dates/2000/04/23
+[0508] Mother's Day
+	2000* (Mother's Day, 2000) -> /Dates/2000/05/14
+[0530] Memorial Day
+	2000* (Memorial Day, 2000) -> /Dates/2000/05/29
+[0619] Father's Day
+	2000* (Father's Day, 2000) -> /Dates/2000/06/18
+[0905] Labor Day
+	2000* (Labor Day, 2000) -> /Dates/2000/09/04
+[1124] Thanksgiving
+	2000* (Thanksgiving, 2000)*
+		[1124] Thanksgiving Day* (Thanksgiving Day, 2000) -> /Dates/2000/11/23
+		[1125] Thanksgiving Friday* (Thanksgiving, 2000) -> /Dates/2000/11/24
+
+# Fixed-Date Holidays
+
+[0101] New Year's
+	2000* (New Year's, 2000)*
+		[1] New Year's Day* (New Year's Day, 2000) -> /Dates/2000/1/1
+	2001* (New Year's, 2001)*
+		[-1] New Year's Eve* (New Year's Eve, 2001) -> /Dates/2000/12/31
+[0202] Groundhog Day
+	2000* (Groundhog Day, 2000) -> /Dates/2000/02/02
+[0214] Valentine's Day
+	2000* (Valentine's Day, 2000) -> /Dates/2000/02/14
+[0317] St. Patrick's Day
+	2000* (St. Patrick's Day, 2000) -> /Dates/2000/03/17
+[0401] April Fool's Day
+	2000* (April Fool's Day, 2000) -> /Dates/2000/04/01
+[0501] May Day
+	2000* (May Day, 2000) -> /Dates/2000/05/01
+[0505] Cinco de Mayo
+	2000* (Cinco de Mayo, 2000) -> /Dates/2000/05/05
+[0704] Independence Day
+	2000* (Independence Day, 2000) -> /Dates/2000/07/04
+[0714] Bastille Day
+	2000* (Bastille Day, 2000) -> /Dates/2000/07/14
+[1031] Halloween
+	2000* (Halloween, 2000) -> /Dates/2000/10/31
+[1111] Veteran's Day
+	2000* (Veteran's Day, 2000) -> /Dates/2000/11/11
+[1225] Christmas
+	2000* (Christmas, 2000) 
+		[1224] Christmas Eve* (Christmas Eve, 2000) -> /Dates/2000/12/24
+		[1225] Christmas Day* (Christmas Day, 2000) -> /Dates/2000/12/25
+		[1226] Boxing Day* (Boxing Day, 2000) -> /Dates/2000/12/26

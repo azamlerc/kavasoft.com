@@ -1,0 +1,53 @@
+/Dates/Holidays
+
+# Variable-Date Holidays
+
+[0122] Chinese New Year
+#	4698* (Chinese New Year, 4697) -> /Dates/1999/02/12
+[0208] Mardi Gras
+#	1999* (Mardi Gras, 1999) -> /Dates/1999/03/07
+[0327] Easter
+	1999* (Easter, 1999) -> /Dates/1999/04/04
+[0508] Mother's Day
+	1999* (Mother's Day, 1999) -> /Dates/1999/05/09
+[0530] Memorial Day
+	1999* (Memorial Day, 1999) -> /Dates/1999/05/31
+[0619] Father's Day
+	1999* (Father's Day, 1999) -> /Dates/1999/06/20
+[0905] Labor Day
+	1999* (Labor Day, 1999) -> /Dates/1999/09/06
+[1124] Thanksgiving
+	1999* (Thanksgiving, 1999)*
+		[1124] Thanksgiving Day* (Thanksgiving Day, 1999) -> /Dates/1999/11/25
+		[1125] Thanksgiving Friday* (Thanksgiving, 1999) -> /Dates/1999/11/26
+
+# Fixed-Date Holidays
+
+[0101] New Year's
+	1999* (New Year's, 1999)*
+		[1] New Year's Day* (New Year's Day, 1999) -> /Dates/1999/1/1
+[0202] Groundhog Day
+	1999* (Groundhog Day, 1999) -> /Dates/1999/02/02
+[0214] Valentine's Day
+	1999* (Valentine's Day, 1999) -> /Dates/1999/02/14
+[0317] St. Patrick's Day
+	1999* (St. Patrick's Day, 1999) -> /Dates/1999/03/17
+[0401] April Fool's Day
+	1999* (April Fool's Day, 1999) -> /Dates/1999/04/01
+[0501] May Day
+	1999* (May Day, 1999) -> /Dates/1999/05/01
+[0505] Cinco de Mayo
+	1999* (Cinco de Mayo, 1999) -> /Dates/1999/05/05
+[0704] Independence Day
+	1999* (Independence Day, 1999) -> /Dates/1999/07/04
+[0714] Bastille Day
+	1999* (Bastille Day, 1999) -> /Dates/1999/07/14
+[1031] Halloween
+	1999* (Halloween, 1999) -> /Dates/1999/10/31
+[1111] Veteran's Day
+	1999* (Veteran's Day, 1999) -> /Dates/1999/11/11
+[1225] Christmas
+	1999* (Christmas, 1999) 
+		[1224] Christmas Eve* (Christmas Eve, 1999) -> /Dates/1999/12/24
+		[1225] Christmas Day* (Christmas Day, 1999) -> /Dates/1999/12/25
+		[1226] Boxing Day* (Boxing Day, 1999) -> /Dates/1999/12/26

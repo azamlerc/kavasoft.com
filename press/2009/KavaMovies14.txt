@@ -1,0 +1,23 @@
+KavaMovies 1.4 adds favorites browser, now 64-bit optimized for Snow Leopard
+
+FOR IMMEDIATE RELEASE
+
+September 1, 2009 - KavaSoft today announced KavaMovies 1.4, the Mac movie database. KavaMovies lets you organize the movies you've seen, the movies you want to see, and the movies in your collection. It connects to the internet and downloads tons of information about each of your movies in realtime.
+
+Imagine making a list of all the movies you've ever seen? You'd be surprised how easy it is with KavaMovies. Click a movie to see who's in it. Click an actor to see what they've been in. Directors, genres, keywords, charts, awards, languages, years... everything is connected!
+
+KavaMovies 1.4 keeps track of all your favorites in a convenient browser. Looking for a movie to watch tonight? KavaMovies brings all your favorite movies together in one place, and makes it easier than ever to find new movies starring your favorite actors or with your favorite keywords. 
+
+KavaMovies 1.4 is now 64-bit optimized for Snow Leopard. Interface performance and database access are improved, and opening a large catalog is up to five times faster than before.*
+
+Use KavaMovies to make a list of all the movies you want to see. Click on a movie you like, and it will recommend ten other movies. Better yet, the program makes a master list all the movies you're most likely to enjoy, based on all the movies in your personal database.
+
+KavaMovies organizes all the movies on your computer (or your shelf). Drag a movie file to the program and it remembers where it is. Just click play to watch whatever you want. It's your whole collection at your fingertips. 
+
+Don't have a movie? Toolbar buttons let you buy it from Amazon on DVD, or from the iTunes Store online. And downloading with BitTorrent has never been simpler: one click to search, another click to start the download in your favorite client.
+
+KavaMovies costs $35. You can try all the features of KavaMovies with up to 100 movies for free.
+
+* Speed tests conducted by KavaSoft, opening the same catalog with 2,250 movies in KavaMovies 1.4 on Mac OS X version 10.6 (5 seconds) compared to KavaMovies 1.3 on Mac OS X version 10.5 (25 seconds), running on a quad-processor 2.66 GHz Mac Pro.
+
+###

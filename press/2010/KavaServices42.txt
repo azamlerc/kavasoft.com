@@ -1,0 +1,27 @@
+KavaServices 4.2 translates 58 languages in the Services menu
+
+FOR IMMEDIATE RELEASE
+
+November 11, 2010 - KavaSoft today released KavaServices 4.2, a collection of useful commands that transforms the Services menu in Mac OS X Snow Leopard. KavaServices can translate, search the web, move and copy files, encode for HTML, calculate, convert units, sort, change case, execute commands, and much more. KavaServices 4.2 adds support for translating text between 58 different languages. 
+
+Services replace the selected text in place, without the need to switch to a different program or copy and paste. For example, to translate text from French in a document, web page or email message, simply select the text and choose Translate from French from the Services menu. The text will then be replaced with its English translation.
+
+Snow Leopard's redesigned Services menu is context-sensitive and fully customizable. You can choose exactly which commands you'd like to include in System Preferences, keeping the menu tidy and clutter-free. KavaServices' preferences let you add menu commands for any combination of languages. 
+
+KavaServices translates text between Afrikaans, Albanian, Arabic, Armenian, Azerbaijani, Basque, Belarusian, Bulgarian, Catalan, Chinese, Croatian, Czech, Danish, Dutch, English, Estonian, Filipino, Finnish, French, Galician, Georgian, German, Greek, Haitian Creole, Hebrew, Hindi, Hungarian, Icelandic, Indonesian, Irish, Italian, Japanese, Korean, Latin, Latvian, Lithuanian, Macedonian, Malay, Maltese, Norwegian, Persian, Polish, Portuguese, Romanian, Russian, Serbian, Slovak, Slovenian, Spanish, Swahili, Swedish, Thai, Turkish, Ukrainian, Urdu, Vietnamese, Welsh, and Yiddish.
+
+KavaServices can search a variety of websites. You can pull up a Wikipedia article, search Google or Yahoo, buy things on Amazon or eBay, locate a place on a map, connect on Facebook or MySpace, or watch a video on YouTube. The Visit Website command goes to the main website for whatever you've selected, just like magic.
+
+KavaServices helps webmasters prepare content for the web by encoding special characters into HTML entities. It can convert accented letters, characters in other alphabets and special punctuation marks for display on the web. It can also encode URL links and convert accented text to plain ASCII.
+
+KavaServices can calculate mathematical expressions, including basic arithmetic, trigonometry, arithmetic with scientific units, base conversions, and more. It can also convert currencies, area, energy, power, pressure, speed, temperature, time, volume and weight.
+
+Text processing commands let you convert text to lowercase, uppercase or title case. You can sort lines alphabetically, with the option to remove duplicates, and remove blank lines. 
+
+KavaServices also offers a gateway to the Terminal in any application. Select a command, hit a keystroke, and the command will be replaced by its result as if you had typed it in the Terminal. 
+
+KavaServices 4.2 is a 64-bit universal application, and is designed specifically for Snow Leopard. KavaServices 3.2.2 remains available for users of Tiger and Leopard.
+
+KavaServices costs $25. The demo version offers a seven day free trial. 
+
+###

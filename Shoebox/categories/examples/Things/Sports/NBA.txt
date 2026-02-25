@@ -1,0 +1,39 @@
+/Things/Sports/Basketball/NBA
+Eastern
+	Atlantic
+		Celtics -> /Places/North America/United States/Massachusetts/Boston/Celtics
+		Nets -> /Places/North America/United States/New Jersey/East Rutherford/Nets
+		Knicks -> /Places/North America/United States/New York/New York/Knicks
+		76ers -> /Places/North America/United States/Pennsylvania/Philadelphia/76ers
+		Raptors -> /Places/North America/Canada/Ontario/Toronto/Raptors
+	Central
+		Bulls -> /Places/North America/United States/Illinois/Chicago/Bulls
+		Cavaliers -> /Places/North America/United States/Ohio/Cleveland/Cavaliers
+		Pistons -> /Places/North America/United States/Michigan/Detroit/Pistons
+		Pacers -> /Places/North America/United States/Indiana/Indianapolis/Pacers
+		Bucks -> /Places/North America/United States/Wisconsin/Milwaukee/Bucks
+	Southeast
+		Hawks -> /Places/North America/United States/Georgia/Atlanta/Hawks
+		Bobcats -> /Places/North America/United States/North Carolina/Charlotte/Bobcats
+		Heat -> /Places/North America/United States/Florida/Miami/Heat
+		Magic -> /Places/North America/United States/Florida/Orlando/Magic
+		Wizards -> /Places/North America/United States/District of Columbia/Wizards
+Western
+	Northwest
+		Nuggets -> /Places/North America/United States/Colorado/Denver/Nuggets
+		Timberwolves -> /Places/North America/United States/Minnesota/Minneapolis/Timberwolves
+		Trail Blazers -> /Places/North America/United States/Oregon/Portland/Trail Blazers
+		SuperSonics -> /Places/North America/United States/Washington/Seattle/SuperSonics
+		Jazz -> /Places/North America/United States/Utah/Salt Lake City/Jazz
+	Southwest
+		Mavericks -> /Places/North America/United States/Texas/Dallas/Mavericks
+		Rockets -> /Places/North America/United States/Texas/Houston/Rockets
+		Grizzlies -> /Places/North America/United States/Tennessee/Memphis/Grizzlies
+		Hornets -> /Places/North America/United States/Louisiana/New Orleans/Hornets
+		Spurs -> /Places/North America/United States/Texas/San Antonio/Spurs
+	Pacific
+		Warriors -> /Places/North America/United States/California/Oakland/Warriors
+		Clippers -> /Places/North America/United States/California/Los Angeles/Clippers
+		Lakers -> /Places/North America/United States/California/Los Angeles/Lakers
+		Suns -> /Places/North America/United States/Arizona/Phoenix/Suns
+		Kings -> /Places/North America/United States/California/Sacramento/Kings

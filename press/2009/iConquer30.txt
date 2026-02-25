@@ -1,0 +1,21 @@
+KavaSoft announces iConquer 3, the game of world conquest for Mac OS X
+
+FOR IMMEDIATE RELEASE
+
+October 16, 2009 - KavaSoft has announced iConquer 3, the latest version of the original game of world conquest for Mac OS X. iConquer 3 has been 64-bit optimized for Snow Leopard, has improved network play, and features an updated interface.
+
+iConquer 3 takes advantage of 64-bit technology in Snow Leopard, and includes an updated interface with new Preferences, Plug-ins, and New Game windows. 
+
+iConquer lets up to six people play against each other over the internet. iConquer 3 features an improved network engine. Bonjour allows you to easily connect to other iConquer players on your local network. 
+
+iConquer can also be played against computer opponents, each with a distinct personality managed by the game's artificial intelligence engine. Six different kinds of opponents keep game play interesting.
+
+iConquer can be played on over twenty different maps, including several high-resolution satellite world maps, the states of the United States, the countries of Europe, the cantons of Switzerland, and even the Solar System. 
+
+If your boss surprises you, just hit a convenient hot key to disguise the game as an Excel spreadsheet. You can even keep playing in spreadsheet mode!
+
+KavaSoft also announces the iConquer Plug-in Kit 3.0, which allows developers to create their own map and player plug-ins. The Plug-in kit adds new iConquer project templates to Xcode that make creating working plug-ins a snap.
+
+iConquer costs $25, and comes with a free 10-game trial. iConquer is available in English, German, French, Japanese, Italian and Dutch.
+
+###

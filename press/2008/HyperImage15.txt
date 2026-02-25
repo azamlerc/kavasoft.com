@@ -1,0 +1,31 @@
+HyperImage 1.5. Download every image from your favorite websites.
+
+FOR IMMEDIATE RELEASE
+
+November 10, 2008 - KavaSoft announces HyperImage 1.5, an application for downloading every image from your favorite websites. 
+
+There are millions of images on the web, but until now there was no convenient way to download them besides clicking on them one by one. HyperImage is an industrial-strength tool for downloading entire websites worth of pictures. Just point HyperImage to any website, and watch as thousands of pictures stream down to your computer.
+
+Enter the address of a website, and HyperImage will crawl every page and download every image. HyperImage includes a built-in image browser, so you can easily browse through all the pictures from a particular page or website. You can even show a full-screen slideshow of images as they are being downloaded. 
+
+HyperImage is highly customizable. You can download all the images you want, but ignore the ones you don't want. You can filter images by name, kind, file size or resolution to skip over buttons, banners and thumbnails. You can also control whether HyperImage follows links in the same folder, the same site, or the same domain. HyperImage lets you download the images you want no matter how the target website is organized.
+
+HyperImage is hyper-threaded, so it downloads images fast using multiple connections. The activity viewer shows you which images are currently being downloaded, what's in the queue, and what's been downloaded. It also shows you which images were skipped -- and why they were skipped, so you can fine-tune your download preferences. 
+
+HyperImage even works with gallery websites that require a login, such as pay-per-content sites. It automatically uses account settings from your keychain, and sends cookies from your browser. Any site that works in your browser works with HyperImage.
+
+HyperImage can easily download a series of consecutively numbered images. For example, enter IMG_0001.jpg through IMG_9999.jpg, and HyperImage will automatically download every file in between. You can also download images from several different galleries or websites by entering a list of addresses. HyperImage takes advantage of the Services menu to let you start downloads from other programs, such as your web browser.
+
+HyperImage is available for $25. You can try it for free, but images downloaded with an unlicensed copy will contain a watermark. HyperImage is a universal application and requires Leopard.
+
+	http://www.kavasoft.com/HyperImage/
+
+HyperImage is part of the new KavaLife Pro bundle, also featuring Shoebox Pro, KavaTunes and KavaMovies. A $175 value, KavaLife Pro sells for ust $120. 
+
+	http://www.kavasoft.com/KavaLife/
+
+Visit the Press Info page for press releases, high-resolution icons, screenshots, and a form to request an evaluation license. 
+
+	http://www.kavasoft.com/press/
+
+###

@@ -1,0 +1,19 @@
+KavaSoft adds internet search to KavaServices 3.1
+
+FOR IMMEDIATE RELEASE
+
+February 19, 2009 - KavaSoft today released KavaServices 3.1, a utility that adds a collection of useful menu items to the Services menu. KavaServices can translate, search the web, encode for HTML, calculate, convert units, sort, change case, execute commands, and more. These commands replace the selected text in any Mac OS X application, without the need to switch to a different program, or copy and paste. 
+
+KavaServices 3.1 adds the ability to search a variety of websites for the selected text. With one menu command or keystroke, you can pull up a Wikipedia article, search Google or Yahoo, buy things on Amazon or eBay, locate a place on a map, connect on Facebook or MySpace, or watch a video on YouTube. The useful "I'm Feeling Lucky" command will even take you straight to the top Google search result. You can also customize the Search menu with your favorite sites. 
+
+KavaServices translates text from one language to another, and can even translate web pages and email messages. KavaServices understands English, French, German, Japanese, Italian, Spanish, Chinese, Dutch, Greek, Korean, Portuguese, and Russian.
+
+KavaServices helps webmasters prepare content for the web by encoding special characters into HTML entities. With one keystroke, KavaServices can convert accented characters, characters in other alphabets and special punctuation marks for display on the web. You can also encode URL links and convert accented text to plain ASCII.
+
+KavaServices can calculate mathematical expressions, including basic arithmetic, trigonometry, arithmetic with scientific units, base conversions, and more. It can also convert currencies, area, energy, power, pressure, speed, temperature, time, volume and weight.
+
+Text processing commands let you convert text to lowercase, uppercase or title case. You can sort lines alphabetically, with the option to remove duplicates as well. 
+
+KavaServices also offers a gateway to the Terminal in any application. Select a command, hit a keystroke, and the command will be replaced by its result as if you had typed it in the Terminal. 
+
+KavaServices costs $25, and can be purchased using PayPal or Kagi. You can try all of the features for free for seven days. 

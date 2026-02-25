@@ -1,0 +1,524 @@
+<HTML><HEAD><TITLE>iConquer - Developer - Documentation - ICPlayer</TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+<a href="index.html"><img src="iConquer_logo.jpg" alt="" width="203" height="55"></a>
+
+<FONT COLOR="#000066"><H1><A NAME="//apple_ref/occ/cl/ICPlayer">ICPlayer</A></H1></FONT><BR>
+
+
+
+	<blockquote><DL><DT><B>Inherits From:</B></DT>  
+	<DD>NSObject</DD>
+</DL></blockquote>
+
+
+
+	<blockquote><DL><DT><B>Conforms To:</B></DT>
+	<DD>ICPlayerProtocol</DD><DD>NSCoding</DD>
+</DL></blockquote>
+
+
+	<blockquote><DL><DT><B>Declared In:</B></DT>
+	<DD>ICPlayer.h</DD>
+	</DL></blockquote>
+
+<BR><BR>
+
+
+<H2>Class Description</H2>
+ICPlayer is an abstract superclass that represents a player in iConquer.<P>
+
+All players are identified in the game by a unique <I>name</I> and <I>color</I>.<P>
+
+The <I>countries</I> array stores a list of all the countries the player owns. The <I>cards</I> array stores a list of all the cards in the player's hand.<P>
+
+You can implement computer strategies by subclassing ICComputerPlayer class, which is itself a subclass of ICPlayer. All methods in the Game Play section below must be overridden by your subclass. These methods define your player's strategies for picking countires, placing armies, attacking, and fortifying.
+
+
+<!--
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Variables</H2>
+	<blockquote>
+	
+		<CODE>id &lt;ICGameControllerProtocol&gt; <B>gameController</B>;</CODE><BR>
+		<CODE>ICGame *<B>game</B>;</CODE><BR>
+		<CODE>NSString *<B>name</B>;</CODE><BR>
+		<CODE>NSString *<B>screenName</B>;</CODE><BR>
+		<CODE>NSString *<B>address</B>;</CODE><BR>
+		<CODE>NSImage *<B>photo</B>;</CODE><BR>
+		<CODE>NSColor *<B>color</B>;</CODE><BR>
+		<CODE>NSMutableArray *<B>countries</B>;</CODE><BR>
+		<CODE>NSMutableArray *<B>destinationCountries</B>;</CODE><BR>
+		<CODE>NSMutableArray *<B>cards</B>;</CODE><BR>
+		<CODE>int <B>unallocatedInitialArmies</B>;</CODE><BR>
+		<CODE>int <B>unallocatedArmies</B>;</CODE><BR>
+		<CODE>int <B>victories</B>;</CODE><BR>
+		<CODE>int <B>defeats</B>;</CODE><BR>
+		<CODE>int <B>armies</B>;</CODE><BR>
+		<CODE>BOOL <B>hasWonThisTurn</B>;</CODE><BR>
+	<P><TABLE>
+	
+		<TR><TD>gameController</TD><TD>Handles the interface</TD></TR>
+	
+		<TR><TD>game</TD><TD>Handles game state.</TD></TR>
+	
+		<TR><TD>name</TD><TD>The player's name.</TD></TR>
+	
+		<TR><TD>screenName</TD><TD>The player's AIM screen name, used for iChat.</TD></TR>
+	
+		<TR><TD>address</TD><TD>The player's IP address.</TD></TR>
+	
+		<TR><TD>photo</TD><TD>The player's photo from the Address Book.</TD></TR>
+	
+		<TR><TD>color</TD><TD>The player's color.</TD></TR>
+	
+		<TR><TD>countries</TD><TD>The player's countries.</TD></TR>
+	
+		<TR><TD>destinationCountries</TD><TD>The countries in which the player may place armies.</TD></TR>
+	
+		<TR><TD>cards</TD><TD>The player's cards.</TD></TR>
+	
+		<TR><TD>unallocatedInitialArmies</TD><TD>The number of armies that the player has left to place at the beginning of the game.</TD></TR>
+	
+		<TR><TD>unallocatedArmies</TD><TD>The number of armies that the player should place right now.</TD></TR>
+	
+		<TR><TD>victories</TD><TD>The number of times the player has conquered a country, for display in the statistics.</TD></TR>
+	
+		<TR><TD>defeats</TD><TD>The number of times the player has lost a country, for display in the statistics.</TD></TR>
+	
+		<TR><TD>armies</TD><TD>The total number of armies owned, for display in the statistics.</TD></TR>
+	
+		<TR><TD>hasWonThisTurn</TD><TD>No description.</TD></TR>
+	
+	</TABLE>
+	</blockquote>
+
+-->
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Method Types</H2>
+	<blockquote>
+	
+		
+			Player Info
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- initWithName:andColor:">- initWithName:andColor:</A></DD>
+		
+			<DD> <A HREF="#- name">- name</A></DD>
+		
+			<DD> <A HREF="#- color">- color</A></DD>
+		
+		</DL>
+	
+		
+			Game Play - Subclasses <B>must</B> override these methods
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- pickCountry">- pickCountry</A></DD>
+		
+			<DD> <A HREF="#- assignInitialArmies">- assignInitialArmies</A></DD>
+		
+			<DD> <A HREF="#- assignArmiesFromIncome">- assignArmiesFromIncome</A></DD>
+		
+			<DD> <A HREF="#- assignArmiesFromConquer">- assignArmiesFromConquer</A></DD>
+		
+			<DD> <A HREF="#- advanceArmiesFrom:to:">- advanceArmiesFrom:to:</A></DD>
+		
+			<DD> <A HREF="#- fortifyArmiesFrom:">- fortifyArmiesFrom:</A></DD>
+		
+			<DD> <A HREF="#- attack">- attack</A></DD>
+		
+			<DD> <A HREF="#- fortify">- fortify</A></DD>
+		
+		</DL>
+	
+		
+			Countries
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- countries">- countries</A></DD>
+		
+			<DD> <A HREF="#- destinationCountries">- destinationCountries</A></DD>
+		
+		</DL>
+	
+		
+			Cards
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- cards">- cards</A></DD>
+		
+			<DD> <A HREF="#- pickCardsToTurnIn">- pickCardsToTurnIn</A></DD>
+		
+			<DD> <A HREF="#- bestCardsToTurnIn">- bestCardsToTurnIn</A></DD>
+		
+			<DD> <A HREF="#- takeCard:">- takeCard:</A></DD>
+		
+			<DD> <A HREF="#- takeCardsFrom:">- takeCardsFrom:</A></DD>
+		
+			<DD> <A HREF="#- turnInCards:">- turnInCards:</A></DD>
+		
+			<DD> <A HREF="#- hasWonThisTurn">- hasWonThisTurn</A></DD>
+		
+		</DL>
+	
+		
+			Statistics
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- income">- income</A></DD>
+		
+			<DD> <A HREF="#- armies">- armies</A></DD>
+		
+			<DD> <A HREF="#- countriesCount">- countriesCount</A></DD>
+		
+			<DD> <A HREF="#- cardsCount">- cardsCount</A></DD>
+		
+			<DD> <A HREF="#- type">- type</A></DD>
+		
+			<DD> <A HREF="#- victories">- victories</A></DD>
+		
+			<DD> <A HREF="#- defeats">- defeats</A></DD>
+		
+			<DD> <A HREF="#- takeVictory:">- takeVictory:</A></DD>
+		
+			<DD> <A HREF="#- takeDefeat:">- takeDefeat:</A></DD>
+		
+			<DD> <A HREF="#- country:wasAttackedBy:">- country:wasAttackedBy:</A></DD>
+		
+		</DL>
+	
+		
+			Accessors
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- game">- game</A></DD>
+		
+			<DD> <A HREF="#- gameController">- gameController</A></DD>
+		
+			<DD> <A HREF="#- otherPlayers">- otherPlayers</A></DD>
+		
+			<DD> <A HREF="#- isComputer">- isComputer</A></DD>
+		
+			<DD> <A HREF="#- unallocatedArmies">- unallocatedArmies</A></DD>
+		
+			<DD> <A HREF="#- unallocatedInitialArmies">- unallocatedInitialArmies</A></DD>
+		
+		</DL>
+	
+	</blockquote>
+
+
+
+
+ 
+
+	<HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Methods</H2>
+ 
+	
+		
+		<A NAME="- advanceArmiesFrom:to:"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/advanceArmiesFrom:to:">advanceArmiesFrom:to:</A></H3><P>
+		<CODE>- (void)<B>advanceArmiesFrom:</B>(ICCountry *)<EM>attackingCountry</EM> <B>to:</B>(ICCountry *)<EM>conqueredCountry</EM>
+			
+		</CODE><P>
+		Allows the player to decide how to advance armies after winning a battle.<P>
+
+Computer players <B>must</B> override this method, placing armies in either <I><I>attackingCountry</I></I> or <I><I>conqueredCountry</I></I> until <I>unallocatedArmies</I> is zero. Always invoke the superclass. For example: <CODE>&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;[super advanceArmiesFrom: attackingCountry to: conqueredCountry]; <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;[self allocateArmiesRandomly]; </CODE>
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- armies"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/armies">armies</A></H3><P>
+		<CODE>- (int)<B>armies</B>
+		</CODE><P>
+		The total number of armies owned, for display in the statistics.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- assignArmiesFromConquer"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/assignArmiesFromConquer">assignArmiesFromConquer</A></H3><P>
+		<CODE>- (void)<B>assignArmiesFromConquer</B>
+		</CODE><P>
+		Tells the player to assign armies because they have eliminated a player and acquired at least five cards.<P>
+
+Computer players <B>must</B> override this method, placing armies in any of the player's countries until <I>unallocatedArmies</I> is zero. Always invoke the superclass. For example: <CODE>&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;[super assignArmiesFromConquer]; <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;[self allocateArmiesRandomly]; </CODE>
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- assignArmiesFromIncome"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/assignArmiesFromIncome">assignArmiesFromIncome</A></H3><P>
+		<CODE>- (void)<B>assignArmiesFromIncome</B>
+		</CODE><P>
+		Tells the player to assign armies from their income at the beginning of the turn. This is the player's signal that it is now their turn to play.<P>
+
+Computer players <B>must</B> override this method, placing armies in any of the player's countries until <I>unallocatedArmies</I> is zero. Always invoke the superclass. For example: <CODE>&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;[super assignArmiesFromIncome]; <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;[self turnInCardsIfPossible]; // optional <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;[self allocateArmiesRandomly]; </CODE>
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- assignInitialArmies"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/assignInitialArmies">assignInitialArmies</A></H3><P>
+		<CODE>- (void)<B>assignInitialArmies</B>
+		</CODE><P>
+		Tells the player to place initial armies at the beginning of the game. This message will be sent to each player four times, and each time they will be given five armies (for a total of twenty initial armies).<P>
+
+Computer players <B>must</B> override this method, placing armies in any of the player's countries until <I>unallocatedArmies</I> is zero. Always invoke the superclass. For example: <CODE>&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;[super assignInitialArmies]; <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;[self allocateArmiesRandomly]; // defined in ICComputerPlayer <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;[game updateStatistics]; // always update statistics last </CODE>
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- attack"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/attack">attack</A></H3><P>
+		<CODE>- (void)<B>attack</B>
+		</CODE><P>
+		Sent to computer players when they should attack.<P>
+
+Computer players <B>must</B> override this method. The player should try to conquer <I>one</I> country, and should return if successful. This message will be sent repeatedly by the game timer, allowing the player to conquer as many countries as they can. When the player is finished attacking, send the <B>fortify</B> message to <I>game</I>.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- bestCardsToTurnIn"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/bestCardsToTurnIn">bestCardsToTurnIn</A></H3><P>
+		<CODE>- (NSArray *)<B>bestCardsToTurnIn</B>
+		</CODE><P>
+		Returns the best cards that this player can turn in. When picking cards of a given suit, prefers cards whose countries are owned by the player so they can get extra armies. Will only use wild cards when necessary, so they can be used later.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- cards"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/cards">cards</A></H3><P>
+		<CODE>- (NSMutableArray *)<B>cards</B>
+		</CODE><P>
+		The player's cards.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- cardsCount"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/cardsCount">cardsCount</A></H3><P>
+		<CODE>- (int)<B>cardsCount</B>
+		</CODE><P>
+		The number of cards, for display in the statistics.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- color"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/color">color</A></H3><P>
+		<CODE>- (NSColor *)<B>color</B>
+		</CODE><P>
+		The player's color.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- countries"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/countries">countries</A></H3><P>
+		<CODE>- (NSMutableArray *)<B>countries</B>
+		</CODE><P>
+		The countries owned by the current player.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- countriesCount"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/countriesCount">countriesCount</A></H3><P>
+		<CODE>- (int)<B>countriesCount</B>
+		</CODE><P>
+		The number of countries owned, for display in the statistics.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- country:wasAttackedBy:"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/country:wasAttackedBy:">country:wasAttackedBy:</A></H3><P>
+		<CODE>- (void)<B>country:</B>(ICCountry *)<EM>victimCountry</EM> <B>wasAttackedBy:</B>(ICCountry *)<EM>attackingCountry</EM>
+			
+		</CODE><P>
+		This message is sent whenever one of the player's countries is attacked (each time the dice are rolled). ICPlayer has an empty implementation. Subclasses can override this method to keep track of how many times they are attacked. By contrast, <B>takeDefeat:</B> is called whenever the player loses a country.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- defeats"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/defeats">defeats</A></H3><P>
+		<CODE>- (int)<B>defeats</B>
+		</CODE><P>
+		The number of times the player has lost a country, for display in the statistics.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- destinationCountries"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/destinationCountries">destinationCountries</A></H3><P>
+		<CODE>- (NSMutableArray *)<B>destinationCountries</B>
+		</CODE><P>
+		The countries in which the player may place armies. When placing armies at the beginning of a game or turn, this value is set to all the player's countries. When fortifying, it is set to the current country and its adjacent countries. And when advancing after an attack, it is set to the attacking and conquered countries.<P>
+
+This array is set on your behalf by ICPlayer's <B>assignInitialArmies</B>, <B>assignArmiesFromIncome</B>, <B>assignArmiesFromConquer</B>, <B>advanceArmiesFrom:to:</B>, and <B>fortifyArmiesFrom:</B> methods. Subclass implementations of these methods must begin with a call to <B>super</B> (for example, <CODE>[super assignInitialArmies]</CODE>).
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- fortify"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/fortify">fortify</A></H3><P>
+		<CODE>- (void)<B>fortify</B>
+		</CODE><P>
+		Sent to computer players when they should fortify.<P>
+
+Computer players <B>must</B> override this method. The player may fortify armies from any of its countries. For example: <CODE>&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;[super fortify]; <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;[self fortifyVulnerableCountries]; <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;[game done]; </CODE>
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- fortifyArmiesFrom:"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/fortifyArmiesFrom:">fortifyArmiesFrom:</A></H3><P>
+		<CODE>- (void)<B>fortifyArmiesFrom:</B>(ICCountry *)<EM>country</EM>
+			
+		</CODE><P>
+		Called when a player decides to fortify armies from a <I>country</I>. Computer players may receive this message from the ICComputerPlayer method <B>fortifyVulnerableCountries</B>.<P>
+
+Computer players <B>must</B> override this method, placing armies in <I><I>country</I></I> or any of its neighbors until <I>unallocatedArmies</I> is zero. Always invoke the superclass. For example: <CODE>&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;[super fortifyArmiesFrom: country]; <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;[self allocateArmiesRandomly]; </CODE>
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- game"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/game">game</A></H3><P>
+		<CODE>- (ICGame *)<B>game</B>
+		</CODE><P>
+		The game object, which controls the game state.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- gameController"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/gameController">gameController</A></H3><P>
+		<CODE>- (id &lt;ICGameControllerProtocol&gt;)<B>gameController</B>
+		</CODE><P>
+		The game controller object, which handles the interface.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- hasWonThisTurn"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/hasWonThisTurn">hasWonThisTurn</A></H3><P>
+		<CODE>- (BOOL)<B>hasWonThisTurn</B>
+		</CODE><P>
+		Returns whether the player has won this turn. This method is used to determine whether the player should receive a card at the end of the turn.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- income"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/income">income</A></H3><P>
+		<CODE>- (int)<B>income</B>
+		</CODE><P>
+		The number of armies that the player gets at the beginning of each turn. 
+Starts with 3 or the number of owned countries divided by three, whichever is higher. 
+Then, each whole continent owned provides an additional bonus.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- initWithName:andColor:"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/initWithName:andColor:">initWithName:andColor:</A></H3><P>
+		<CODE>- (id)<B>initWithName:</B>(NSString *)<EM>newName</EM> <B>andColor:</B>(NSColor *)<EM>newColor</EM>
+			
+		</CODE><P>
+		Initializes the player with the given name and color.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- isComputer"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/isComputer">isComputer</A></H3><P>
+		<CODE>- (BOOL)<B>isComputer</B>
+		</CODE><P>
+		Returns whether the player is a computer player. You should not override this method.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- name"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/name">name</A></H3><P>
+		<CODE>- (NSString *)<B>name</B>
+		</CODE><P>
+		The player's name.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- otherPlayers"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/otherPlayers">otherPlayers</A></H3><P>
+		<CODE>- (NSMutableArray *)<B>otherPlayers</B>
+		</CODE><P>
+		Returns all the players in the game except the current player.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- pickCardsToTurnIn"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/pickCardsToTurnIn">pickCardsToTurnIn</A></H3><P>
+		<CODE>- (void)<B>pickCardsToTurnIn</B>
+		</CODE><P>
+		Called when a player will turn in cards.<P>
+
+Computer players <B>may</B> override this method. The default implementation in ICComputerPlayer turns in the best possible cards: <CODE>&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;[self turnInCards: [self bestCardsToTurnIn]]; </CODE>
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- pickCountry"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/pickCountry">pickCountry</A></H3><P>
+		<CODE>- (void)<B>pickCountry</B>
+		</CODE><P>
+		Tells the player to pick a country.<P>
+
+Computer players <B>must</B> override this method, sending the <B>pick</B> message to one country in <CODE>[game unallocatedCountries]</CODE>. For example: <CODE>&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;[[[game unallocatedCountries] randomObject] pick]; </CODE>
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- takeCard:"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/takeCard:">takeCard:</A></H3><P>
+		<CODE>- (void)<B>takeCard:</B>(ICCard *)<EM>card</EM>
+			
+		</CODE><P>
+		Adds <I><I>card</I></I> to the player's cards.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- takeCardsFrom:"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/takeCardsFrom:">takeCardsFrom:</A></H3><P>
+		<CODE>- (void)<B>takeCardsFrom:</B>(ICPlayer *)<EM>loser</EM>
+			
+		</CODE><P>
+		Takes all the cards from <I><I>loser</I></I>. Called when the player conquers the last country belonging to <I><I>loser</I></I>.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- takeDefeat:"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/takeDefeat:">takeDefeat:</A></H3><P>
+		<CODE>- (void)<B>takeDefeat:</B>(ICCountry *)<EM>country</EM>
+			
+		</CODE><P>
+		Called after the player loses <I><I>country</I></I> to another player. Increments the number of defeats. When this method is called, <I><I>country</I></I> has already been transferred to the winning player.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- takeVictory:"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/takeVictory:">takeVictory:</A></H3><P>
+		<CODE>- (void)<B>takeVictory:</B>(ICCountry *)<EM>country</EM>
+			
+		</CODE><P>
+		Called after the player conquers <I><I>country</I></I>. Increments the number of victories, and notes that the player has won this turn. When this method is called, <I><I>country</I></I> still belongs to the losing player.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- turnInCards:"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/turnInCards:">turnInCards:</A></H3><P>
+		<CODE>- (void)<B>turnInCards:</B>(NSArray *)<EM>cards</EM>
+			
+		</CODE><P>
+		Turns in <I>someCards</I> in exchange for a number of armies. Called when it's the player's turn and they have five or more <I>cards</I>. Also called by ICComputerPlayer's <B>turnInCardsIfPossible</B>, which can be called when placing armies from income.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- type"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/type">type</A></H3><P>
+		<CODE>- (NSString *)<B>type</B>
+		</CODE><P>
+		The localized name of the player type, for display in the statistics. Returns the !CFBundleName value from the player bundle's <CODE>InfoPlist.strings</CODE> file.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- unallocatedArmies"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/unallocatedArmies">unallocatedArmies</A></H3><P>
+		<CODE>- (int)<B>unallocatedArmies</B>
+		</CODE><P>
+		The number of armies that the player should place right now.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- unallocatedInitialArmies"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/unallocatedInitialArmies">unallocatedInitialArmies</A></H3><P>
+		<CODE>- (int)<B>unallocatedInitialArmies</B>
+		</CODE><P>
+		The number of armies that the player has left to place at the beginning of the game.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- victories"></A><H3><A NAME="//apple_ref/occ/instm/ICPlayer/victories">victories</A></H3><P>
+		<CODE>- (int)<B>victories</B>
+		</CODE><P>
+		The number of times the player has conquered a country, for display in the statistics.
+	
+
+
+
+
+<P><HR>
+Version 1.1 Copyright &copy;2003 by KavaSoft.  All Rights Reserved.  
+<P>
+</BODY></HTML>

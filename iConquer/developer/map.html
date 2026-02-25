@@ -1,0 +1,257 @@
+<html>
+<head>
+	<title>iConquer - Developer - Maps</title>
+	<link rel="SHORTCUT ICON" href="http://www.kavasoft.com/iConquer/favicon.ico"> 
+	<link rel="stylesheet" type="text/css" href="../styles.css" media="screen" />
+</head>
+<BODY BGCOLOR=#FFFFFF>
+
+<center>
+<TABLE WIDTH="700" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+	<TR>
+		<TD>
+			<a href="index.php"><IMG SRC="developer_header.jpg" WIDTH=700 HEIGHT=300></a>
+		</TD>
+	</TR>
+<TR><TD colspan=2 align=center>
+
+<TABLE WIDTH="700" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+	<TR>
+		<TD WIDTH="520" valign=top>
+			<FONT FACE="Lucida Grande,Geneva,Arial,Helvetica,sans-serif" SIZE=2>
+			
+<P>
+<a name="planningyourmap"></a><B>Planning your map</B>
+<P>
+First, decide what the target sizes of your map will be.
+You can create versions of your plugin to fit on various display sizes. The following table provides recommended maximum map sizes for various displays. 
+
+<center>
+<table width="90%" border="0" cellspacing="0" cellpadding="2">
+	<tr BGCOLOR=#EEEEEE>
+		<td align=center nowrap><class="features"><B>Size</B></font></td>
+		<td align=center nowrap><class="features"><B>Display Type</B></font></td>
+		<td align=center nowrap><class="features"><B>Display Resolution</B></font></td>
+		<td align=center nowrap><class="features"><B>Max. Map Size</B></font></td>
+	</tr>
+	<tr BGCOLOR=#F7F7F7>
+		<td align=center nowrap><class="features">Medium</font></td>
+		<td align=center nowrap><class="features">MacBook 13"</font></td>
+		<td align=center nowrap><class="features">1280 x 800&nbsp;&nbsp;</font></td>
+		<td align=center nowrap><class="features">1260 x 600</font></td>
+	</tr>
+	<tr BGCOLOR=#F7F7F7>
+		<td align=center nowrap><class="features">Large</font></td>
+		<td align=center nowrap><class="features">Cinema Display 20"</font></td>
+		<td align=center nowrap><class="features">1680 x 1050</font></td>
+		<td align=center nowrap><class="features">1660 x 850</font></td>
+	</tr>
+	<tr BGCOLOR=#F7F7F7>
+		<td align=center nowrap><class="features">HD</font></td>
+		<td align=center nowrap><class="features">Cinema Display 23"</font></td>
+		<td align=center nowrap><class="features">1920 x 1200</font></td>
+		<td align=center nowrap><class="features">1900 x 1000</font></td>
+	</tr>
+</table>
+</center>
+<P>
+You should design your map at the highest possible resolution, and then scale it down to fit the displays above. Be sure to allow apprixmately 200 x 200 pixels in one corner of the map for the <a href="#playerlist">player list</a>.
+<P>
+<a name="creatingyourmap"></a><B>Creating your map</B><BR><BR>
+</TD>
+		<TD WIDTH="20">
+			<!-- separator -->		
+		</TD>
+		<TD WIDTH="160" valign=top align=center>
+			<FONT FACE="Lucida Grande,Geneva,Arial,Helvetica,sans-serif" SIZE=1>
+
+<a href="#planningyourmap">Planning your map</a><BR>
+<a href="#creatingyourmap">Creating your map</a><BR>
+<a href="#mapfamilies">Creating map families</a><BR>
+<a href="#definingcountries">Defining countries</a><BR>
+<a href="#namingcountries">Naming countries</a><BR>
+<a href="#definingcontinents">Defining continents</a><BR>
+<a href="#namingcontinents">Naming continents</a><BR>
+<a href="#thumbnail">Creating a thumbnail</a><BR>
+<a href="#colortransparency">Color transparency</a><BR>
+<a href="#playerlist">Moving the player list</a><BR>
+<a href="#armyimages">Creating army images</a><BR>
+<a href="#suitimages">Creating card suit images</a><BR>
+<a href="#building">Building your plug-in</a><BR>
+<a href="#editingmaps">Editing maps in iConquer</a><BR>
+		</td>
+	</tr>
+	<tr>
+	<td>
+<P>
+Most of the work of designing a map will take place in your image editor. These instructions will provide some general guidelines, but the creative part is up to you.
+<P>
+These instructions assume that you are using <a href="http://www.adobe.com/products/photoshop/main.html">Adobe Photoshop</a> to create maps. However, any graphics program that can create PNG images with transparency will work fine.
+<UL>
+	<LI>Create or open your map in Photoshop.
+	<LI>Select the part of the map where the countries will be, as opposed to the area where the background will show through. Choose Layer&nbsp;<font color=gray size=-1>&#9654;</font> New&nbsp;<font color=gray size=-1>&#9654;</font> Layer&nbsp;via&nbsp;Copy. 
+	<LI>Select each country one at a time, and then choose Layer&nbsp;<font color=gray size=-1>&#9654;</font> New&nbsp;<font color=gray size=-1>&#9654;</font> Layer&nbsp;via&nbsp;Cut. 
+	<LI>Save each country layer as a PNG file with the name of the country.
+	<LI>Save the background as Background.png.
+</UL>
+Be sure to save all graphics at 72 dpi (you can change the resolution in the Image Size window). When you have created graphics files for each country, add all the files to the Resources <font color=gray size=-1>&#9654;</font> Countries folder in Xcode as shown in the example at right. 
+<P>
+<a name="mapfamilies"></a><B>Creating map families</B>
+<P>
+You may wish to make several different variations of the same map. For example, you could make different sizes, or different colors. You can switch back and forth between different variants in the middle of a game, and each player in a network game can use different variants of the same map. All variants in a family must have the same countries and continents.<P>
+You'll need to set a few more <a href="index.php#Customizing">Info.plist Entries</a>. All maps in the same family must have the same <tt>ICFamilyIdentifier</tt>, but a unique <tt>CFBundleIdentifier</tt>. They should also all have the same <tt>CFBundleName</tt>, but with the variant name in parentheses.
+<P align=center>
+<table  width="90%" border="0" cellspacing="0" cellpadding="2">
+	<tr BGCOLOR=#EEEEEE> 
+		<td valign=top><class="features"><B>CFBundleName</B></font></td>
+		<td valign=top><class="features"><B>CFBundleIdentifier</B></font></td>
+		<td valign=top><class="features"><B>ICFamilyIdentifier</B></font></td>
+	</tr>
+	<tr>
+		<td valign=top><class="features">My Map (Small)</font></td>
+		<td valign=top><class="features">com.mydomain.mymap.small</font></td>
+		<td valign=top><class="features">com.mydomain.mymap</font></td>
+	</tr>
+	<tr BGCOLOR=#F7F7F7>
+		<td valign=top><class="features">My Map (Medium)</font></td>
+		<td valign=top><class="features">com.mydomain.mymap.medium</font></td>
+		<td valign=top><class="features">com.mydomain.mymap</font></td>
+	</tr>
+	<tr>
+		<td valign=top><class="features">My Map (Large)</font></td>
+		<td valign=top><class="features">com.mydomain.mymap.large</font></td>
+		<td valign=top><class="features">com.mydomain.mymap</font></td>
+	</tr>
+</table> 
+<P>
+If iConquer loads several maps in the same family, it will display them in a submenu in the map menu:
+<P align=center><img src="map_menu_family.jpg" alt="" width="260" height="184" border="0">
+<P>
+You can also create a map that appears separately in the Map menu, yet behaves as if it were in the same family as another map. Just set your map's <tt>ICCompatibleIdentifier</tt> to match the other map's <tt>ICFamilyIdentifier</tt>. 
+<P>
+For example, you can switch from the iConquer World map to the Excel map in the middle of a game, because the Excel map's <tt>ICCompatibleIdentifier</tt> is set to <tt>com.kavasoft.iConquer.maps.world</tt>. 
+<P>
+<a name="definingcountries"></a><B>Defining countries</B>
+<P>
+Country names, positions, and connections are stored in the <tt>Countries.plist</tt> file. You'll need to edit this file with information for your map's countries.
+<P>
+You can use the Property List Editor program to edit plist files in an outline view. Or, if you are familiar with XML, you can use any text editor.
+ <P>
+The property list contains a dictionary of countries, where each key is the country's name and the value is a dictionary of information about the country.
+
+<P align=center><img src="countries_plist.jpg" alt="" width="363" height="294" border="0">
+<P>
+
+The plist defines where each country is on the map. Each country dictionary contains a pair of numbers (<tt>x</tt> and <tt>y</tt>) that specify the pixel coordinates of the lower-left corner of the country's image, as measured from the lower-left corner of the map. Use a reasonable guesstimate when initially inputting these numbers&mdash;you can use iConquer's map editor to accurately position countries. 
+<P>
+The dot that shows the number of armies in the country normally appears in the center of the country. However, if the country has an asymmetrical shape, it may be preferable to display the dot slightly offset from the center. 
+The numbers (<tt>dotOffsetX</tt> and <tt>dotOffsetY</tt>) specify how many pixels the dot should be offset from the center of the country. 
+<P>
+The plist also specifies which countries are connected. Each country dictionary contains a <tt>neighbors</tt> array that contains the names of the countries it is connected to. iConquer will write an error message to the Console if a string in the <tt>neighbors</tt> array does not match the name of a country. Connections must be two-way&mdash;an error will also be written for one-way connections. (To check for error messages, open the Console program in /Applications/Utilities.) 
+<P>
+<a name="namingcountries"></a><B>Naming countries</B>
+<P>
+You should edit the file <tt>English.lproj/Countries.strings</tt> so that it contains the names of all your countries. (This file allows you to conveniently rename countries, as illustrated by Greenland in the example.)
+
+<P align=center><img src="country_strings_english.gif" alt="" width="306" height="57" border="0">
+<P>
+If you would like to distribute your map in multiple languages, you can create localized variants of the <tt>Countries.strings</tt> file.
+
+<P align=center><img src="countries_strings_french.gif" alt="" width="306" height="58" border="0">
+
+<P>
+<a name="definingcontinents"></a><B>Defining continents</B>
+<P>
+
+Information on continents is stored in the <tt>Continents.plist</tt> file. Each key in the file is the name of a continent, and each value is a dictionary of information about that continent. Note that continent names are not displayed in the program, so you don't need to worry about localizing them.
+
+<P align=center><img src="continents_plist.jpg" alt="" width="363" height="282" border="0">
+<P>
+Each continent dictionary contains a <tt>countries</tt> array, which contains the names of the countries in the continent. These names must correspond to keys in the <tt>Countries.plist</tt> file, or an error will be written to the Console.
+<P>
+The <tt>armies</tt> number determines how many bonus armies players receive if they own every country in the continent.
+<P>
+
+<a name="namingcontinents"></a><B>Naming continents</B> (2.3)
+<P>
+You should edit the file <tt>English.lproj/Continents.strings</tt> so that it contains the names of all your continents.
+
+<P align=center><img src="continents_strings_english.gif" alt="" width="223" height="84" border="0">
+<P>
+If you would like to distribute your map in multiple languages, you can create localized variants of the <tt>Continents.strings</tt> file.
+
+<P align=center><img src="continents_strings_french.gif" alt="" width="223" height="84" border="0">
+
+<P>
+<a name="thumbnail"></a><B>Creating a thumbnail</B>
+<P>
+The Plug-ins window will display a thumbnail for your map plug-in when the user clicks on it in the list. If the plug-in is not installed, the thumbnail will be read from your web server.  
+<P>
+To create the thumbnail image, start a game of iConquer and pick countries so that the map borders are shown distinctly. Choose File&nbsp;<font color=gray size=-1>&#9654;</font> Save Picture to save a screenshot as a PNG file. 
+<P>
+Use your image editor to reduce the image's size to 360 x 225, with transparent pixels in the background. Save the file as a PNG, and add the file to your project. Lastly, change the <tt>ICThumbnail</TT> value in your project's Info.plist entries to the name of the file, without the extension. 
+<P>
+<a name="colortransparency"></a><B>Changing color transparency</B> (2.1)
+<P>
+You can change the transparency of the color that iConquer uses to color your map. By default, countries are filled 40% with color, allowing 60% of each country's image to show through. <P>You can override this value by setting the <TT>ICColorTransparency</TT> value in the Info.plist entries to a number bewtween 20 and 80. If the user specifies a custom value in the Preferences, it will override the value specified by the map.
+
+<P>
+<a name="playerlist"></a><B>Moving the player list</B> (2.1)
+<P>
+By default, the list of players appears in the bottom left corner of the map. If it would be more convenient for your map, you can move the player list to a different corner. In the Info.plist entries, change the <tt>ICPlayerList</TT> value from <TT>BottomLeft</TT> to <TT>TopLeft</TT>, <TT>TopRight</TT>, or <TT>BottomRight</TT>. 
+<P>Alternatively, if your map has no room for the player list you may hide it entirely by setting the <tt>ICPlayerList</TT> value to <TT>Hidden</TT>. To see which player is current, the user can show the Statistics window or add the current player toolbar item to the toolbar.   
+<P>
+<a name="armyimages"></a><B>Creating army images</B> (2.3)
+<P>
+You can replace the images that iConquer uses for armies in the armies drawer with your own. Create ten images, scale them to 50 x 50 pixels, save them as <tt>1.png</tt>, <tt>2.png</tt>, <tt>5.png</tt>, <tt>10.png</tt>, <tt>20.png</tt>, <tt>50.png</tt>, <tt>100.png</tt>, <tt>200.png</tt>, <tt>500.png</tt>, and <tt>1000.png</tt>, and add them to your project. It should be noted that this step is optional; if these images are not supplied iConquer will use the default images. 
+<P>
+<a name="suitimages"></a><B>Creating card suit images</B> (2.1)
+<P>
+You can replace the images that iConquer uses for card suits with your own. Create three images, scale them to 50 x 50 pixels, save them as <tt>SuitOne.png</tt>, <tt>SuitTwo.png</tt>, and <tt>SuitThree.png</tt>, and add them to your project. It should be noted that this step is optional; if these images are not supplied iConquer will use the default images. 
+<P>
+<a name="Building"></a><B>Building your plug-in</B><P>
+When you are done preparing the files for your plugin, choose Build <font color=gray size=-1>&#9654;</font> Build. Your complete will plug-in will be placed in the build directory in your project directory. You can then <a href="index.php#Installing">install</a> and test your map plug-in.
+<P>
+<a name="editingmaps"></a><B>Editing maps in iConquer</B>
+<P>
+iConquer has a built-in map editor that can be used to fine-tune the positions of countries and their dots. To enable the map editor for a given map, edit the map's <a href="index.php#Customizing">Info.plist Entries</a> and set <tt>ICDebug</tt> to <tt>YES</tt> (make sure the type is Boolean and not String). When you load the plug-in, three new items will appear in the Map menu:
+ 
+<P align=center><img src="map_menu_debug.jpg" alt="" width="200" height="236" border="0">
+<P>
+If you choose "Arrange Countries," you can drag countries around with the mouse. You can use the arrow keys to move countries one pixel at a time (or ten pixels at a time using the shift key). You can also drag the status dots around, or nudge them one pixel at a time using the arrow keys while holding down the option key.
+<P>
+Choose "Hide Countries" to display all countries with 10% opacity. If the background image contains all of the countries, repeatedly hitting &#8997;&#8984;T (or just the spacebar) should make misaligned countries <blink>blink</blink> at you. 
+<P>
+When all the countries are where you want them to be, choose "Save Countries." This will overwrite the <tt>Countries.plist</tt> file in the plug-in. You should then copy this file from the installed plug-in back to your project folder.
+<P>
+Be sure to set <tt>ICDebug</tt> to <tt>NO</tt> before you <a href="index.php#Submitting">release</a> your map.
+
+</TD>
+		<TD WIDTH="20">
+			<!-- separator -->		
+		</TD>
+		<TD WIDTH="160" valign=top align=center>
+<p align=center><p align=center><img src="layers.jpg" alt="" width="160" height="207" border="0">
+<p align=center><img src="files_list.jpg" alt="" width="160" height="167" border="0">
+
+			</FONT>
+		</TD>
+	</TR>
+
+
+</table>
+
+<FONT FACE="Lucida Grande,Geneva,Arial,Helvetica,sans-serif" SIZE=1><P>
+	<a href="../index.php">Home</a> | 
+	<a href="../plugins/index.php">Maps</a> | 
+	<a href="../developer/index.php">Developer</a> | 
+	<a href="../download/index.php">Download</a> | 
+	<a href="../../store/index.php?iconquer=1">Buy Now</a>
+
+<P>
+&copy; 2002-2010 KavaSoft.<BR>
+All rights reserved.
+
+</center>
+</body>
+</html>

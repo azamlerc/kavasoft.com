@@ -1,0 +1,23 @@
+KavaSoft announces Shoebox 1.7. Organize your photos by content.
+
+FOR IMMEDIATE RELEASE
+
+March 5, 2007 - KavaSoft announces Shoebox 1.7, the professional Mac application for organizing digital photos by content. Shoebox 1.7 features a brand new, more intuitive way to display and edit a photo's categories.
+
+Shoebox lets you organize your photos into categories according to dates, people, places and things. Looking for that photo of a yellow butterfly you took last year? Just type "yellow butterfly" and Shoebox finds it for you instantly. It even tells you when and where you took it. Looking for other photos of insects? Shoebox is intelligent and knows that a butterfly is an insect: type "insects" and the same yellow butterfly will show up among the results.
+
+Shoebox 1.7 now displays categories in the toolbar, reducing window clutter. Categorizing photos is now as easy as addressing a message in Mail. Just type the first few letters of the category's name, and Shoebox will present a popup menu with all matching categories. 
+
+Shoebox 1.7 features new display options for working with photos more efficiently than ever. You can now breeze through slideshows using the scroll wheel. Shoebox 1.7 also features additional optimizations for multiprocessor Macs.
+
+Shoebox is optimized for the needs of media professionals with large photo libraries. It lets you store your photos anywhere, even on external hard disks or CD/DVDs. Shoebox allows you to keep a compressed version of the high-resolution original on your hard disk so you can work while traveling. 
+
+Shoebox helps you archive large collections by letting you burn photos directly to CD/DVD. It keeps track of which photos have been archived, so you can back up your large collection over time.
+ 
+Shoebox can import photos from iPhoto and Cumulus, and play a slideshow of photos as you download them from your digital camera. Slideshows are optimized for dual displays, with thumbnails on one screen and the slideshow on the other.
+
+Shoebox is a universal binary, and is available in English, French, German, Dutch and Japanese. Shoebox integrates with Spotlight in Mac OS X Tiger, and is compatible with the upcoming Mac OS X Leopard.
+
+You can try Shoebox for free. Shoebox comes in two versions: Shoebox Pro ($80) for digital media professionals, and Shoebox Express ($30) for home users with up to 10,000 photos.
+
+###

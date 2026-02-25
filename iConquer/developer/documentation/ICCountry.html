@@ -1,0 +1,471 @@
+<HTML><HEAD><TITLE>iConquer - Developer - Documentation - ICCountry</TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+<a href="index.html"><img src="iConquer_logo.jpg" alt="" width="203" height="55"></a>
+
+<FONT COLOR="#000066"><H1><A NAME="//apple_ref/occ/cl/ICCountry">ICCountry</A></H1></FONT><BR>
+
+
+
+	<blockquote><DL><DT><B>Inherits From:</B></DT>  
+	<DD>NSObject</DD>
+</DL></blockquote>
+
+
+
+	<blockquote><DL><DT><B>Conforms To:</B></DT>
+	<DD>ICCountryProtocol</DD><DD>NSCoding</DD>
+</DL></blockquote>
+
+
+	<blockquote><DL><DT><B>Declared In:</B></DT>
+	<DD>ICCountry.h</DD>
+	</DL></blockquote>
+
+<BR><BR>
+
+
+<H2>Class Description</H2>
+ICCountry represents one country in the game.
+
+
+<!--
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Defined Types</H2>
+	<blockquote>
+	
+		
+		<H4>Synopsis:</H4>
+		
+			<CODE><A NAME="//apple_ref/c/tdef/ICAttackCount">
+			typedef enum _ICAttackCount {&nbsp;&nbsp;&nbsp;&nbsp;AttackOnce, AttackUntilLossesExceed, <BR>
+AttackUntilWinOrLose} <B>ICAttackCount</B>;</A></CODE><BR>
+		
+		
+	
+	</blockquote>
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Variables</H2>
+	<blockquote>
+	
+		<CODE>NSUserDefaults *<B>defaults</B>;</CODE><BR>
+		<CODE>NSMutableArray *<B>countryViews</B>;</CODE><BR>
+		<CODE>NSString *<B>name</B>;</CODE><BR>
+		<CODE>ICGame *<B>game</B>;</CODE><BR>
+		<CODE>NSMutableArray *<B>neighbors</B>;</CODE><BR>
+		<CODE>ICPlayer *<B>player</B>;</CODE><BR>
+		<CODE>NSMutableDictionary *<B>customInfo</B>;</CODE><BR>
+		<CODE>int <B>armies</B>;</CODE><BR>
+		<CODE>int <B>tiredArmies</B>;</CODE><BR>
+		<CODE>int <B>threat</B>;</CODE><BR>
+		<CODE>BOOL <B>selected</B>;</CODE><BR>
+		<CODE>int <B>highestDie</B>;</CODE><BR>
+		<CODE>int <B>secondHighestDie</B>;</CODE><BR>
+		<CODE>int <B>reserveArmies</B>;</CODE><BR>
+		<CODE>NSMutableArray *<B>attackPath</B>;</CODE><BR>
+		<CODE>int <B>armiesAlongAttackPath</B>;</CODE><BR>
+	<P><TABLE>
+	
+		<TR><TD>defaults</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>countryViews</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>name</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>game</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>neighbors</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>player</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>customInfo</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>armies</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>tiredArmies</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>threat</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>selected</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>highestDie</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>secondHighestDie</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>reserveArmies</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>attackPath</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>armiesAlongAttackPath</TD><TD>No description.</TD></TR>
+	
+	</TABLE>
+	</blockquote>
+
+-->
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Method Types</H2>
+	<blockquote>
+	
+		
+			Accessors
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- name">- name</A></DD>
+		
+			<DD> <A HREF="#- game">- game</A></DD>
+		
+			<DD> <A HREF="#- selected">- selected</A></DD>
+		
+			<DD> <A HREF="#- setSelected:">- setSelected:</A></DD>
+		
+		</DL>
+	
+		
+			Player
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- player">- player</A></DD>
+		
+			<DD> <A HREF="#- pick">- pick</A></DD>
+		
+			<DD> <A HREF="#- isOwnedBy:">- isOwnedBy:</A></DD>
+		
+			<DD> <A HREF="#- isOwnedByCurrentPlayer">- isOwnedByCurrentPlayer</A></DD>
+		
+		</DL>
+	
+		
+			Armies
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- canAssignArmies">- canAssignArmies</A></DD>
+		
+			<DD> <A HREF="#- assignArmies:">- assignArmies:</A></DD>
+		
+			<DD> <A HREF="#- armies">- armies</A></DD>
+		
+			<DD> <A HREF="#- tiredArmies">- tiredArmies</A></DD>
+		
+			<DD> <A HREF="#- reserveArmies">- reserveArmies</A></DD>
+		
+			<DD> <A HREF="#- setReserveArmies:">- setReserveArmies:</A></DD>
+		
+			<DD> <A HREF="#- sortByArmies:">- sortByArmies:</A></DD>
+		
+		</DL>
+	
+		
+			Neighbors
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- neighbors">- neighbors</A></DD>
+		
+			<DD> <A HREF="#- ownedNeighbors">- ownedNeighbors</A></DD>
+		
+			<DD> <A HREF="#- unownedNeighbors">- unownedNeighbors</A></DD>
+		
+			<DD> <A HREF="#- mostVulnerableNeighbor">- mostVulnerableNeighbor</A></DD>
+		
+			<DD> <A HREF="#- isAdjacentTo:">- isAdjacentTo:</A></DD>
+		
+			<DD> <A HREF="#- threat">- threat</A></DD>
+		
+			<DD> <A HREF="#- calculateThreat">- calculateThreat</A></DD>
+		
+			<DD> <A HREF="#- sortByThreat:">- sortByThreat:</A></DD>
+		
+		</DL>
+	
+		
+			Attacking
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- canAttack">- canAttack</A></DD>
+		
+			<DD> <A HREF="#- attack:attacksPerClick:untilLossesExceed:withDice:advanceArmies:">- attack:attacksPerClick:untilLossesExceed:withDice:advanceArmies:</A></DD>
+		
+			<DD> <A HREF="#- currentCountryAttackSelfAttacksPerClick:untilLossesExceed:withDice:advanceArmies:">- currentCountryAttackSelfAttacksPerClick:untilLossesExceed:withDice:advanceArmies:</A></DD>
+		
+		</DL>
+	
+		
+			Attack Paths
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- attackPath">- attackPath</A></DD>
+		
+			<DD> <A HREF="#- calculateAttackPath">- calculateAttackPath</A></DD>
+		
+			<DD> <A HREF="#- armiesAlongAttackPath">- armiesAlongAttackPath</A></DD>
+		
+			<DD> <A HREF="#- sortByArmiesAlongAttackPath:">- sortByArmiesAlongAttackPath:</A></DD>
+		
+		</DL>
+	
+		
+			Attack Paths
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- customInfo">- customInfo</A></DD>
+		
+		</DL>
+	
+	</blockquote>
+
+
+
+
+ 
+
+	<HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Methods</H2>
+ 
+	
+		
+		<A NAME="- armies"></A><H3><A NAME="//apple_ref/occ/instm/ICCountry/armies">armies</A></H3><P>
+		<CODE>- (int)<B>armies</B>
+		</CODE><P>
+		The number of armies in the country.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- armiesAlongAttackPath"></A><H3><A NAME="//apple_ref/occ/instm/ICCountry/armiesAlongAttackPath">armiesAlongAttackPath</A></H3><P>
+		<CODE>- (int)<B>armiesAlongAttackPath</B>
+		</CODE><P>
+		The countries along the most optimum attack path from a country owned by the current player to this country.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- assignArmies:"></A><H3><A NAME="//apple_ref/occ/instm/ICCountry/assignArmies:">assignArmies:</A></H3><P>
+		<CODE>- (void)<B>assignArmies:</B>(int)<EM>count</EM>
+			
+		</CODE><P>
+		Takes <I><I>count</I></I> armies from the country's owner and places them in the country. If these armies are being fortified from another country, increments <I>tiredArmies</I> by <I><I>count</I></I>. If the player's <I>unallocatedArmies</I> value is 0, proceeds to the next phase of the turn or game.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- attack:attacksPerClick:untilLossesExceed:withDice:advanceArmies:"></A><H3><A NAME="//apple_ref/occ/instm/ICCountry/attack:attacksPerClick:untilLossesExceed:withDice:advanceArmies:">attack:attacksPerClick:untilLossesExceed:withDice:advanceArmies:</A></H3><P>
+		<CODE>- (BOOL)<B>attack:</B>(ICCountry *)<EM>country</EM> <B>attacksPerClick:</B>(ICAttackCount)<EM>attacksPerClick</EM> <B>untilLossesExceed:</B>(int)<EM>lossesExceedValue</EM> <B>withDice:</B>(int)<EM>diceToRoll</EM> <B>advanceArmies:</B>(BOOL)<EM>advanceArmies</EM>
+			
+		</CODE><P>
+		Launches an attack on <I><I>country</I></I>.<P>
+
+The <I><I>attacksPerClick</I></I> value controls how many attacks will be performed, and can be <CODE>AttackOnce</CODE>, <CODE>AttackUntilLossesExceed</CODE>, or <CODE>AttackUntilWinOrLose</CODE>. If <CODE>AttackUntilLossesExceed</CODE> is specified, then attacks will continue until <I><I>lossesExceedValue</I></I> armies have been lost. Otherwise, the value of <I><I>lossesExceedValue</I></I> is ignored.<P>
+
+The <I><I>diceToRoll</I></I> value determines how many dice to roll, and can be 1, 2, or 3. The more dice that are rolled, the more risky the attack.<P>
+
+In the event of a victory, if <I><I>advanceArmies</I></I> is <CODE>YES</CODE> armies are automatically advanced to the conquered <I>country</I>. Otherwise, the player receives an <B>advanceArmiesFrom:to:</B> message.<P>
+
+Returns whether <I><I>country</I></I> was conquered.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- attackPath"></A><H3><A NAME="//apple_ref/occ/instm/ICCountry/attackPath">attackPath</A></H3><P>
+		<CODE>- (NSMutableArray *)<B>attackPath</B>
+		</CODE><P>
+		The countries along the most optimum attack path from a country owned by the current player to this country.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- calculateAttackPath"></A><H3><A NAME="//apple_ref/occ/instm/ICCountry/calculateAttackPath">calculateAttackPath</A></H3><P>
+		<CODE>- (void)<B>calculateAttackPath</B>
+		</CODE><P>
+		Sets <I>attackPath</I> to the countries along the most optimum attack path from a country owned by the current player to this country.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- calculateThreat"></A><H3><A NAME="//apple_ref/occ/instm/ICCountry/calculateThreat">calculateThreat</A></H3><P>
+		<CODE>- (void)<B>calculateThreat</B>
+		</CODE><P>
+		Sets the country's <I>threat</I> level to the number of adjacent enemy countries, plus the number of armies in those countries, minus the number of armies in this country.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- canAssignArmies"></A><H3><A NAME="//apple_ref/occ/instm/ICCountry/canAssignArmies">canAssignArmies</A></H3><P>
+		<CODE>- (BOOL)<B>canAssignArmies</B>
+		</CODE><P>
+		Returns whether the country is owned by the current player and the player has armies to place.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- canAttack"></A><H3><A NAME="//apple_ref/occ/instm/ICCountry/canAttack">canAttack</A></H3><P>
+		<CODE>- (BOOL)<B>canAttack</B>
+		</CODE><P>
+		Returns whether the game's <I>currentCountry</I> is adjacent to this country and this country is not owned by the game's <I>currentPlayer</I>.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- currentCountryAttackSelfAttacksPerClick:untilLossesExceed:withDice:advanceArmies:"></A><H3><A NAME="//apple_ref/occ/instm/ICCountry/currentCountryAttackSelfAttacksPerClick:untilLossesExceed:withDice:advanceArmies:">currentCountryAttackSelfAttacksPerClick:untilLossesExceed:withDice:advanceArmies:</A></H3><P>
+		<CODE>- (void)<B>currentCountryAttackSelfAttacksPerClick:</B>(ICAttackCount)<EM>attacksPerClick</EM> <B>untilLossesExceed:</B>(int)<EM>lossesExceedValue</EM> <B>withDice:</B>(int)<EM>diceToRoll</EM> <B>advanceArmies:</B>(BOOL)<EM>advanceArmies</EM>
+			
+		</CODE><P>
+		This convenience method calls: <CODE>&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;[[game currentCountry] attack: self <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;attacksPerClick: attacksPerClick <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;untilLossesExceed: lossesExceedValue <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;withDice: diceToRoll <BR>
+&nbsp;&nbsp;&nbsp;&nbsp;advanceArmies: advanceArmies]; </CODE>
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- customInfo"></A><H3><A NAME="//apple_ref/occ/instm/ICCountry/customInfo">customInfo</A></H3><P>
+		<CODE>- (NSMutableDictionary *)<B>customInfo</B>
+		</CODE><P>
+		This dictionary can be used by players to store information on each country. 
+You can rely on this data being preserved from turn to turn, even if the game is saved and restored. 
+This dictionary is shared by all players, so be sure to use unique keys 
+(i.e. &quot;&lt;playername&gt;&lt;keyname&gt;&quot;) to avoid clobbering values added by other players.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- game"></A><H3><A NAME="//apple_ref/occ/instm/ICCountry/game">game</A></H3><P>
+		<CODE>- (ICGame *)<B>game</B>
+		</CODE><P>
+		The game object, which handles the game state.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- isAdjacentTo:"></A><H3><A NAME="//apple_ref/occ/instm/ICCountry/isAdjacentTo:">isAdjacentTo:</A></H3><P>
+		<CODE>- (BOOL)<B>isAdjacentTo:</B>(ICCountry *)<EM>country</EM>
+			
+		</CODE><P>
+		Returns whether <I><I>country</I></I> is adjacent to this <I>country</I>.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- isOwnedBy:"></A><H3><A NAME="//apple_ref/occ/instm/ICCountry/isOwnedBy:">isOwnedBy:</A></H3><P>
+		<CODE>- (BOOL)<B>isOwnedBy:</B>(ICPlayer *)<EM>value</EM>
+			
+		</CODE><P>
+		Returns whether the country is owned by the player <I><I>value</I></I>.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- isOwnedByCurrentPlayer"></A><H3><A NAME="//apple_ref/occ/instm/ICCountry/isOwnedByCurrentPlayer">isOwnedByCurrentPlayer</A></H3><P>
+		<CODE>- (BOOL)<B>isOwnedByCurrentPlayer</B>
+		</CODE><P>
+		Returns whether the country is owned by the current player.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- mostVulnerableNeighbor"></A><H3><A NAME="//apple_ref/occ/instm/ICCountry/mostVulnerableNeighbor">mostVulnerableNeighbor</A></H3><P>
+		<CODE>- (ICCountry *)<B>mostVulnerableNeighbor</B>
+		</CODE><P>
+		Returns the unowned adjacent country with the fewest number of armies. If all adjacent countries are owned by the same player as this country, returns <B>nil</B>.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- name"></A><H3><A NAME="//apple_ref/occ/instm/ICCountry/name">name</A></H3><P>
+		<CODE>- (NSString *)<B>name</B>
+		</CODE><P>
+		The non-localized name of the country. For the localized name, use <B>description</B>.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- neighbors"></A><H3><A NAME="//apple_ref/occ/instm/ICCountry/neighbors">neighbors</A></H3><P>
+		<CODE>- (NSMutableArray *)<B>neighbors</B>
+		</CODE><P>
+		The countries that are adjacent to this country.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- ownedNeighbors"></A><H3><A NAME="//apple_ref/occ/instm/ICCountry/ownedNeighbors">ownedNeighbors</A></H3><P>
+		<CODE>- (NSMutableArray *)<B>ownedNeighbors</B>
+		</CODE><P>
+		Returns the adjacent countries that are owned by the same player as this country.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- pick"></A><H3><A NAME="//apple_ref/occ/instm/ICCountry/pick">pick</A></H3><P>
+		<CODE>- (void)<B>pick</B>
+		</CODE><P>
+		Players send <B>pick</B> to a country when picking countries. Removes the country from the game's <I>unallocatedCountries</I>, sets the player of the country to the game's <I>currentPlayer</I>. If there are more unallocated countries, tells the next player to pick a country. Otherwise, sends <B>donePickingCountries</B> to the game.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- player"></A><H3><A NAME="//apple_ref/occ/instm/ICCountry/player">player</A></H3><P>
+		<CODE>- (ICPlayer *)<B>player</B>
+		</CODE><P>
+		The player who owns this country.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- reserveArmies"></A><H3><A NAME="//apple_ref/occ/instm/ICCountry/reserveArmies">reserveArmies</A></H3><P>
+		<CODE>- (int)<B>reserveArmies</B>
+		</CODE><P>
+		The number of armies to be used for defense.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- selected"></A><H3><A NAME="//apple_ref/occ/instm/ICCountry/selected">selected</A></H3><P>
+		<CODE>- (BOOL)<B>selected</B>
+		</CODE><P>
+		Returns whether this country is selected.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setReserveArmies:"></A><H3><A NAME="//apple_ref/occ/instm/ICCountry/setReserveArmies:">setReserveArmies:</A></H3><P>
+		<CODE>- (void)<B>setReserveArmies:</B>(int)<EM>value</EM>
+			
+		</CODE><P>
+		Sets the number of armies to be used for defense. At the beginning of the turn, this message is sent with <I><I>value</I></I> equal to <I>armies</I> times the <I>value</I> returned by the player's <B>armiesToReserveForDefense</B> method.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setSelected:"></A><H3><A NAME="//apple_ref/occ/instm/ICCountry/setSelected:">setSelected:</A></H3><P>
+		<CODE>- (void)<B>setSelected:</B>(BOOL)<EM>value</EM>
+			
+		</CODE><P>
+		Sets whether this country is selected. If the country's owner is not a computer player, tells the current country view to display the country as selected.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- sortByArmies:"></A><H3><A NAME="//apple_ref/occ/instm/ICCountry/sortByArmies:">sortByArmies:</A></H3><P>
+		<CODE>- (int)<B>sortByArmies:</B>(ICCountry *)<EM>country</EM>
+			
+		</CODE><P>
+		Returns <CODE>NSOrderedAscending</CODE> if this <I>country</I> has more armies than <I><I>country</I></I>, <CODE>NSOrderedDescending</CODE> if it has fewer, or <CODE>NSOrderedSame</CODE> if they have the same number.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- sortByArmiesAlongAttackPath:"></A><H3><A NAME="//apple_ref/occ/instm/ICCountry/sortByArmiesAlongAttackPath:">sortByArmiesAlongAttackPath:</A></H3><P>
+		<CODE>- (int)<B>sortByArmiesAlongAttackPath:</B>(ICCountry *)<EM>country</EM>
+			
+		</CODE><P>
+		Returns <CODE>NSOrderedAscending</CODE> if this <I>country</I> has fewer armies along the attack path than <I><I>country</I></I>, <CODE>NSOrderedDescending</CODE> if it has more, or <CODE>NSOrderedSame</CODE> if they have the same number.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- sortByThreat:"></A><H3><A NAME="//apple_ref/occ/instm/ICCountry/sortByThreat:">sortByThreat:</A></H3><P>
+		<CODE>- (int)<B>sortByThreat:</B>(ICCountry *)<EM>country</EM>
+			
+		</CODE><P>
+		Returns <CODE>NSOrderedAscending</CODE> if this <I>country</I> has a lower threat than <I><I>country</I></I>, <CODE>NSOrderedDescending</CODE> if it has a higher threat. If the countries have the same threat level, randomly returns <CODE>NSOrderedAscending</CODE> or <CODE>NSOrderedDescending</CODE>.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- threat"></A><H3><A NAME="//apple_ref/occ/instm/ICCountry/threat">threat</A></H3><P>
+		<CODE>- (int)<B>threat</B>
+		</CODE><P>
+		Returns the stored threat level of this country. To calculate the threat level, send the <B>calculateThreat</B> message.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- tiredArmies"></A><H3><A NAME="//apple_ref/occ/instm/ICCountry/tiredArmies">tiredArmies</A></H3><P>
+		<CODE>- (int)<B>tiredArmies</B>
+		</CODE><P>
+		The number of armies that have been fortified into this country from another country during this turn. Tired armies cannot be fortified to another country.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- unownedNeighbors"></A><H3><A NAME="//apple_ref/occ/instm/ICCountry/unownedNeighbors">unownedNeighbors</A></H3><P>
+		<CODE>- (NSMutableArray *)<B>unownedNeighbors</B>
+		</CODE><P>
+		Returns the adjacent countries that are not owned by the same player as this country.
+	
+
+
+
+
+<P><HR>
+Version 1.1 Copyright &copy;2003 by KavaSoft.  All Rights Reserved.  
+<P>
+</BODY></HTML>

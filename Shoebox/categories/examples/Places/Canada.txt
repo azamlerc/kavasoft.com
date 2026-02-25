@@ -1,0 +1,32 @@
+/Places/North America/Canada
+
+Alberta
+	Calgary
+	Edmonton
+British Columbia
+	Vancouver
+	Victoria
+Manitoba
+	Winnipeg
+New Brunswick
+	Fredericton
+Newfoundland
+	St. Johns
+Northwest Territories
+	Yellowknife
+Nova Scotia
+	Halifax
+Nunavut
+	Iqaluit
+Ontario
+	Ottawa
+	Toronto
+Prince Edward Island
+	Charlottetown
+Québec
+	Montréal
+	Québec City
+Saskatchewan
+	Regina
+Yukon
+	Whitehorse

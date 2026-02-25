@@ -1,0 +1,370 @@
+Dates
+People
+Places
+	North America
+		Canada
+			Alberta
+				Calgary
+					Flames
+				Edmonton
+					Oilers
+			British Columbia
+				Vancouver
+					Canucks
+			Ontario
+				Ottawa
+					Senators
+				Toronto
+					Blue Jays
+					Maple Leafs
+					Raptors
+			QuŽbec
+				MontrŽal
+					Canadiens
+		United States
+			Arizona
+				Phoenix
+					Coyotes
+					Diamondbacks
+					Suns
+				Tempe
+					Cardinals
+			California
+				Anaheim
+					Angels
+					Mighty Ducks
+				Los Angeles
+					Clippers
+					Dodgers
+					Kings
+					Lakers
+				Oakland
+					Athletics
+					Raiders
+					Warriors
+				Sacramento
+					Kings
+				San Diego
+					Chargers
+					Padres
+				San Francisco
+					49ers
+					Giants
+				San Jose
+					Sharks
+			Colorado
+				Denver
+					Avalanche
+					Broncos
+					Nuggets
+					Rockies
+			District of Columbia
+				Capitals
+				Nationals
+				Redskins
+				Wizards
+			Florida
+				Jacksonville
+					Jaguars
+				Miami
+					Dolphins
+					Heat
+					Marlins
+				Orlando
+					Magic
+				Sunrise
+					Panthers
+				Tampa
+					Buccaneers
+					Devil Rays
+					Lightning
+			Georgia
+				Atlanta
+					Braves
+					Falcons
+					Hawks
+					Thrashers
+			Illinois
+				Chicago
+					Bears
+					Blackhawks
+					Bulls
+					Cubs
+					White Sox
+			Indiana
+				Indianapolis
+					Colts
+					Pacers
+			Louisiana
+				New Orleans
+					Hornets
+					Saints
+			Maryland
+				Baltimore
+					Orioles
+					Ravens
+			Massachusetts
+				Boston
+					Bruins
+					Celtics
+					Patriots
+					Red Sox
+			Michigan
+				Detroit
+					Lions
+					Pistons
+					Red Wings
+					Tigers
+			Minnesota
+				Minneapolis
+					Timberwolves
+					Twins
+					Vikings
+					Wild
+			Missouri
+				Kansas City
+					Chiefs
+					Royals
+				St. Louis
+					Blues
+					Cardinals
+					Rams
+			New Jersey
+				East Rutherford
+					Devils
+					Nets
+			New York
+				Buffalo
+					Bills
+					Sabres
+				New York
+					Giants
+					Islanders
+					Jets
+					Knicks
+					Mets
+					Rangers
+					Yankees
+			North Carolina
+				Charlotte
+					Bobcats
+					Panthers
+				Raleigh
+					Hurricanes
+			Ohio
+				Cincinnati
+					Bengals
+					Reds
+				Cleveland
+					Browns
+					Cavaliers
+					Indians
+				Columbus
+					Blue Jackets
+			Oregon
+				Portland
+					Trail Blazers
+			Pennsylvania
+				Philadelphia
+					76ers
+					Eagles
+					Flyers
+					Phillies
+				Pittsburgh
+					Penguins
+					Pirates
+					Steelers
+			Tennessee
+				Memphis
+					Grizzlies
+				Nashville
+					Predators
+					Titans
+			Texas
+				Arlington
+					Rangers
+				Dallas
+					Cowboys
+					Mavericks
+					Stars
+				Houston
+					Astros
+					Rockets
+					Texans
+				San Antonio
+					Spurs
+			Utah
+				Salt Lake City
+					Jazz
+			Washington
+				Seattle
+					Mariners
+					Seahawks
+					SuperSonics
+			Wisconsin
+				Green Bay
+					Packers
+				Milwaukee
+					Brewers
+					Bucks
+Things
+	Sports
+		Baseball
+			MLB
+				American League
+					Angels -> /Places/North America/United States/California/Anaheim/Angels
+					Athletics -> /Places/North America/United States/California/Oakland/Athletics
+					Blue Jays -> /Places/North America/Canada/Ontario/Toronto/Blue Jays
+					Devil Rays -> /Places/North America/United States/Florida/Tampa/Devil Rays
+					Indians -> /Places/North America/United States/Ohio/Cleveland/Indians
+					Mariners -> /Places/North America/United States/Washington/Seattle/Mariners
+					Orioles -> /Places/North America/United States/Maryland/Baltimore/Orioles
+					Rangers -> /Places/North America/United States/Texas/Arlington/Rangers
+					Red Sox -> /Places/North America/United States/Massachusetts/Boston/Red Sox
+					Royals -> /Places/North America/United States/Missouri/Kansas City/Royals
+					Tigers -> /Places/North America/United States/Michigan/Detroit/Tigers
+					Twins -> /Places/North America/United States/Minnesota/Minneapolis/Twins
+					White Sox -> /Places/North America/United States/Illinois/Chicago/White Sox
+					Yankees -> /Places/North America/United States/New York/New York/Yankees
+				National League
+					Astros -> /Places/North America/United States/Texas/Houston/Astros
+					Braves -> /Places/North America/United States/Georgia/Atlanta/Braves
+					Brewers -> /Places/North America/United States/Wisconsin/Milwaukee/Brewers
+					Cardinals -> /Places/North America/United States/Missouri/St. Louis/Cardinals
+					Cubs -> /Places/North America/United States/Illinois/Chicago/Cubs
+					Diamondbacks -> /Places/North America/United States/Arizona/Phoenix/Diamondbacks
+					Dodgers -> /Places/North America/United States/California/Los Angeles/Dodgers
+					Giants -> /Places/North America/United States/California/San Francisco/Giants
+					Marlins -> /Places/North America/United States/Florida/Miami/Marlins
+					Mets -> /Places/North America/United States/New York/New York/Mets
+					Nationals -> /Places/North America/United States/District of Columbia/Nationals
+					Padres -> /Places/North America/United States/California/San Diego/Padres
+					Phillies -> /Places/North America/United States/Pennsylvania/Philadelphia/Phillies
+					Pirates -> /Places/North America/United States/Pennsylvania/Pittsburgh/Pirates
+					Reds -> /Places/North America/United States/Ohio/Cincinnati/Reds
+					Rockies -> /Places/North America/United States/Colorado/Denver/Rockies
+		Basketball
+			NBA
+				Eastern
+					Atlantic
+						76ers -> /Places/North America/United States/Pennsylvania/Philadelphia/76ers
+						Celtics -> /Places/North America/United States/Massachusetts/Boston/Celtics
+						Knicks -> /Places/North America/United States/New York/New York/Knicks
+						Nets -> /Places/North America/United States/New Jersey/East Rutherford/Nets
+						Raptors -> /Places/North America/Canada/Ontario/Toronto/Raptors
+					Central
+						Bucks -> /Places/North America/United States/Wisconsin/Milwaukee/Bucks
+						Bulls -> /Places/North America/United States/Illinois/Chicago/Bulls
+						Cavaliers -> /Places/North America/United States/Ohio/Cleveland/Cavaliers
+						Pacers -> /Places/North America/United States/Indiana/Indianapolis/Pacers
+						Pistons -> /Places/North America/United States/Michigan/Detroit/Pistons
+					Southeast
+						Bobcats -> /Places/North America/United States/North Carolina/Charlotte/Bobcats
+						Hawks -> /Places/North America/United States/Georgia/Atlanta/Hawks
+						Heat -> /Places/North America/United States/Florida/Miami/Heat
+						Magic -> /Places/North America/United States/Florida/Orlando/Magic
+						Wizards -> /Places/North America/United States/District of Columbia/Wizards
+				Western
+					Northwest
+						Jazz -> /Places/North America/United States/Utah/Salt Lake City/Jazz
+						Nuggets -> /Places/North America/United States/Colorado/Denver/Nuggets
+						SuperSonics -> /Places/North America/United States/Washington/Seattle/SuperSonics
+						Timberwolves -> /Places/North America/United States/Minnesota/Minneapolis/Timberwolves
+						Trail Blazers -> /Places/North America/United States/Oregon/Portland/Trail Blazers
+					Pacific
+						Clippers -> /Places/North America/United States/California/Los Angeles/Clippers
+						Kings -> /Places/North America/United States/California/Sacramento/Kings
+						Lakers -> /Places/North America/United States/California/Los Angeles/Lakers
+						Suns -> /Places/North America/United States/Arizona/Phoenix/Suns
+						Warriors -> /Places/North America/United States/California/Oakland/Warriors
+					Southwest
+						Grizzlies -> /Places/North America/United States/Tennessee/Memphis/Grizzlies
+						Hornets -> /Places/North America/United States/Louisiana/New Orleans/Hornets
+						Mavericks -> /Places/North America/United States/Texas/Dallas/Mavericks
+						Rockets -> /Places/North America/United States/Texas/Houston/Rockets
+						Spurs -> /Places/North America/United States/Texas/San Antonio/Spurs
+		Football
+			NFL
+				American League
+					East
+						Bills -> /Places/North America/United States/New York/Buffalo/Bills
+						Dolphins -> /Places/North America/United States/Florida/Miami/Dolphins
+						Jets -> /Places/North America/United States/New York/New York/Jets
+						Patriots -> /Places/North America/United States/Massachusetts/Boston/Patriots
+					North
+						Bengals -> /Places/North America/United States/Ohio/Cincinnati/Bengals
+						Browns -> /Places/North America/United States/Ohio/Cleveland/Browns
+						Ravens -> /Places/North America/United States/Maryland/Baltimore/Ravens
+						Steelers -> /Places/North America/United States/Pennsylvania/Pittsburgh/Steelers
+					South
+						Colts -> /Places/North America/United States/Indiana/Indianapolis/Colts
+						Jaguars -> /Places/North America/United States/Florida/Jacksonville/Jaguars
+						Texans -> /Places/North America/United States/Texas/Houston/Texans
+						Titans -> /Places/North America/United States/Tennessee/Nashville/Titans
+					West
+						Broncos -> /Places/North America/United States/Colorado/Denver/Broncos
+						Chargers -> /Places/North America/United States/California/San Diego/Chargers
+						Chiefs -> /Places/North America/United States/Missouri/Kansas City/Chiefs
+						Raiders -> /Places/North America/United States/California/Oakland/Raiders
+				National League
+					East
+						Cowboys -> /Places/North America/United States/Texas/Dallas/Cowboys
+						Eagles -> /Places/North America/United States/Pennsylvania/Philadelphia/Eagles
+						Giants -> /Places/North America/United States/New York/New York/Giants
+						Redskins -> /Places/North America/United States/District of Columbia/Redskins
+					North
+						Bears -> /Places/North America/United States/Illinois/Chicago/Bears
+						Lions -> /Places/North America/United States/Michigan/Detroit/Lions
+						Packers -> /Places/North America/United States/Wisconsin/Green Bay/Packers
+						Vikings -> /Places/North America/United States/Minnesota/Minneapolis/Vikings
+					South
+						Buccaneers -> /Places/North America/United States/Florida/Tampa/Buccaneers
+						Falcons -> /Places/North America/United States/Georgia/Atlanta/Falcons
+						Panthers -> /Places/North America/United States/North Carolina/Charlotte/Panthers
+						Saints -> /Places/North America/United States/Louisiana/New Orleans/Saints
+					West
+						49ers -> /Places/North America/United States/California/San Francisco/49ers
+						Cardinals -> /Places/North America/United States/Arizona/Tempe/Cardinals
+						Rams -> /Places/North America/United States/Missouri/St. Louis/Rams
+						Seahawks -> /Places/North America/United States/Washington/Seattle/Seahawks
+		Hockey
+			NHL
+				Eastern
+					Atlantic
+						Devils -> /Places/North America/United States/New Jersey/East Rutherford/Devils
+						Flyers -> /Places/North America/United States/Pennsylvania/Philadelphia/Flyers
+						Islanders -> /Places/North America/United States/New York/New York/Islanders
+						Penguins -> /Places/North America/United States/Pennsylvania/Pittsburgh/Penguins
+						Rangers -> /Places/North America/United States/New York/New York/Rangers
+					Northeast
+						Bruins -> /Places/North America/United States/Massachusetts/Boston/Bruins
+						Canadiens -> /Places/North America/Canada/QuŽbec/MontrŽal/Canadiens
+						Maple Leafs -> /Places/North America/Canada/Ontario/Toronto/Maple Leafs
+						Sabres -> /Places/North America/United States/New York/Buffalo/Sabres
+						Senators -> /Places/North America/Canada/Ontario/Ottawa/Senators
+					Southeast
+						Capitals -> /Places/North America/United States/District of Columbia/Capitals
+						Hurricanes -> /Places/North America/United States/North Carolina/Raleigh/Hurricanes
+						Lightning -> /Places/North America/United States/Florida/Tampa/Lightning
+						Panthers -> /Places/North America/United States/Florida/Sunrise/Panthers
+						Thrashers -> /Places/North America/United States/Georgia/Atlanta/Thrashers
+				Western
+					Central
+						Blackhawks -> /Places/North America/United States/Illinois/Chicago/Blackhawks
+						Blue Jackets -> /Places/North America/United States/Ohio/Columbus/Blue Jackets
+						Blues -> /Places/North America/United States/Missouri/St. Louis/Blues
+						Predators -> /Places/North America/United States/Tennessee/Nashville/Predators
+						Red Wings -> /Places/North America/United States/Michigan/Detroit/Red Wings
+					Northwest
+						Avalanche -> /Places/North America/United States/Colorado/Denver/Avalanche
+						Canucks -> /Places/North America/Canada/British Columbia/Vancouver/Canucks
+						Flames -> /Places/North America/Canada/Alberta/Calgary/Flames
+						Oilers -> /Places/North America/Canada/Alberta/Edmonton/Oilers
+						Wild -> /Places/North America/United States/Minnesota/Minneapolis/Wild
+					Pacific
+						Coyotes -> /Places/North America/United States/Arizona/Phoenix/Coyotes
+						Kings -> /Places/North America/United States/California/Los Angeles/Kings
+						Mighty Ducks -> /Places/North America/United States/California/Anaheim/Mighty Ducks
+						Sharks -> /Places/North America/United States/California/San Jose/Sharks
+						Stars -> /Places/North America/United States/Texas/Dallas/Stars
+Unfiled

@@ -1,0 +1,23 @@
+KavaSoft releases KavaTunes 3.2, the web jukebox for iTunes
+
+FOR IMMEDIATE RELEASE
+
+July 18, 2008 - KavaSoft today released KavaTunes 3.2, the web jukebox for iTunes. KavaTunes makes websites that look and work just like iTunes, so you can browse, search and play your music from any web browser. KavaTunes features continuous playback, so you can queue up an album or playlist and listen to one song after another. 
+
+KavaTunes can add album artwork to your music library, and includes artwork in the catalog. KavaTunes can also create web catalogs that look and work just like an iPod. Visitors can browse and play your music using the familiar iPod clickwheel interface. 
+
+Your web catalog is a great way to introduce everyone to your favorite music. Your personalized home page shows your most played artists, recently added albums, recently played songs, and top rated albums. Visitors can then click on the music they like, listen to it online, and buy it directly from the iTunes Store.
+
+KavaTunes 3.2 features a newly resdesigned music preferences pane. Users can choose whether to allow visitors to download music from their website, and can customize the volume of music for optimum playback. 
+
+KavaTunes costs $35, and can be purchased using PayPal or Kagi. You can try all the features of KavaTunes on part of your library for free.
+
+KavaSoft also announced Shoebox 1.7.3, the world's smartest photo orgnizer, and Curator 1.1.2, the artwork manager for iTunes. More information is available on the KavaSoft website.
+
+	http://www.kavasoft.com/
+
+Visit the Press Info page for press releases, high-resolution icons, screenshots, and a form to request an evaluation license. 
+
+	http://www.kavasoft.com/press/
+
+###

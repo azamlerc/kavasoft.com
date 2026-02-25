@@ -1,0 +1,183 @@
+<HTML><HEAD><TITLE>iConquer - Developer - Documentation - ICDeck</TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+<a href="index.html"><img src="iConquer_logo.jpg" alt="" width="203" height="55"></a>
+
+<FONT COLOR="#000066"><H1><A NAME="//apple_ref/occ/cl/ICDeck">ICDeck</A></H1></FONT><BR>
+
+
+
+	<blockquote><DL><DT><B>Inherits From:</B></DT>  
+	<DD>NSObject</DD>
+</DL></blockquote>
+
+
+
+	<blockquote><DL><DT><B>Conforms To:</B></DT>
+	<DD>NSCoding</DD>
+</DL></blockquote>
+
+
+	<blockquote><DL><DT><B>Declared In:</B></DT>
+	<DD>ICDeck.h</DD>
+	</DL></blockquote>
+
+<BR><BR>
+
+
+<H2>Class Description</H2>
+The ICDeck class manages all the cards in the game.
+
+
+<!--
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Variables</H2>
+	<blockquote>
+	
+		<CODE>NSMutableArray *<B>allCards</B>;</CODE><BR>
+		<CODE>NSMutableArray *<B>cards</B>;</CODE><BR>
+		<CODE>NSMutableArray *<B>discardedCards</B>;</CODE><BR>
+	<P><TABLE>
+	
+		<TR><TD>allCards</TD><TD>All the cards in the game.</TD></TR>
+	
+		<TR><TD>cards</TD><TD>The cards in the draw pile.</TD></TR>
+	
+		<TR><TD>discardedCards</TD><TD>The cards in the discard pile.</TD></TR>
+	
+	</TABLE>
+	</blockquote>
+
+-->
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Method Types</H2>
+	<blockquote>
+	
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- initWithCountries:">- initWithCountries:</A></DD>
+		
+			<DD> <A HREF="#- allCards">- allCards</A></DD>
+		
+			<DD> <A HREF="#- setAllCards:">- setAllCards:</A></DD>
+		
+			<DD> <A HREF="#- cards">- cards</A></DD>
+		
+			<DD> <A HREF="#- setCards:">- setCards:</A></DD>
+		
+			<DD> <A HREF="#- discardedCards">- discardedCards</A></DD>
+		
+			<DD> <A HREF="#- setDiscardedCards:">- setDiscardedCards:</A></DD>
+		
+			<DD> <A HREF="#- takeCard">- takeCard</A></DD>
+		
+			<DD> <A HREF="#- discard:">- discard:</A></DD>
+		
+			<DD> <A HREF="#- shuffle">- shuffle</A></DD>
+		
+		</DL>
+	
+	</blockquote>
+
+
+
+
+ 
+
+	<HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Methods</H2>
+ 
+	
+		
+		<A NAME="- allCards"></A><H3><A NAME="//apple_ref/occ/instm/ICDeck/allCards">allCards</A></H3><P>
+		<CODE>- (NSMutableArray *)<B>allCards</B>
+		</CODE><P>
+		All the cards in the game.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- cards"></A><H3><A NAME="//apple_ref/occ/instm/ICDeck/cards">cards</A></H3><P>
+		<CODE>- (NSMutableArray *)<B>cards</B>
+		</CODE><P>
+		The cards in the draw pile.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- discard:"></A><H3><A NAME="//apple_ref/occ/instm/ICDeck/discard:">discard:</A></H3><P>
+		<CODE>- (void)<B>discard:</B>(NSArray *)<EM>someCards</EM>
+			
+		</CODE><P>
+		Puts the cards in the discard pile.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- discardedCards"></A><H3><A NAME="//apple_ref/occ/instm/ICDeck/discardedCards">discardedCards</A></H3><P>
+		<CODE>- (NSMutableArray *)<B>discardedCards</B>
+		</CODE><P>
+		The cards in the discard pile.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- initWithCountries:"></A><H3><A NAME="//apple_ref/occ/instm/ICDeck/initWithCountries:">initWithCountries:</A></H3><P>
+		<CODE>- (id)<B>initWithCountries:</B>(NSArray *)<EM>countries</EM>
+			
+		</CODE><P>
+		Initializes up the deck with one card for each country in <I><I>countries</I></I>, plus two wild cards.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setAllCards:"></A><H3><A NAME="//apple_ref/occ/instm/ICDeck/setAllCards:">setAllCards:</A></H3><P>
+		<CODE>- (void)<B>setAllCards:</B>(NSMutableArray *)<EM>value</EM>
+			
+		</CODE><P>
+		Sets all the cards in the game.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setCards:"></A><H3><A NAME="//apple_ref/occ/instm/ICDeck/setCards:">setCards:</A></H3><P>
+		<CODE>- (void)<B>setCards:</B>(NSMutableArray *)<EM>value</EM>
+			
+		</CODE><P>
+		Sets the cards in the draw pile.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setDiscardedCards:"></A><H3><A NAME="//apple_ref/occ/instm/ICDeck/setDiscardedCards:">setDiscardedCards:</A></H3><P>
+		<CODE>- (void)<B>setDiscardedCards:</B>(NSMutableArray *)<EM>value</EM>
+			
+		</CODE><P>
+		Sets the cards in the discard pile.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- shuffle"></A><H3><A NAME="//apple_ref/occ/instm/ICDeck/shuffle">shuffle</A></H3><P>
+		<CODE>- (void)<B>shuffle</B>
+		</CODE><P>
+		Shuffles the cards in the discard pile and places them in the draw pile.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- takeCard"></A><H3><A NAME="//apple_ref/occ/instm/ICDeck/takeCard">takeCard</A></H3><P>
+		<CODE>- (ICCard *)<B>takeCard</B>
+		</CODE><P>
+		Returns the top card in the draw pile. If there are no cards in the draw pile, calls <B>shuffle</B>.
+	
+
+
+
+
+<P><HR>
+Version 1.1 Copyright &copy;2003 by KavaSoft.  All Rights Reserved.  
+<P>
+</BODY></HTML>

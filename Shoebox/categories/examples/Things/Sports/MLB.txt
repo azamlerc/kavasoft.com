@@ -1,0 +1,33 @@
+/Things/Sports/Baseball/MLB
+American League
+	Angels -> /Places/North America/United States/California/Anaheim/Angels
+	Orioles -> /Places/North America/United States/Maryland/Baltimore/Orioles
+	Red Sox -> /Places/North America/United States/Massachusetts/Boston/Red Sox
+	Indians -> /Places/North America/United States/Ohio/Cleveland/Indians
+	White Sox -> /Places/North America/United States/Illinois/Chicago/White Sox
+	Tigers -> /Places/North America/United States/Michigan/Detroit/Tigers
+	Royals -> /Places/North America/United States/Missouri/Kansas City/Royals
+	Twins -> /Places/North America/United States/Minnesota/Minneapolis/Twins
+	Yankees -> /Places/North America/United States/New York/New York/Yankees
+	Athletics -> /Places/North America/United States/California/Oakland/Athletics
+	Mariners -> /Places/North America/United States/Washington/Seattle/Mariners
+	Devil Rays -> /Places/North America/United States/Florida/Tampa/Devil Rays
+	Rangers -> /Places/North America/United States/Texas/Arlington/Rangers
+	Blue Jays -> /Places/North America/Canada/Ontario/Toronto/Blue Jays
+National League
+	Diamondbacks -> /Places/North America/United States/Arizona/Phoenix/Diamondbacks
+	Braves -> /Places/North America/United States/Georgia/Atlanta/Braves
+	Cubs -> /Places/North America/United States/Illinois/Chicago/Cubs
+	Reds -> /Places/North America/United States/Ohio/Cincinnati/Reds
+	Rockies -> /Places/North America/United States/Colorado/Denver/Rockies
+	Marlins -> /Places/North America/United States/Florida/Miami/Marlins
+	Astros -> /Places/North America/United States/Texas/Houston/Astros
+	Dodgers -> /Places/North America/United States/California/Los Angeles/Dodgers
+	Brewers -> /Places/North America/United States/Wisconsin/Milwaukee/Brewers
+	Mets -> /Places/North America/United States/New York/Flushing/Mets
+	Phillies -> /Places/North America/United States/Pennsylvania/Philadelphia/Phillies
+	Pirates -> /Places/North America/United States/Pennsylvania/Pittsburgh/Pirates
+	Padres -> /Places/North America/United States/California/San Diego/Padres
+	Giants -> /Places/North America/United States/California/San Francisco/Giants
+	Cardinals -> /Places/North America/United States/Missouri/St. Louis/Cardinals
+	Nationals -> /Places/North America/United States/District of Columbia/Nationals

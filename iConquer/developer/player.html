@@ -1,0 +1,114 @@
+<html>
+<head>
+	<title>iConquer - Developer - Players</title>
+	<link rel="SHORTCUT ICON" href="http://www.kavasoft.com/iConquer/favicon.ico"> 
+	<link rel="stylesheet" type="text/css" href="../styles.css" media="screen" />
+</head>
+<BODY BGCOLOR=#FFFFFF>
+
+<center>
+<TABLE WIDTH="700" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+	<TR>
+		<TD>
+			<a href="index.html"><IMG SRC="developer_header.jpg" WIDTH=700 HEIGHT=300></a>
+		</TD>
+	</TR>
+<TR><TD colspan=2 align=center>
+<TABLE WIDTH="700" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+	<TR>
+		<TD WIDTH="520" valign=top>
+			<FONT FACE="Lucida Grande,Geneva,Arial,Helvetica,sans-serif" SIZE=2>
+			
+<P>
+<B>Developing Player Plug-ins</B>
+<P>
+
+The artificial intelligence algorithms used by computer players are defined in player plug-ins. Each player plug-in is a bundle that contain a subclass of ICComputerPlayer. 
+
+<P>
+<P>
+<B>Class Documentation</B>
+<P>
+Complete documentation for the classes you will need to interact with are available below. 
+<UL>
+<LI> <a href="documentation/ICGame.html">ICGame</a>
+<LI> <a href="documentation/ICPlayer.html">ICPlayer</a>
+<UL>
+<LI> <a href="documentation/ICComputerPlayer.html">ICComputerPlayer</a> 
+</UL>
+<LI> <a href="documentation/ICCountry.html">ICCountry</a>
+<LI> <a href="documentation/ICCard.html">ICCard</a>
+</UL>
+<p>
+You may also view the source of the <a href="documentation/ICComputerPlayer.m">ICComputerPlayer</a> class.
+<P>
+<B>Methods to override</B>
+<P>
+Your subclass must override the following ICPlayer methods. Click each method name for a detailed description of what the method should do, including a sample implementation.<P>
+
+<blockquote>
+<A HREF="documentation/ICPlayer.html#- pickCountry">- pickCountry</A><!--<blockquote><font size=-1>Tells the player to pick a country.</font></blockquote>--><BR>
+
+<A HREF="documentation/ICPlayer.html#- assignInitialArmies">- assignInitialArmies</A><!--<blockquote><font size=-1>Tells the player to place initial armies at the beginning of the game.</font></blockquote>--><BR>
+
+<A HREF="documentation/ICPlayer.html#- assignArmiesFromIncome">- assignArmiesFromIncome</A><!--<blockquote><font size=-1>Tells the player to assign armies from their income at the beginning of the turn.</font></blockquote>--><BR>
+
+<A HREF="documentation/ICPlayer.html#- assignArmiesFromConquer">- assignArmiesFromConquer</A><!--<blockquote><font size=-1>Tells the player to assign armies because they have eliminated a player and acquired at least five cards.</font></blockquote>--><BR>
+
+<A HREF="documentation/ICPlayer.html#- advanceArmiesFrom:to:">- advanceArmiesFrom:to:</A><!--<blockquote><font size=-1>Allows the player to decide how to advance armies after winning a battle.</font></blockquote>--><BR>
+
+<A HREF="documentation/ICPlayer.html#- attack">- attack</A><!--<blockquote><font size=-1>Sent to computer players when they should attack.</font></blockquote>--><BR>
+
+<A HREF="documentation/ICPlayer.html#- fortify">- fortify</A><!--<blockquote><font size=-1>Sent to computer players when they should fortify.</font></blockquote>--><BR>
+
+<A HREF="documentation/ICPlayer.html#- fortifyArmiesFrom:">- fortifyArmiesFrom:</A><!--<blockquote><font size=-1>Called when a player decides to fortify armies from a country.</font></blockquote>--><BR>
+</blockquote>
+
+<p>
+Xcode will automatically create a project with a complete player implementation. You simply need to modify the code for the above methods.
+<P>
+<a name="Interacting"></a><B>Interacting with countries</B>
+<P>
+Most of your activities will involve picking, placing armies in, or attacking countries. There are a few arrays of countries that facilitate these activities. <P>
+The game's <a href="documentation/ICGame.html#-%20unallocatedCountries">unallocatedCountries</a> array contains the unpicked countries that your player can pick from at the beginning of the game. 
+<P>
+The <a href="documentation/ICPlayer.html#-%20destinationCountries">destinationCountries</a> array contains the countries in which you are allowed to place armies at the current point in the game.  For example, when you receive a <b>fortifyArmiesFrom:</b> message, unallocatedCountries will contain the given country and its neighbors.
+<P>
+You can set the <a href="documentation/ICComputerPlayer.html#-%20victims">victims</a> array to the countries you want to attack, and the <a href="documentation/ICComputerPlayer.html#-%20attackers">attackers</a> array to the countries you want to attack from. Convenience methods in ICComputerPlayer facilitate allocating armies to the attackers and attacking the victims.
+
+<P>
+<a name="Building"></a><B>Building your plug-in</B>
+<P>
+When building player plug-ins, be sure that iConquer is located in your Applications folder (at <tt>/&zwj;Applications&zwj;/&zwj;iConquer.app</tt>). This is necessary because player plug-ins link with the <tt>iConquerGame.framework</tt>, which is located inside the iConquer application bundle. You can then <a href="index.html#Installing">install</a> and test your player plug-in.
+
+
+
+		</TD>
+		<TD WIDTH="20">
+			<!-- separator -->		
+		</TD>
+		<TD WIDTH="160" valign=top>
+			<FONT FACE="Lucida Grande,Geneva,Arial,Helvetica,sans-serif" SIZE=1>
+
+
+			</FONT>
+		</TD>
+	</TR>
+
+
+</table>
+
+<FONT FACE="Lucida Grande,Geneva,Arial,Helvetica,sans-serif" SIZE=1><P>
+	<a href="../index.php">Home</a> | 
+	<a href="../plugins/index.php">Maps</a> | 
+	<a href="../developer/index.php">Developer</a> | 
+	<a href="../download/index.php">Download</a> | 
+	<a href="../../store/index.php?iconquer=1">Buy Now</a>
+
+<P>
+&copy; 2002-2006 KavaSoft.<BR>
+All rights reserved.
+
+</center>
+</body>
+</html>

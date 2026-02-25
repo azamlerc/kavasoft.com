@@ -1,0 +1,70 @@
+<?php
+
+include('licenses.php');
+require 'DB.php';
+$dbh = DB::connect('mysql://kavasoft_admin:KaVaDaTa@localhost/kavasoft_licenses');
+
+set_error_handler('handle_error');
+
+function handle_error($errno, $error, $file, $line) {
+	maczot_log("Error: $error in $file:$line");
+}
+
+function maczot_log($error) {
+	if (strpos($error, 'references should be returned by reference')) return;
+	error_log(date('m/d/Y H:i:s') . " $error\n", 3, 'logs/maczot.txt');
+}
+
+function maczot_error($error) {
+	$message = "There was an error with the following purchase:\n\n$error\n\nmethod: PayPal\n";
+	foreach ($_GET as $key => $value) $message .= "$key: $value\n";
+	send_message('info@kavasoft.com', "Purchase error", $message);
+	maczot_log($error . ' (sent email)');
+}
+
+function get_value($key) {
+	return array_key_exists($key, $_GET) ? urldecode($_GET[$key]) : null;	
+}
+
+$item_name = get_value('product');
+$payment_amount = get_value('price');
+$full_name = get_value('name');
+$payer_email =  get_value('email');
+
+$txn_id = "MZ" . rand(100000, 999999) . rand(100000, 999999);
+
+$program = get_program($item_name);
+$language = 'English';
+
+$language_code = 'en';
+$version = '';
+
+maczot_log("");
+maczot_log("Processed $item_name order for $full_name <$payer_email>.");
+
+if (transaction_id_exists($dbh, $txn_id)) { 
+	maczot_log("Transaction ID already used: $txn_id"); // no email for this
+} else if (!$program) { 
+	maczot_error("Invalid program: $item_name");
+} else {
+	$subject = maczot_subject($language_code);
+	$message = maczot_message($full_name, $program, $payer_email, $language_code);
+	send_message("$full_name <$payer_email>", $subject, $message, 'store@kavasoft.com', 'info@kavasoft.com');
+	
+	$date_paid = date('Y-m-d');
+	
+	$result = save_license($dbh, $full_name, $payer_email, $program, null, null,
+		$date_paid, $payment_amount, 'MacZOT', $language, $version, null, $txn_id);
+
+	maczot_log("Emailed $payer_email.");
+	
+	echo("<html><body>");
+	echo("Name: $full_name<br>");
+	echo("Email: $payer_email<br>");
+	echo("Product: $item_name<br>");
+	echo("Price: $payment_amount<br>");
+	echo("Transaction: $txn_id<br>");
+	echo("<body><html>");
+}
+
+?>

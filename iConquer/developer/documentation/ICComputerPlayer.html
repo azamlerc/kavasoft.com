@@ -1,0 +1,256 @@
+<HTML><HEAD><TITLE>iConquer - Developer - Documentation - ICComputerPlayer</TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+<a href="index.html"><img src="iConquer_logo.jpg" alt="" width="203" height="55"></a>
+
+<FONT COLOR="#000066"><H1><A NAME="//apple_ref/occ/cl/ICComputerPlayer">ICComputerPlayer</A></H1></FONT><BR>
+
+
+
+	<blockquote><DL><DT><B>Inherits From:</B></DT>  
+	<DD>ICPlayer</DD>
+</DL></blockquote>
+
+
+
+
+
+	<blockquote><DL><DT><B>Declared In:</B></DT>
+	<DD>ICComputerPlayer.h</DD>
+	</DL></blockquote>
+
+<BR><BR>
+
+
+<H2>Class Description</H2>
+ICComputerPlayer is an abstract superclass of all computer players. It contains a number of convenience methods to simplify the design of computer players.
+
+
+<!--
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Variables</H2>
+	<blockquote>
+	
+		<CODE>NSMutableArray *<B>attackers</B>;</CODE><BR>
+		<CODE>NSMutableArray *<B>victims</B>;</CODE><BR>
+	<P><TABLE>
+	
+		<TR><TD>attackers</TD><TD>No description.</TD></TR>
+	
+		<TR><TD>victims</TD><TD>No description.</TD></TR>
+	
+	</TABLE>
+	</blockquote>
+
+-->
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Method Types</H2>
+	<blockquote>
+	
+		
+			Turning in cards
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- turnInCardsIfPossible">- turnInCardsIfPossible</A></DD>
+		
+		</DL>
+	
+		
+			Placing armies
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- allocateArmiesRandomly">- allocateArmiesRandomly</A></DD>
+		
+			<DD> <A HREF="#- allocateArmiesToMostThreatenedCountries">- allocateArmiesToMostThreatenedCountries</A></DD>
+		
+			<DD> <A HREF="#- allocateArmiesRandomlyToMostThreatenedCountries">- allocateArmiesRandomlyToMostThreatenedCountries</A></DD>
+		
+			<DD> <A HREF="#- allocateArmiesToAttackers">- allocateArmiesToAttackers</A></DD>
+		
+		</DL>
+	
+		
+			Attacking
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- attackVulnerableCountries">- attackVulnerableCountries</A></DD>
+		
+			<DD> <A HREF="#- attackRandomCountries">- attackRandomCountries</A></DD>
+		
+			<DD> <A HREF="#- attackVictimsWithAttackers">- attackVictimsWithAttackers</A></DD>
+		
+			<DD> <A HREF="#- pickAttackersAndVictims">- pickAttackersAndVictims</A></DD>
+		
+			<DD> <A HREF="#- calculateAttackPaths">- calculateAttackPaths</A></DD>
+		
+			<DD> <A HREF="#- attackers">- attackers</A></DD>
+		
+			<DD> <A HREF="#- setAttackers:">- setAttackers:</A></DD>
+		
+			<DD> <A HREF="#- victims">- victims</A></DD>
+		
+			<DD> <A HREF="#- setVictims:">- setVictims:</A></DD>
+		
+		</DL>
+	
+		
+			Defending
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- armiesToReserveForDefense">- armiesToReserveForDefense</A></DD>
+		
+			<DD> <A HREF="#- fortifyVulnerableCountries">- fortifyVulnerableCountries</A></DD>
+		
+			<DD> <A HREF="#- updateReserveArmies">- updateReserveArmies</A></DD>
+		
+		</DL>
+	
+	</blockquote>
+
+
+
+
+ 
+
+	<HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Methods</H2>
+ 
+	
+		
+		<A NAME="- allocateArmiesRandomly"></A><H3><A NAME="//apple_ref/occ/instm/ICComputerPlayer/allocateArmiesRandomly">allocateArmiesRandomly</A></H3><P>
+		<CODE>- (void)<B>allocateArmiesRandomly</B>
+		</CODE><P>
+		Randomly places armies in the destination countries.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- allocateArmiesRandomlyToMostThreatenedCountries"></A><H3><A NAME="//apple_ref/occ/instm/ICComputerPlayer/allocateArmiesRandomlyToMostThreatenedCountries">allocateArmiesRandomlyToMostThreatenedCountries</A></H3><P>
+		<CODE>- (void)<B>allocateArmiesRandomlyToMostThreatenedCountries</B>
+		</CODE><P>
+		Same as <B>allocateArmiesToMostThreatenedCountries</B>, except distributes armies a little more evenly and less predictably. 
+Specifically, most armies are placed in the most threatened few countries, while a few armies are randomly distributed among the other countries.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- allocateArmiesToAttackers"></A><H3><A NAME="//apple_ref/occ/instm/ICComputerPlayer/allocateArmiesToAttackers">allocateArmiesToAttackers</A></H3><P>
+		<CODE>- (void)<B>allocateArmiesToAttackers</B>
+		</CODE><P>
+		For each victim country, while there are unallocated armies, places enough armies in the country that will be used to attack the victim to have a good chance of counquering the victim.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- allocateArmiesToMostThreatenedCountries"></A><H3><A NAME="//apple_ref/occ/instm/ICComputerPlayer/allocateArmiesToMostThreatenedCountries">allocateArmiesToMostThreatenedCountries</A></H3><P>
+		<CODE>- (void)<B>allocateArmiesToMostThreatenedCountries</B>
+		</CODE><P>
+		Places armies in the most threatened destination countries. 
+While there are unallocated armies, places an army in the most threatened country. 
+The threat level is defined as the number of adjacent enemy armies minus the number of armies.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- armiesToReserveForDefense"></A><H3><A NAME="//apple_ref/occ/instm/ICComputerPlayer/armiesToReserveForDefense">armiesToReserveForDefense</A></H3><P>
+		<CODE>- (float)<B>armiesToReserveForDefense</B>
+		</CODE><P>
+		The portion of armies to reserve for defense. If this method returns 0.0, all armies will be used for attacking. If it returns 1.0, no armies will be used for attacking.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- attackRandomCountries"></A><H3><A NAME="//apple_ref/occ/instm/ICComputerPlayer/attackRandomCountries">attackRandomCountries</A></H3><P>
+		<CODE>- (BOOL)<B>attackRandomCountries</B>
+		</CODE><P>
+		Tells each of the player's countries to randomly attack their neighbors. Returns <CODE>NO</CODE> if the player conquers a country. Returns <CODE>YES</CODE> if there are not enough armies to continue attacking.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- attackVictimsWithAttackers"></A><H3><A NAME="//apple_ref/occ/instm/ICComputerPlayer/attackVictimsWithAttackers">attackVictimsWithAttackers</A></H3><P>
+		<CODE>- (BOOL)<B>attackVictimsWithAttackers</B>
+		</CODE><P>
+		Tries to attack each country in the <I>victims</I> array.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- attackVulnerableCountries"></A><H3><A NAME="//apple_ref/occ/instm/ICComputerPlayer/attackVulnerableCountries">attackVulnerableCountries</A></H3><P>
+		<CODE>- (BOOL)<B>attackVulnerableCountries</B>
+		</CODE><P>
+		Tells each of the player's countries to attack their most vulnerable neighbors. Returns <CODE>NO</CODE> if the player conquers a country. Returns <CODE>YES</CODE> if there are not enough armies to continue attacking.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- attackers"></A><H3><A NAME="//apple_ref/occ/instm/ICComputerPlayer/attackers">attackers</A></H3><P>
+		<CODE>- (NSMutableArray *)<B>attackers</B>
+		</CODE><P>
+		The countries you would like to attack from.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- calculateAttackPaths"></A><H3><A NAME="//apple_ref/occ/instm/ICComputerPlayer/calculateAttackPaths">calculateAttackPaths</A></H3><P>
+		<CODE>- (void)<B>calculateAttackPaths</B>
+		</CODE><P>
+		Calculates attack paths for all countries. After calling this method, every unowned country will have its <I>attackPath</I> array set to the countries along the optimum attack path from an owned country.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- fortifyVulnerableCountries"></A><H3><A NAME="//apple_ref/occ/instm/ICComputerPlayer/fortifyVulnerableCountries">fortifyVulnerableCountries</A></H3><P>
+		<CODE>- (void)<B>fortifyVulnerableCountries</B>
+		</CODE><P>
+		Sends the <B>fortifyArmiesFrom:</B> message to all countries with armies that can be moved.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- pickAttackersAndVictims"></A><H3><A NAME="//apple_ref/occ/instm/ICComputerPlayer/pickAttackersAndVictims">pickAttackersAndVictims</A></H3><P>
+		<CODE>- (void)<B>pickAttackersAndVictims</B>
+		</CODE><P>
+		Override this method to pick attackers and victims. You should call this method before placing armies at the beginning of hte turn. It will also be called by <B>attackVictimsWithAttackers</B> if all the victims have been conquered.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setAttackers:"></A><H3><A NAME="//apple_ref/occ/instm/ICComputerPlayer/setAttackers:">setAttackers:</A></H3><P>
+		<CODE>- (void)<B>setAttackers:</B>(NSMutableArray *)<EM>value</EM>
+			
+		</CODE><P>
+		Sets the countries you would like to attack from. You may call this method from your implementation of <B>pickAttackersAndVictims</B>. When attacking using <B>attackVictimsWithAttackers</B>, attacks are actually launched from the first country in each country's <I>attackPath</I>.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- setVictims:"></A><H3><A NAME="//apple_ref/occ/instm/ICComputerPlayer/setVictims:">setVictims:</A></H3><P>
+		<CODE>- (void)<B>setVictims:</B>(NSMutableArray *)<EM>value</EM>
+			
+		</CODE><P>
+		Sets the countries you would like to attack. You should call this method from your implementation of <B>pickAttackersAndVictims</B>.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- turnInCardsIfPossible"></A><H3><A NAME="//apple_ref/occ/instm/ICComputerPlayer/turnInCardsIfPossible">turnInCardsIfPossible</A></H3><P>
+		<CODE>- (void)<B>turnInCardsIfPossible</B>
+		</CODE><P>
+		Checks to see if there are sets of cards that can be turned in. If so, turns them in. This method can be called by <B>assignArmiesFromIncome</B>.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- updateReserveArmies"></A><H3><A NAME="//apple_ref/occ/instm/ICComputerPlayer/updateReserveArmies">updateReserveArmies</A></H3><P>
+		<CODE>- (void)<B>updateReserveArmies</B>
+		</CODE><P>
+		Sets aside a certain portion of armies in each of the player's countries to use for defense. These armies will not be used when attacking. The portion used for defense is determined by the value returned by <B>armiesToReserveForDefense</B>.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- victims"></A><H3><A NAME="//apple_ref/occ/instm/ICComputerPlayer/victims">victims</A></H3><P>
+		<CODE>- (NSMutableArray *)<B>victims</B>
+		</CODE><P>
+		The countries you would like to attack. The method <B>attackVictimsWithAttackers</B> will try to attack the countries in victims.
+	
+
+
+
+
+<P><HR>
+Version 1.1 Copyright &copy;2003 by KavaSoft.  All Rights Reserved.  
+<P>
+</BODY></HTML>

@@ -1,0 +1,23 @@
+HyperImage 3.5, the ultimate Tumblr app for Mac
+
+FOR IMMEDIATE RELEASE
+
+September 24, 2010 - KavaSoft has released HyperImage 3.5, an application for downloading web photo galleries. HyperImage 3.5 is the ultimate app for downloading entire Tumblr blogs, and posting photos to your own blog.
+
+There are millions of images on the web, but how do you find and download them without clicking on them one at a time? HyperImage is an industrial-strength tool for searching the web and downloading entire websites worth of pictures. Just enter an address or keyword, and watch as thousands of pictures stream down to your computer.
+
+Tumblr is an awesome community for blogging and reblogging photos. HyperImage helps you do everything you can do on the Tumblr website, but in a better way. Just enter the address of a Tumblr blog, and HyperImage will download ALL of the photos... with blinding speed, at the highest resolution, starting with the most recent photos. Browse through photos from your favorite Tumblr blogs with one consistent, familiar, clutter-free interface. 
+
+The Tumblr dashboard shows the most recently posted photos on the blogs you're following. With one click of a button, HyperImage can download the top 250 photos from your dashboard and present them in an instant slideshow. It's the best way to stay up-to-date with the blogs you're following, and find new photos to reblog. 
+
+Tumblr is all about sharing, and HyperImage is the ultimate way to blog your favorite photos. Post any picture to your Tumblr blog with one click. Whatever the source, HyperImage can reblog photos from Tumblr, share photos from other websites, and upload pictures from your computer. You can add captions and tags, and juggle multiple blogs with ease.
+
+HyperImage includes a built-in image browser with infinitely resizable thumbnails, and can show a a full-screen slideshow of images as they are being downloaded. It's hyperthreaded, so it downloads images at amazing speed. The activity viewer lets you see what the web crawler is doing, and the preferences let you precisely control where it goes. 
+
+HyperImage smartly follows RSS feeds, and makes downloading consecutively numbered images a snap. It knows how to deal with gallery websites that require a login, such as pay-per-content and adult-themed sites, using passwords from your keychain and cookies from your browser. 
+
+HyperImage is available for $25. You can try it for free, and images downloaded with an unlicensed copy will contain a watermark. HyperImage requires Mac OS X Snow Leopard and is 64-bit optimized.
+
+Our affiliate program lets webmasters promote HyperImage, offer their readers a discount, and receive a portion of sales. It's a great way for webmasters and bloggers to help readers download their content. 
+
+###

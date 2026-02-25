@@ -1,0 +1,19 @@
+Introducing Curator 1.3. The artwork manager for iTunes.
+
+FOR IMMEDIATE RELEASE
+
+February 4, 2010 - KavaSoft announces Curator 1.3 for Mac OS X, the artwork manager for iTunes. Curator downloads album covers from the internet and adds them to your iTunes music library.
+
+Curator is the solution for people who like to micro-manage their artwork collection, or have obscure albums with hard-to-find covers. Curator is unique in letting you manage artwork in your library on an album-by-album basis, so you can download as much or as little artwork as you want. Indicators show you at a glance which albums have missing artwork. 
+
+Curator can even find artwork for unusual albums by looking them up on Amazon.com, the largest collection of music on the internet. Curator also helps you find artwork for foreign titles by searching all of Amazon.com's international sites. 
+
+Curator can handle special editions and multiple artwork for one album. It can show you when it finds several answers and lets you choose the one you like best.  
+
+Curator lets you take full advantage of Cover Flow, Front Row, and the Apple TV keeping your artwork collection complete. Curator also helps you add artwork to your iPod, so you can see artwork on your iPod display while your music plays. 
+
+Curator is a universal application, and requires Mac OS X 10.5 or later. It is available in English, French, German, Japanese, Italian and Dutch. 
+
+Curator costs $25. You can try all the features of Curator on part of your library for free.
+
+###

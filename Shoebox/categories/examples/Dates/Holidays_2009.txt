@@ -1,0 +1,55 @@
+/Dates/Holidays
+
+# Variable-Date Holidays
+
+[0122] Chinese New Year
+	4707* (Chinese New Year, 4707) -> /Dates/2009/01/26
+[0220] Mardi Gras
+	2009* (Mardi Gras, 2009) -> /Dates/2009/02/24
+[0408] Easter
+	2009* (Easter, 2009) -> /Dates/2009/04/12
+[0513] Mother's Day
+	2009* (Mother's Day, 2009) -> /Dates/2009/05/10
+[0528] Memorial Day
+	2009* (Memorial Day, 2009) -> /Dates/2009/05/25
+[0617] Father's Day
+	2009* (Father's Day, 2009) -> /Dates/2009/06/21
+[0903] Labor Day
+	2009* (Labor Day, 2009) -> /Dates/2009/09/07
+[1122] Thanksgiving
+	2009* (Thanksgiving, 2009)*
+		[1122] Thanksgiving Day* (Thanksgiving Day, 2009) -> /Dates/2009/11/26
+		[1123] Thanksgiving Friday* (Thanksgiving Friday, 2009) -> /Dates/2009/11/27
+
+# Fixed-Date Holidays
+
+[0101] New Year's
+	2009* (New Year's, 2009)*
+		[1] New Year's Day* (New Year's Day, 2009) -> /Dates/2009/1/1
+	2010* (New Year's, 2010)*
+		[-1] New Year's Eve* (New Year's Eve, 2010) -> /Dates/2009/12/31
+[0202] Groundhog Day
+	2009* (Groundhog Day, 2009) -> /Dates/2009/02/02
+[0214] Valentine's Day
+	2009* (Valentine's Day, 2009) -> /Dates/2009/02/14
+[0317] St. Patrick's Day
+	2009* (St. Patrick's Day, 2009) -> /Dates/2009/03/17
+[0401] April Fool's Day
+	2009* (April Fool's Day, 2009) -> /Dates/2009/04/01
+[0501] May Day
+	2009* (May Day, 2009) -> /Dates/2009/05/01
+[0505] Cinco de Mayo
+	2009* (Cinco de Mayo, 2009) -> /Dates/2009/05/05
+[0704] Independence Day
+	2009* (Independence Day, 2009) -> /Dates/2009/07/04
+[0714] Bastille Day
+	2009* (Bastille Day, 2009) -> /Dates/2009/07/14
+[1031] Halloween
+	2009* (Halloween, 2009) -> /Dates/2009/10/31
+[1111] Veteran's Day
+	2009* (Veteran's Day, 2009) -> /Dates/2009/11/11
+[1225] Christmas
+	2009* (Christmas, 2009) 
+		[1224] Christmas Eve* (Christmas Eve, 2009) -> /Dates/2009/12/24
+		[1225] Christmas Day* (Christmas Day, 2009) -> /Dates/2009/12/25
+		[1226] Boxing Day* (Boxing Day, 2009) -> /Dates/2009/12/26

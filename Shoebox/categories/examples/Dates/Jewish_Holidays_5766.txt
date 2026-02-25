@@ -1,0 +1,31 @@
+/Dates/Jewish Holidays
+[10] Rosh Hashana
+	5766* (Rosh Hashana, 5766)
+		[0] Erev Rosh Hashana*   (Erev Rosh Hashana, 5766) -> /Dates/2005/10/03
+		[1] First Day*   (First Day of Rosh Hashana, 5766) -> /Dates/2005/10/04
+		[1] Second Day* (Second Day of Rosh Hashana, 5766) -> /Dates/2005/10/05
+[20] Yom Kippur
+	5766* (Yom Kippur, 5766)
+		[0] Erev Yom Kippur*    (Erev Yom Kippur, 5766) -> /Dates/2005/10/12
+		[1] Yom Kippur* (First Day of Yom Kippur, 5766) -> /Dates/2005/10/13
+[30] Sukkot
+	5766* (Sukkot, 5766)
+		[0] Erev Sukkot*           (Erev Sukkot, 5766) -> /Dates/2005/10/17
+		[1] First Day*     (First Day of Sukkot, 5766) -> /Dates/2005/10/18		
+		[2] Second Day*   (Second Day of Sukkot, 5766) -> /Dates/2005/10/19
+		[3] Third Day*     (Third Day of Sukkot, 5766) -> /Dates/2005/10/20
+		[4] Fourth Day*   (Fourth Day of Sukkot, 5766) -> /Dates/2005/10/21
+		[5] Fifth Day*     (Fifth Day of Sukkot, 5766) -> /Dates/2005/10/22
+		[6] Sixth Day*     (Sixth Day of Sukkot, 5766) -> /Dates/2005/10/23
+		[7] Seventh Day* (Seventh Day of Sukkot, 5766) -> /Dates/2005/10/24
+[40] Hanukkah
+	5766* (Hanukkah, 5766)
+		[0] 1 Candle*       (Hanukkah: 1 Candle, 5766) -> /Dates/2005/12/25
+		[1] 2 Candles*     (Hanukkah: 2 Candles, 5766) -> /Dates/2005/12/26		
+		[2] 3 Candles*     (Hanukkah: 3 Candles, 5766) -> /Dates/2005/12/27
+		[3] 4 Candles*     (Hanukkah: 4 Candles, 5766) -> /Dates/2005/12/28
+		[4] 5 Candles*     (Hanukkah: 5 Candles, 5766) -> /Dates/2005/12/29
+		[5] 6 Candles*     (Hanukkah: 6 Candles, 5766) -> /Dates/2005/12/30
+		[6] 7 Candles*     (Hanukkah: 7 Candles, 5766) -> /Dates/2005/12/31
+#		[7] 8 Candles*     (Hanukkah: 8 Candles, 5766) -> /Dates/2006/01/01
+#		[7] Eighth Day* (Eighth Day of Hanukkah, 5766) -> /Dates/2006/01/02

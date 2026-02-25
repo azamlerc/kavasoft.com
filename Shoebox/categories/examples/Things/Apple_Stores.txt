@@ -1,0 +1,238 @@
+Places
+	North America
+		United States
+			Arizona
+				Chandler
+					Chandler Fashion Center <http://www.apple.com/retail/chandler/>
+				Phoenix
+					Biltmore <http://www.apple.com/retail/biltmore/>
+				Tucson
+					La Encantada <http://www.apple.com/retail/laencantada/>
+			California
+				Burlingame
+					Burlingame <http://www.apple.com/retail/burlingame/>
+				Corte Madera
+					Corte Madera <http://www.apple.com/retail/cortemadera/>
+				Costa Mesa
+					South Coast Plaza <http://www.apple.com/retail/southcoastplaza/>
+				Emeryville
+					Bay Street <http://www.apple.com/retail/baystreet/>
+				Glendale
+					Glendale Galleria <http://www.apple.com/retail/glendale/>
+				Los Angeles
+					The Grove <http://www.apple.com/retail/thegrove/>
+				Mission Viejo
+					Mission Viejo <http://www.apple.com/retail/missionviejo/>
+				Newport Beach
+					Fashion Island <http://www.apple.com/retail/fashionisland/>
+				Northridge
+					Northridge <http://www.apple.com/retail/northridge/>
+				Palo Alto
+					Palo Alto <http://www.apple.com/retail/paloalto/>
+				Palo Alto
+					Stanford Shopping Center <http://www.apple.com/retail/stanford/>
+				Pasadena
+					Apple Store Pasadena <http://www.apple.com/retail/pasadena/>
+				Pleasanton
+					Stoneridge Mall <http://www.apple.com/retail/stoneridgemall/>
+				Rancho Cucamonga
+					Victoria Gardens <http://www.apple.com/retail/victoriagardens/>
+				Sacramento
+					Arden Fair <http://www.apple.com/retail/ardenfair/>
+				San Diego
+					Fashion Valley <http://www.apple.com/retail/fashionvalley/>
+				San Diego
+					UTC <http://www.apple.com/retail/utc/>
+				San Francisco
+					San Francisco <http://www.apple.com/retail/sanfrancisco/>
+				San Francisco
+					Stonestown <http://www.apple.com/retail/stonestown/>
+				San Jose
+					Oakridge <http://www.apple.com/retail/oakridge/>
+				Santa Clara
+					Valley Fair <http://www.apple.com/retail/valleyfair/>
+				Santa Monica
+					Third Street Promenade <http://www.apple.com/retail/thirdstreetpromenade/>
+				Santa Rosa
+					Santa Rosa Plaza <http://www.apple.com/retail/santarosaplaza/>
+				Walnut Creek
+					Walnut Creek <http://www.apple.com/retail/walnutcreek/>
+			Colorado
+				Denver
+					Cherry Creek <http://www.apple.com/retail/cherrycreek/>
+				Littleton
+					Aspen Grove <http://www.apple.com/retail/aspengrove/>
+			Connecticut
+				Danbury
+					Danbury Fair Mall <http://www.apple.com/retail/danburyfairmall/>
+				Farmington
+					Westfarms <http://www.apple.com/retail/westfarms/>
+			Delaware
+				Newark
+					Christiana Mall <http://www.apple.com/retail/christianamall/>
+			Florida
+				Aventura
+					Aventura <http://www.apple.com/retail/aventura/>
+				Boca Raton
+					Boca Raton <http://www.apple.com/retail/bocaraton/>
+				Miami
+					The Falls <http://www.apple.com/retail/thefalls/>
+				Orlando
+					Millenia <http://www.apple.com/retail/millenia/>
+				Tampa
+					International Plaza <http://www.apple.com/retail/plaza/>
+				Wellington
+					Wellington Green <http://www.apple.com/retail/wellingtongreen/>
+			Georgia
+				Alpharetta
+					North Point <http://www.apple.com/retail/northpoint/>
+				Atlanta
+					Lenox Square <http://www.apple.com/retail/lenoxsquare/>
+			Hawaii
+				Honolulu
+					Ala Moana <http://www.apple.com/retail/alamoana/>
+			Illinois
+				Chicago
+					North Michigan Avenue <http://www.apple.com/retail/northmichiganavenue/>
+				Oak Brook
+					Oakbrook <http://www.apple.com/retail/oakbrook/>
+				Schaumburg
+					Woodfield <http://www.apple.com/retail/woodfield/>
+				Skokie
+					Old Orchard <http://www.apple.com/retail/oldorchard/>
+			Indiana
+				Indianapolis
+					Keystone <http://www.apple.com/retail/keystone/>
+			Iowa
+				West Des Moines
+					Jordan Creek <http://www.apple.com/retail/jordancreek/>
+			Maryland
+				Bethesda
+					Montgomery Mall <http://www.apple.com/retail/montgomerymall/>
+				Towson
+					Towson Town Center <http://www.apple.com/retail/towson/>
+			Massachusetts
+				Cambridge
+					CambridgeSide <http://www.apple.com/retail/cambridgeside/>
+				Chestnut Hill
+					Chestnut Hill <http://www.apple.com/retail/chestnuthill/>
+				Peabody
+					Northshore <http://www.apple.com/retail/northshore/>
+			Michigan
+				Novi
+					Twelve Oaks <http://www.apple.com/retail/twelveoaks/>
+				Troy
+					Somerset <http://www.apple.com/retail/somerset/>
+			Minnesota
+				Bloomington
+					Mall of America <http://www.apple.com/retail/mallofamerica/>
+				Edina
+					Southdale <http://www.apple.com/retail/southdale/>
+				Roseville
+					Rosedale Center <http://www.apple.com/retail/rosedalecenter/>
+			Missouri
+				Des Peres
+					West County <http://www.apple.com/retail/westcounty/>
+				Kansas City
+					Country Club Plaza <http://www.apple.com/retail/countryclubplaza/>
+			Nevada
+				Las Vegas
+					Fashion Show <http://www.apple.com/retail/fashionshow/>
+			New Hampshire
+				Salem
+					Rockingham Park <http://www.apple.com/retail/rockinghampark/>
+			New Jersey
+				Bridgewater
+					Bridgewater <http://www.apple.com/retail/bridgewater/>
+				Edison
+					Menlo Park <http://www.apple.com/retail/menlopark/>
+				Marlton
+					Sagemore <http://www.apple.com/retail/sagemore/>
+				Rockaway
+					Rockaway <http://www.apple.com/retail/rockaway/>
+				Short Hills
+					Short Hills <http://www.apple.com/retail/shorthills/>
+				Woodcliff Lake
+					Tice's Corner <http://www.apple.com/retail/tices/>
+			New York
+				Albany
+					Crossgates <http://www.apple.com/retail/crossgates/>
+				Buffalo
+					Walden Galleria <http://www.apple.com/retail/walden/>
+				Garden City
+					Roosevelt Field <http://www.apple.com/retail/rooseveltfield/>
+				Huntington Station
+					Walt Whitman <http://www.apple.com/retail/waltwhitman/>
+				New York City
+					SoHo <http://www.apple.com/retail/soho/>
+				Syracuse
+					Carousel <http://www.apple.com/retail/carousel/>
+				West Nyack
+					Palisades <http://www.apple.com/retail/palisades/>
+				White Plains
+					The Westchester <http://www.apple.com/retail/thewestchester/>
+			North Carolina
+				Charlotte
+					SouthPark <http://www.apple.com/retail/southpark/>
+				Durham
+					Southpoint <http://www.apple.com/retail/southpoint/>
+			Ohio
+				Cincinnati
+					Kenwood Towne Centre <http://www.apple.com/retail/kenwood/>
+				Columbus
+					Easton Town Center <http://www.apple.com/retail/easton/>
+				Lyndhurst
+					Legacy Village <http://www.apple.com/retail/legacyvillage/>
+			Oregon
+				Tigard
+					Washington Square <http://www.apple.com/retail/washingtonsquare/>
+			Pennsylvania
+				King of Prussia
+					King of Prussia <http://www.apple.com/retail/kingofprussia/>
+				Pittsburgh
+					Shadyside <http://www.apple.com/retail/shadyside/>
+			Tennessee
+				Germantown
+					Saddle Creek <http://www.apple.com/retail/saddlecreek/>
+			Texas
+				Austin
+					Barton Creek <http://www.apple.com/retail/bartoncreek/>
+				Highland Park
+					Knox Street <http://www.apple.com/retail/knoxstreet/>
+				Houston
+					Houston Galleria <http://www.apple.com/retail/houstongalleria/>
+				Plano
+					Willow Bend <http://www.apple.com/retail/willowbend/>
+			Virginia
+				Arlington
+					Clarendon <http://www.apple.com/retail/clarendon/>
+				McLean
+					Tysons Corner <http://www.apple.com/retail/tysons/>
+				Richmond
+					Short Pump Town Center <http://www.apple.com/retail/shortpump/>
+			Washington
+				Bellevue Square
+					Bellevue Square <http://www.apple.com/retail/bellevuesquare/>
+				Lynnwood
+					Alderwood Mall <http://www.apple.com/retail/alderwoodmall/>
+				Seattle
+					University Village <http://www.apple.com/retail/universityvillage/>
+				Tukwila
+					Southcenter <http://www.apple.com/retail/southcenter/>
+			Wisconsin
+				Wauwatosa
+					Mayfair <http://www.apple.com/retail/mayfair/>
+	Asia Pacific
+		East Asia
+			Japan
+				Tokyo
+					Ginza <http://www.apple.com/retail/jp/ginza/>
+				Osaka
+					Shinsaibashi <http://www.apple.com/retail/jp/shinsaibashi/>
+	Europe
+		Western Europe
+			United Kingdom
+				England
+					London
+						Westminster
+							Regent Street <http://www.apple.com/retail/uk/regentstreet/>

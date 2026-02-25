@@ -1,0 +1,55 @@
+/Dates/Holidays
+
+# Variable-Date Holidays
+
+[0122] Chinese New Year
+	4701* (Chinese New Year, 4701) -> /Dates/2003/02/01
+[0208] Mardi Gras
+	2003* (Mardi Gras, 2003) -> /Dates/2003/02/08
+[0327] Easter
+	2003* (Easter, 2003) -> /Dates/2003/04/20
+[0508] Mother's Day
+	2003* (Mother's Day, 2003) -> /Dates/2003/05/11
+[0530] Memorial Day
+	2003* (Memorial Day, 2003) -> /Dates/2003/05/26
+[0619] Father's Day
+	2003* (Father's Day, 2003) -> /Dates/2003/06/15
+[0905] Labor Day
+	2003* (Labor Day, 2003) -> /Dates/2003/09/01
+[1124] Thanksgiving
+	2003* (Thanksgiving, 2003)*
+		[1124] Thanksgiving Day* (Thanksgiving Day, 2003) -> /Dates/2003/11/27
+		[1125] Thanksgiving Friday* (Thanksgiving Friday, 2003) -> /Dates/2003/11/28
+
+# Fixed-Date Holidays
+
+[0101] New Year's
+	2003* (New Year's, 2003)*
+		[1] New Year's Day* (New Year's Day, 2003) -> /Dates/2003/1/1
+	2004* (New Year's, 2004)*
+		[-1] New Year's Eve* (New Year's Eve, 2004) -> /Dates/2003/12/31
+[0202] Groundhog Day
+	2003* (Groundhog Day, 2003) -> /Dates/2003/02/02
+[0214] Valentine's Day
+	2003* (Valentine's Day, 2003) -> /Dates/2003/02/14
+[0317] St. Patrick's Day
+	2003* (St. Patrick's Day, 2003) -> /Dates/2003/03/17
+[0401] April Fool's Day
+	2003* (April Fool's Day, 2003) -> /Dates/2003/04/01
+[0501] May Day
+	2003* (May Day, 2003) -> /Dates/2003/05/01
+[0505] Cinco de Mayo
+	2003* (Cinco de Mayo, 2003) -> /Dates/2003/05/05
+[0704] Independence Day
+	2003* (Independence Day, 2003) -> /Dates/2003/07/04
+[0714] Bastille Day
+	2003* (Bastille Day, 2003) -> /Dates/2003/07/14
+[1031] Halloween
+	2003* (Halloween, 2003) -> /Dates/2003/10/31
+[1111] Veteran's Day
+	2003* (Veteran's Day, 2003) -> /Dates/2003/11/11
+[1225] Christmas
+	2003* (Christmas, 2003) 
+		[1224] Christmas Eve* (Christmas Eve, 2003) -> /Dates/2003/12/24
+		[1225] Christmas Day* (Christmas Day, 2003) -> /Dates/2003/12/25
+		[1226] Boxing Day* (Boxing Day, 2003) -> /Dates/2003/12/26

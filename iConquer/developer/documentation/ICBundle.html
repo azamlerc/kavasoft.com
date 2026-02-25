@@ -1,0 +1,151 @@
+<HTML><HEAD><TITLE>iConquer - Developer - Documentation - NSBundle (ICBundle)</TITLE></HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+<a href="index.html"><img src="iConquer_logo.jpg" alt="" width="203" height="55"></a>
+
+<FONT COLOR="#000066"><H1><A NAME="//apple_ref/occ/cl/NSBundle (ICBundle)">NSBundle (ICBundle)</A></H1></FONT><BR>
+
+
+
+
+
+
+
+	<blockquote><DL><DT><B>Declared In:</B></DT>
+	<DD>ICBundle.h</DD>
+	</DL></blockquote>
+
+<BR><BR>
+
+
+<H2>Category Description</H2>
+Some convenience methods useful for iConquer plug-in bundles.
+
+
+<!--
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+-->
+
+
+	<P><HR WIDTH=50% ALIGN=LEFT>
+	<H2>Method Types</H2>
+	<blockquote>
+	
+		
+		<DL><DT></DT>
+		
+			<DD> <A HREF="#- bundleName">- bundleName</A></DD>
+		
+			<DD> <A HREF="#- bundleFamilyName">- bundleFamilyName</A></DD>
+		
+			<DD> <A HREF="#- bundleChildName">- bundleChildName</A></DD>
+		
+			<DD> <A HREF="#- bundleVersion">- bundleVersion</A></DD>
+		
+			<DD> <A HREF="#- bundleFamilyIdentifier">- bundleFamilyIdentifier</A></DD>
+		
+			<DD> <A HREF="#- pluginType">- pluginType</A></DD>
+		
+			<DD> <A HREF="#- isInSameFamilyAs:">- isInSameFamilyAs:</A></DD>
+		
+			<DD> <A HREF="#- myObjectForInfoDictionaryKey:">- myObjectForInfoDictionaryKey:</A></DD>
+		
+			<DD> <A HREF="#- compareBundleName:">- compareBundleName:</A></DD>
+		
+		</DL>
+	
+	</blockquote>
+
+
+
+
+ 
+
+	<HR WIDTH=50% ALIGN=LEFT>
+	<H2>Instance Methods</H2>
+ 
+	
+		
+		<A NAME="- bundleChildName"></A><H3><A NAME="//apple_ref/occ/instm/NSBundle (ICBundle)/bundleChildName">bundleChildName</A></H3><P>
+		<CODE>- (NSString *)<B>bundleChildName</B>
+		</CODE><P>
+		Returns the part of the name in parentheses. For example, if the name is &quot;iConquer World (Medium)&quot;, returns &quot;Medium&quot;.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- bundleFamilyIdentifier"></A><H3><A NAME="//apple_ref/occ/instm/NSBundle (ICBundle)/bundleFamilyIdentifier">bundleFamilyIdentifier</A></H3><P>
+		<CODE>- (NSString *)<B>bundleFamilyIdentifier</B>
+		</CODE><P>
+		If the plug-in is part of a family, returns the identifier without the last segment. For example, if the identifier is &quot;com.kavasoft.iConquer.maps.world.medium&quot;, returns &quot;com.kavasoft.iConquer.maps.world&quot;.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- bundleFamilyName"></A><H3><A NAME="//apple_ref/occ/instm/NSBundle (ICBundle)/bundleFamilyName">bundleFamilyName</A></H3><P>
+		<CODE>- (NSString *)<B>bundleFamilyName</B>
+		</CODE><P>
+		Returns the part of the name not in parentheses. For example, if the name is &quot;iConquer World (Medium)&quot;, returns &quot;iConquer World&quot;.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- bundleName"></A><H3><A NAME="//apple_ref/occ/instm/NSBundle (ICBundle)/bundleName">bundleName</A></H3><P>
+		<CODE>- (NSString *)<B>bundleName</B>
+		</CODE><P>
+		Returns the value of <I>CFBundleName</I>.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- bundleVersion"></A><H3><A NAME="//apple_ref/occ/instm/NSBundle (ICBundle)/bundleVersion">bundleVersion</A></H3><P>
+		<CODE>- (NSString *)<B>bundleVersion</B>
+		</CODE><P>
+		Returns the value of <I>CFBundleVersion</I>.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- compareBundleName:"></A><H3><A NAME="//apple_ref/occ/instm/NSBundle (ICBundle)/compareBundleName:">compareBundleName:</A></H3><P>
+		<CODE>- (NSComparisonResult)<B>compareBundleName:</B>(NSBundle *)<EM>value</EM>
+			
+		</CODE><P>
+		Performs a case insensitive comparison of the bundle names.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- isInSameFamilyAs:"></A><H3><A NAME="//apple_ref/occ/instm/NSBundle (ICBundle)/isInSameFamilyAs:">isInSameFamilyAs:</A></H3><P>
+		<CODE>- (BOOL)<B>isInSameFamilyAs:</B>(NSBundle *)<EM>bundle</EM>
+			
+		</CODE><P>
+		Returns whether <B>self</B> and <I>bundle</I> have the same <I>ICFamilyIdentifier</I> value.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- myObjectForInfoDictionaryKey:"></A><H3><A NAME="//apple_ref/occ/instm/NSBundle (ICBundle)/myObjectForInfoDictionaryKey:">myObjectForInfoDictionaryKey:</A></H3><P>
+		<CODE>- (id)<B>myObjectForInfoDictionaryKey:</B>(NSString *)<EM>key</EM>
+			
+		</CODE><P>
+		Returns the localized info dictionary value for <I>key</I>. 
+This method wraps <B>objectForInfoDictionaryKey:</B> for compatibility with 10.1. 
+On 10.2 or later, simply calls <B>objectForInfoDictionaryKey:</B>. 
+On earlier versions, uses a custom implementation that does the same thing.
+	
+		<P><HR WIDTH=25% ALIGN=LEFT>
+		<A NAME="- pluginType"></A><H3><A NAME="//apple_ref/occ/instm/NSBundle (ICBundle)/pluginType">pluginType</A></H3><P>
+		<CODE>- (NSString *)<B>pluginType</B>
+		</CODE><P>
+		Returns the value of <I>ICPluginType</I>.
+	
+
+
+
+
+<P><HR>
+Version 1.1 Copyright &copy;2003 by KavaSoft.  All Rights Reserved.  
+<P>
+</BODY></HTML>

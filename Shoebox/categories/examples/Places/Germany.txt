@@ -1,0 +1,33 @@
+/Places/Europe/Western Europe/Germany/
+Schleswig-Holstein
+	Kiel
+Hamburg
+Nordrhein-Westfalen
+	Düsseldorf
+	Köln
+Niedersachsen
+	Hannover
+Hessen
+	Wiesbaden
+	Frankfurt
+Rheinland-Pfalz
+	Mainz
+Saarland
+	Saarbrücken
+Baden-Württemberg
+	Stuttgart
+Bayern
+	München
+Thüringen
+	Erfurt
+Sachsen
+	Dresden
+	Leipzig
+Sachsen-Anhalt
+	Magdeburg
+Brandenburg
+	Potsdam
+Bremen
+Berlin
+Mecklemburg-Vorpommern
+	Schwerin

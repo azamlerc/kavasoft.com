@@ -1,0 +1,15 @@
+Black
+Blue
+Brown
+Clear
+Gold
+Gray
+Green
+Maroon
+Orange
+Pink
+Purple
+Red
+Silver
+White
+Yellow

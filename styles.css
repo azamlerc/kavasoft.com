@@ -1,0 +1,95 @@
+body { 
+	background-image: url('../images/backgrounds/background_gradient.jpg'); 
+	background-repeat: repeat-x; 	
+	background-attachment: fixed;
+	background-color: #d4d4d4;
+	font: 14px/1.4em Futura, 'Lucida Grande', Verdana; color: #333; } 
+p, li, td { font: 14px/1.4em Futura, 'Lucida Grande', Verdana; color: #444; } 
+body.frame { margin: 0px 0px; background: white; }
+body.popup { margin: 25px 25px; }
+table.main { background-image: url('../apps/Shoebox-512.png'); }
+
+span.mainheader { font: 50px Futura, 'Lucida Grande', Verdana; } 
+span.grayheader { color: gray; font: 50px Futura, 'Lucida Grande', Verdana; } 
+span.subheader { color: gray; font: 30px Futura, 'Lucida Grande', Verdana; } 
+p.text { color: #444; font: 14px/1.6em Futura, 'Lucida Grande', Verdana; } 
+.sidebar { color: #555; font: 13px/1.6em Futura, 'Lucida Grande', Verdana; } 
+
+a.mainheader { color: #444; text-decoration: none; } 
+a.otherapps { color: black; font: 13px/1.5em Futura, 'Lucida Grande', Verdana; 
+	text-decoration: none; } 
+a.hometitle { color: black; font: 20px/1.6em Futura, 'Lucida Grande', Verdana;
+ 	text-decoration: none; }
+a.homelink { color: #666; text-decoration: none; 
+	font: 12px/1.6em Futura, 'Lucida Grande', Verdana; }
+a.homelink:hover { color: black; text-decoration: none; }
+
+.box_header { padding: 3px 13px; 
+	background-color: rgba(0, 0, 0, 0.08); 
+	border-top: 1px solid rgba(0, 0, 0, 0.08); 
+	border-left: 1px solid rgba(0, 0, 0, 0.08); 
+	border-right: 1px solid rgba(0, 0, 0, 0.08);}
+.box { padding: 10px 13px; 
+	background-color: rgba(100%, 100%, 100%, 0.5); 
+	border-top: 1px solid rgba(0, 0, 0, 0.16); 
+	border-left: 1px solid rgba(0, 0, 0, 0.16); 
+	border-right: 1px solid rgba(0, 0, 0, 0.16);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.16);}
+.no_padding { padding: 0px 0px; }
+.box_footer { padding: 10px 13px; 
+	background-color: rgba(100%, 100%, 100%, 0.5); 
+	border-left: 1px solid rgba(0, 0, 0, 0.16); 
+	border-right: 1px solid rgba(0, 0, 0, 0.16);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.16);}
+
+a.text_link { color: #444; text-decoration: none; }
+a.text_link:hover { color: black; text-decoration: none; }
+a.sidebar_link { color: #555; text-decoration: none; }
+a.sidebar_link:hover { color: black; text-decoration: none; }
+a.selected { color: black; text-decoration: none; }
+a.darker { color: #222; text-decoration: none; } 
+a.darker:hover { color: black; text-decoration: none; } 
+
+tr.evenrow { } 
+tr.oddrow { background-color: rgba(0, 0, 0, 0.03); } 
+
+span.oldprice { text-decoration: line-through; }
+span.saleprice { color: red; }
+
+span.code { font: 14px Courier; } 
+
+span.euro { font: 17px Symbol; } 
+
+span.quote { margin: 0 0 0 -0.6em; }
+
+div.example { color: #888; }
+	
+.footer { font: 13px/1.4em Futura, 'Lucida Grande', Verdana; color: #555; } 
+
+/*
+
+p.tourtext { font: 13px 'Lucida Grande', Verdana; } 
+p.subbody { font: 11px 'Lucida Grande', Verdana; } 
+p.tiny { font: 10px 'Lucida Grande', Verdana; } 
+p.example { font: 10px Monaco, Courier; } 
+li.whatsnew { font: 11px 'Lucida Grande', Verdana; } 
+div.quote { font: 14px 'Lucida Grande', Verdana; } 
+td.left_shadow { background-image: url('../images/backgrounds/left_gradient.png');  } 
+td.right_shadow { background-image: url('../images/backgrounds/right_gradient.png');  } 
+td.header { background-color: #DDDDDD;  } 
+# td.features { background-color: white; } 
+td.languages { font: 11px 'Lucida Grande', Verdana; } 
+td.category { font: 12px 'Lucida Grande', Verdana; } 
+td.compheader { font: 11px 'Lucida Grande', Verdana;  background-color: #e2e2e2; } 
+td.compodd { font: 11px 'Lucida Grande', Verdana;  background-color: #f7f7f7; } 
+td.compeven { font: 11px 'Lucida Grande', Verdana;  background-color: #FFFFFF; } 
+
+*/
+
+a.prlink { color: gray; text-decoration: none; }
+a.prlink:hover { color: gray; text-decoration: underline; }
+
+# a { color: red; text-decoration: none; border: none; }
+# a:hover { color: #0095cd; text-decoration: underline; }
+# a:active { color: #cd6416; }
+# a:visited { color: #919191; }

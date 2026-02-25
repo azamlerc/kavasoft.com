@@ -1,0 +1,55 @@
+/Dates/Holidays
+
+# Variable-Date Holidays
+
+[0122] Chinese New Year
+	4702* (Chinese New Year, 4702) -> /Dates/2002/01/22
+[0208] Mardi Gras
+	2004* (Mardi Gras, 2004) -> /Dates/2004/02/24
+[0327] Easter
+	2004* (Easter, 2004) -> /Dates/2004/04/11
+[0508] Mother's Day
+	2004* (Mother's Day, 2004) -> /Dates/2004/05/09
+[0530] Memorial Day
+	2004* (Memorial Day, 2004) -> /Dates/2004/05/31
+[0619] Father's Day
+	2004* (Father's Day, 2004) -> /Dates/2004/06/20
+[0905] Labor Day
+	2004* (Labor Day, 2004) -> /Dates/2004/09/05
+[1124] Thanksgiving
+	2004* (Thanksgiving, 2004)*
+		[1124] Thanksgiving Day* (Thanksgiving Day, 2004) -> /Dates/2004/11/25
+		[1125] Thanksgiving Friday* (Thanksgiving Friday, 2004) -> /Dates/2004/11/26
+
+# Fixed-Date Holidays
+
+[0101] New Year's
+	2004* (New Year's, 2004)*
+		[1] New Year's Day* (New Year's Day, 2004) -> /Dates/2004/1/1
+	2005* (New Year's, 2005)*
+		[-1] New Year's Eve* (New Year's Eve, 2005) -> /Dates/2004/12/31
+[0202] Groundhog Day
+	2004* (Groundhog Day, 2004) -> /Dates/2004/02/02
+[0214] Valentine's Day
+	2004* (Valentine's Day, 2004) -> /Dates/2004/02/14
+[0317] St. Patrick's Day
+	2004* (St. Patrick's Day, 2004) -> /Dates/2004/03/17
+[0401] April Fool's Day
+	2004* (April Fool's Day, 2004) -> /Dates/2004/04/01
+[0501] May Day
+	2004* (May Day, 2004) -> /Dates/2004/05/01
+[0505] Cinco de Mayo
+	2004* (Cinco de Mayo, 2004) -> /Dates/2004/05/05
+[0704] Independence Day
+	2004* (Independence Day, 2004) -> /Dates/2004/07/04
+[0714] Bastille Day
+	2004* (Bastille Day, 2004) -> /Dates/2004/07/14
+[1031] Halloween
+	2004* (Halloween, 2004) -> /Dates/2004/10/31
+[1111] Veteran's Day
+	2004* (Veteran's Day, 2004) -> /Dates/2004/11/11
+[1225] Christmas
+	2004* (Christmas, 2004) 
+		[1224] Christmas Eve* (Christmas Eve, 2004) -> /Dates/2004/12/24
+		[1225] Christmas Day* (Christmas Day, 2004) -> /Dates/2004/12/25
+		[1226] Boxing Day* (Boxing Day, 2004) -> /Dates/2004/12/26

@@ -1,0 +1,15 @@
+Translate text in any application with Translation Service 1.2
+
+FOR IMMEDIATE RELEASE
+
+April 1, 2004 - KavaSoft has released Translation Service 1.2. Translation Service adds a "Translate" menu to the Services menu, allowing you to translate text between a dozen languages in any application that uses Services.
+
+For example, if you select the text "Hello" in your text editor and choose Services > Translate > English -> Francais, the selected text will be automatically replaced with "Bonjour".
+
+Translation Service works with the following languages: English, French, German, Japanese, Italian, Spanish, Chinese (Simplified and Traditional), Dutch, Greek, Korean, Portuguese, and Russian.
+
+Version 1.2 allows you to customize keyboard shortcuts and choose which languages appear in the menu.
+
+Translation Service costs US$4.99, and you can try the the program ten times for free. You can purchase Translation Service using secure online payment through PayPal.
+
+###

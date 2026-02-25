@@ -1,0 +1,27 @@
+KavaSoft releases KavaServices 3.0, utilities to translate, encode, convert and more
+
+FOR IMMEDIATE RELEASE
+
+January 22, 2009 - KavaSoft today released KavaServices 3.0, a utility that adds a collection of useful menu items to the Services menu. KavaServices can translate, encode for HTML, calculate, convert units, sort, change case, execute commands, and more. These commands replace the selected text in any Mac OS X application, without the need to switch to a different program, or copy and paste. 
+
+KavaServices translates text from one language to another, and can even translate web pages and email messages. KavaServices understands English, French, German, Japanese, Italian, Spanish, Chinese, Dutch, Greek, Korean, Portuguese, and Russian.
+
+KavaServices helps webmasters prepare content for the web by encoding special characters into HTML entities. With one keystroke, KavaServices can convert accented characters, characters in other alphabets and special punctuation marks for display on the web. KavaServices 3.0 adds the ability to encode URL links, and to convert accented text to plain ASCII.
+
+KavaServices can calculate mathematical expressions, including basic arithmetic, trigonometry, arithmetic with scientific units, base conversions, and more. It can also convert currencies, area, energy, power, pressure, speed, temperature, time, volume and weight.
+
+New text processing commands in KavaServices 3.0 let you convert text to lowercase, uppercase or title case. You can sort lines alphabetically, with the option to remove duplicates as well. 
+
+KavaServices also offers a gateway to the Terminal in any application. Select a command, hit a keystroke, and the command will be replaced by its result as if you had typed it in the Terminal. 
+
+KavaServices costs $25, and can be purchased using PayPal or Kagi. You can try all of the features for free for seven days. 
+
+More information is available on the KavaSoft website.
+	
+	http://www.kavasoft.com/
+
+Visit the Press Info page for press releases, high-resolution icons, screenshots, and a form to request an evaluation license. 
+
+	http://www.kavasoft.com/press/
+
+###
