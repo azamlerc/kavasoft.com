@@ -1,6 +1,6 @@
 <?php
 
-include($doc_root . '../../products.php');
+include('../../products.php');
 
 # Page title
 $page_name = 'home';

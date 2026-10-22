@@ -4,10 +4,11 @@ $page_name = 'download';
 $doc_root = './';
 $lang = 'en';
 
-include($doc_root . '../shared.php');
+include(__DIR__ . '/../shared.php');
 
 $stylesheet = '/styles.css';
-$favicon = $GLOBALS['favicon'];
+$favicon = '/images/apps/KavaTunes-16.png';
+$php_support_title = 'KavaTunes - PHP';
 $generator = 'TextMate';
 
 header("Content-type: text/html; charset=utf-8");

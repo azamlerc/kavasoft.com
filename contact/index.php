@@ -4,7 +4,6 @@ $doc_root = '../Shoebox/';
 
 include('../products.php'); 
 include('../shared.php');
-include('../licenses/licenses.php');
 
 $program = get_value('program');
 $name = get_value('name');
@@ -47,20 +46,9 @@ questions_box(array('email', 'pr'));
 
 table_2();
 
-if ($email && $message) {
-	$full_subject = '';
-	if ($program) $full_subject .= $program . ' ';
-	if ($version) $full_subject .= $version . ' ';
-	if ($topic) $full_subject .= $topic . ' ';
-	if ($subject) $full_subject .= "- $subject";
-	if ($licensekey) $full_subject .= " ($licensekey)";
-	else if ($computernumber) $full_subject .= " ($computernumber)";
+$sent = false;
 	
-	send_message('info@kavasoft.com', $full_subject, $message, "$name <$email>");
-	$sent = true;
-}
-
-$instructions = 'You can send us a message with this form. Use the links at left to check the status of your order, transfer your license key, or find the answers to frequently asked questions.';
+$instructions = 'This is an archived site. This form is no longer available. Use the links at left to check the status of your order, transfer your license key, or find the answers to frequently asked questions.';
 
 if ($sent) {
 	$instructions = 'Thank you for your message. We will get back to you shortly.';
@@ -68,7 +56,7 @@ if ($sent) {
 
 box('text', 'Contact Us', $instructions);
 
-echo('<form name="contactform" method="get" action="index.php">');
+echo('<form inert name="contactform" method="get" action="index.php">');
 
 function all_programs($keys) {
 	echo('<table class="box" width="600" border="0" cellpadding="0" cellspacing="0"><tr>');
@@ -144,7 +132,7 @@ box('text', 'Message', '<table border="0">' . tr(array(td('features', "Topic:&nb
 	order_row('Subject', 'subject', $subject, 62, 255) .
 	tr(array(td('features', "Message:&nbsp;&nbsp;&nbsp;", 130, null, null, null, 'valign="top"'), 
 		td('features', text_area('message', $message, 60, 10) . $br . $br .
-		submit_button('submit', 'Send Message')))) . 
+		submit_button('submit', 'Unavailable — archive')))) .
 	'</table>');
 
 table_3();

@@ -1,6 +1,6 @@
 <?php
 
-include($doc_root . '../products.php');
+include(__DIR__ . '/../products.php');
 
 # Page title
 $page_name = 'home';
@@ -102,6 +102,7 @@ screenshot(600, 375, 1200, 750);
 
 features_box();
 
+$examples = '';
 $row = 0;
 function rowclass($row) {
 	return $row % 2 == 1 ? 'oddrow' : 'evenrow';

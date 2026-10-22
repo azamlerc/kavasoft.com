@@ -8,8 +8,8 @@
 # What's new dialog 
 $verisonalert = "This version displays categories in the status bar, and lets you add categories as easily as addressing a mesasge in Mail. Note that Shoebox now requires Mac OS X 10.4.";
 
-$cameras_link = local_link('cameras', 'cameras');
-$categories_link = local_link('../categories/index', 'categories');
+$cameras_link = hyperlink('cameras.php', 'cameras');
+$categories_link = hyperlink('../categories/index.php', 'categories');
 $tips_and_tricks_link = hyperlink('../help/pgs/tipsandtricks.htm', 'tips & tricks');
    
 $versions_to_show = array('2.0', '1.7', '1.6', '1.5', '1.2', '1.1');

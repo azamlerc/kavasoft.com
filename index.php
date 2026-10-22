@@ -5,8 +5,8 @@ include('shared.php');
 
 // if (dutch()) header('Location: http://www.kavafoto.com');
 
-$itunes_catalog_version = $products['itunes_catalog']['version'];
-$itunes_catalog_price = $products['itunes_catalog']['price'];
+$itunes_catalog_version = $discontinued_products['itunes_catalog']['version'];
+$itunes_catalog_price = $discontinued_products['itunes_catalog']['price'] ?? null;
 
 $shoebox_version = $products['shoebox_pro']['version'];
 $shoebox_express_price = $products['shoebox_express']['price'];
@@ -21,11 +21,11 @@ $curator_price = $products['curator']['price'];
 $hyperimage_version = $products['hyperimage']['version'];
 $hyperimage_price = $products['hyperimage']['price'];
 
-$translation_service_version = $products['translation_service']['version'];
-$translation_service_price = $products['translation_service']['price'];
+$translation_service_version = $discontinued_products['translation_service']['version'];
+$translation_service_price = $discontinued_products['translation_service']['price'];
 
-$character_converter_version = $products['character_converter']['version'];
-$character_converter_price = $products['character_converter']['price'];
+$character_converter_version = $discontinued_products['character_converter']['version'];
+$character_converter_price = $discontinued_products['character_converter']['price'];
 
 head("KavaSoft", $folder, null, null, ' onload="window.setInterval(\'runSlideShow()\', SlideShowSpeed);"');
 ?>
@@ -84,7 +84,7 @@ $vertical_space = 10;
 
 function all_programs($keys, $icon_size) {
 	echo('<table width="898" border="0" cellpadding="5" cellspacing="0"><tr>');
-	if ($title == 'Shoebox') $title = "Shoebox Pro";
+
 	global $products;
 	global $br;
 	
@@ -103,7 +103,7 @@ function all_programs($keys, $icon_size) {
 				$name, $icon_size, $icon_size)));
 			echo($br . hyperlink("$icon/", $name, 'hometitle'));
 			echo($br . $slogan);
-			if (!$product['coming_soon']) {
+			if (!($product['coming_soon'] ?? false)) {
 				echo($br . hyperlink("$icon.dmg", 
 					"download version $version", 'sidebar_link'));
 			} else {

@@ -1,6 +1,6 @@
 <?php
 
-include($doc_root . '../products.php');
+include(__DIR__ . '/../products.php');
 
 # Page title
 $page_name = 'home';
@@ -69,6 +69,7 @@ foreach($plugins as $index => $plugin) {
 }
 
 function my_table_1($width = 300, $total_width = 925, $image = null) {
+    $vertical_space = 10;
 	global $folder;
 	global $title;
 	global $slogan;
@@ -80,7 +81,7 @@ function my_table_1($width = 300, $total_width = 925, $image = null) {
 	
 	echo("<table class=\"main\" width=\"$total_width\" border=\"$border\" 
 		cellpadding=\"0\" cellspacing=\"0\">");
-	echo("<tr><td width=\"$totalwidth\" align=\"left\" valign=\"top\" colspan=\"3\">");
+	echo("<tr><td width=\"$total_width\" align=\"left\" valign=\"top\" colspan=\"3\">");
 
 	echo(spacer_img(15, $vertical_space));
 	echo(hyperlink($doc_root . 'index.php', img('images/iconquer_london.jpg', 'iConquer 4 is here.', 925, 400, 'id="PictureBox" name="PictureBox"')));
@@ -111,6 +112,7 @@ echo(spacer_img(25, 25));
 table_3(); 
 
 function another_table_1($width = 300, $total_width = 925, $image = null) {
+    $vertical_space = 10;
 	global $folder;
 	global $title;
 	global $slogan;
@@ -122,9 +124,9 @@ function another_table_1($width = 300, $total_width = 925, $image = null) {
 	
 	echo("<table class=\"main\" width=\"$total_width\" border=\"$border\" 
 		cellpadding=\"0\" cellspacing=\"0\">");
-	echo("<tr><td width=\"$totalwidth\" align=\"left\" valign=\"top\" colspan=\"3\">");
+	echo("<tr><td width=\"$total_width\" align=\"left\" valign=\"top\" colspan=\"3\">");
 
-	echo(div("$class box_header", 'Maps'));
+	echo(div("text box_header", 'Maps'));
 	echo('<iframe src="imageflow/index.html" width="927" height="425" frameborder="0" scrolling="no" marginwidth="0" marginheight="0"></iframe>');
 	echo(div("text box", $plugin_links));
 

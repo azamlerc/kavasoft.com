@@ -1,5 +1,9 @@
 <?php
 
+$folder = $folder ?? '';
+$title = $title ?? 'KavaSoft';
+$doc_root = $doc_root ?? './';
+$class = $class ?? 'text';
 $br = '<br />';
 $submenu = '<font size=-1>&#9654;</font>';
 $email_address = '&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#110;&#102;&#111;&#64;'.
@@ -10,10 +14,10 @@ $year = '2011'; // date('Y');
 $copyright = "&copy; 2002&ndash;$year KavaSoft.";
 $all_rights_reserved = 'All rights reserved.';
 
-$product_version = $products[$store_product]['version'];
-$product_price = $products[$store_product]['price'];
-$product_size = $products[$store_product]['size'];
-$whatsnew = $products[$store_product]['whatsnew'];
+$product_version = $products[$store_product ?? '']['version'] ?? null;
+$product_price = $products[$store_product ?? '']['price'] ?? null;
+$product_size = $products[$store_product ?? '']['size'] ?? null;
+$whatsnew = $products[$store_product ?? '']['whatsnew'] ?? null;
 
 function gray($text) {
 	return "<font color=\"gray\">$text</font>";
@@ -48,7 +52,7 @@ function div($class, $text) {
 }
 
 function get_value($key) {
-	return array_key_exists($key, $_GET) ? $_GET[$key] : null;
+	return array_key_exists($key, $_GET) ? ($_GET[$key] ?? null) : null;
 }
 
 function text_field($name, $value, $size, $maxlength = 255) {
@@ -162,7 +166,7 @@ function list_with_tag($items, $class, $tag) {
 			$list .= "\t<li class=\"$class\">$item";
 		}
 		
-		if (count($items) == ($i + 1) || !is_array($items[$i + 1])) $list .= "</li>";
+		if (count($items) == ($i + 1) || !is_array($items[$i + 1] ?? null)) $list .= "</li>";
 		$list .= "\n";
 	}
 	$list .= "</$tag>\n";
@@ -195,7 +199,7 @@ function right_cell() {
 	echo("</td><td width=\"20\"></td><td width=\"$right_width\" valign=top>");
 }
 
-function text_toolbar($current_page, $dir = './', $product_name) {
+function text_toolbar($current_page, $dir = './', $product_name = '') {
 	$page_names = $GLOBALS['page_names'];
 	
 	echo("<p align=\"center\" class=\"footer\">");
@@ -292,45 +296,7 @@ function features_box() {
 }
 
 function buy_box($upgrade_text = null, $upgrade_link = null) {
-	global $store_product;
-	global $title;
-	global $product_price;
-	global $coupons;
-	global $br;
-	
-	$link = "/store/index.php?$store_product=1";
-
-	$coupon = $_GET['coupon'];
-	if ($coupon) {
-		$coupon = strtoupper($coupon);
-		$coupon_info = $coupons[$coupon];
-		$allowed = $coupon_info['allowed'];
-		if ($coupon_info && ($allowed[0] == 'all' || array_search($store_product, $allowed) !== false)) {
-			$discount = $coupon_info['discount'];
-			$old_price = $product_price;
-			$product_price *= $discount;
-			$link .= "&coupon=$coupon";
-		}
-	}
-	
-	if ($old_price) $text = "Buy $title for just $br" . /* span('oldprice', "$$old_price") . ' ' .*/ span('saleprice', "$$product_price") . " with coupon code $coupon";
-	else $text = "Buy $title for $$product_price";
-	
-	$stuff = '<table border="0" cellspacing="0" cellpadding="0">';
-	
-	$stuff .= '<tr><td>' . hyperlink($link, 
-		img('/images/buttons/buy_now.png', 'Buy Now', 93, 23)) . '</td><td>' .
-		hyperlink("/store/index.php?$store_product=1", $text, 'sidebar_link') . '</td></tr>';
-	if ($upgrade_text && $upgrade_link) {
-		$stuff .= '<tr><td colspan="2">' . img('/images/spacer.gif', '', 10, 10) . '</td></tr>';
-		$stuff .= '<tr><td>' . hyperlink($upgrade_link, 
-			img('/images/buttons/upgrade.png', 'Upgrade Now', 93, 23)) . '</td><td>' .
-			hyperlink($upgrade_link, $upgrade_text, 'sidebar_link') . '</td></tr>';
-	}
-	
-	$stuff .= '</table>';
-
-	box('sidebar', 'Buy', $stuff);
+	box('sidebar', 'Archive', 'This site is preserved for nostalgia. Purchases and license services are no longer available.');
 }
 
 function download_box($stuff) {
@@ -483,6 +449,8 @@ function table_1($width = 300, $total_width = 925, $image = null) {
 }
 
 function banner_table_1($width = 300, $total_width = 925, $image = null) {
+    $totalwidth = $total_width;
+    $vertical_space = 10;
 	global $folder;
 	global $title;
 	global $slogan;
@@ -572,7 +540,7 @@ function guided_tour() {
 
 	include('content.php');
 
-	$page_index = $_GET['page'];
+	$page_index = max(1, min(count($pages), (int) ($_GET['page'] ?? 1)));
 	if (!$page_index) $page_index = 1;
 	$page_index--;
 	$tour_page = $pages[$page_index];

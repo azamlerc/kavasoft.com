@@ -32,7 +32,7 @@ box('sidebar', 'More Questions?',
  
 table_2(700);
 
-$topic = $_GET['topic'];
+$topic = ($_GET['topic'] ?? null);
 if (!$topic) $topic = 'Music';
 $questions = $topics[$topic];
 
@@ -47,7 +47,7 @@ if ($questions) {
 box('sidebar', $topic, $question_links);
 
 $questions = $topics[$topic];
-$question_name = $_GET['question'];
+$question_name = ($_GET['question'] ?? null);
 if (!$question_name) $question_name = $questions[0]['name'];
 
 if ($questions) {
@@ -56,7 +56,7 @@ if ($questions) {
 			$question_title = $question['title'];
 			$question_answer = $question['text'];
 
-			box('text', $question_title, join($question_answer, "$br$br"), false);
+			box('text', $question_title, join("$br$br", $question_answer), false);
 		}
 	}
 }

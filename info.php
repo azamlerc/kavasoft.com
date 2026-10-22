@@ -1,12 +1,2 @@
-<html>
-<head>
-	<title>PHP Info</title>
-</head>
-<body>
 <?php
-
-phpinfo();
-
-?>
-</body>
-</html>
+require __DIR__ . '/archive.php';

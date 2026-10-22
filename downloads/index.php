@@ -54,7 +54,7 @@ function app_row($class, $key, $version1, $version2, $version3, $version4, $vers
 	global $products;
 	global $discontinued_products;
 	
-	$product = $products[$key];
+	$product = $products[$key] ?? null;
 	if ($product == null) $product = $discontinued_products[$key];
 	$name = $product['name'];
 	$icon = $product['icon'];

@@ -11,7 +11,6 @@ $store_product = 'hyperimage';
 $slogan = "for Webmasters";
 
 include($doc_root . '../shared.php');
-include($doc_root . '../licenses/licenses.php');
 
 $name = get_value('name');
 $email = get_value('email');
@@ -21,19 +20,7 @@ $computernumber = get_value('computernumber');
 $paypal = get_value('paypal');
 $comments = get_value('comments');
 
-if ($email && $website) {
-	$subject = 'HyperImage affiliate program';
-	$message = "Name: $name\n";
-	$message .= "Email: $email\n";
-	$message .= "Website: $website\n";
-	$message .= "Coupon code: $coupon\n";
-	$message .= "Computer Number: $computernumber\n";
-	$message .= "Paypal account: $paypal\n";
-	$message .= "Comments: $comments\n";
-	
-	send_message('info@kavasoft.com', $subject, $message, "$name <$email>");
-	$sent = true;
-}
+$sent = false;
 
 head('HyperImage - Webmasters', $folder);
 table_1();
@@ -83,7 +70,7 @@ $br$br You can also link directly to our online store:$br$br
 
 box('text', 'Earn money from sales', "We'll send you the proceeds from every fifth sale using your coupon code. In other words, you'll earn 20% cash back for sales from your website. For example, if ten people buy the program, we'll send you forty bucks. Make sure to let us know your PayPal account.");
 
-echo('<form name="webmasterform" method="get" action="index.php">');
+echo('<form inert name="webmasterform" method="get" action="index.php">');
 
 function order_row($label, $name, $value, $width, $maxwidth, $example = null) {
 	if ($example) $example = gray("&nbsp;&nbsp;&nbsp; ($example)");
@@ -101,9 +88,9 @@ $personal_info_table .= order_row('Computer number', 'computernumber', $computer
 $personal_info_table .= order_row('PayPal account', 'paypal', $paypal, 30, 255, 'paypal@mycoolblog.com');
 $personal_info_table .= tr(array(td('features', "Comments:&nbsp;&nbsp;&nbsp;", 130, null, null, null, 'valign="top"'), 
 	td('features', text_area('comments', $comments, 28, 8) . $br . $br .
-	submit_button('submit', 'Sign up'))));
+	submit_button('submit', 'Unavailable — archive'))));
 $personal_info_table .= '</table>';
-box('text', 'Sign up', "$personal_info_table");
+box('text', 'Unavailable — archive', "$personal_info_table");
 
 
 echo('</form>');

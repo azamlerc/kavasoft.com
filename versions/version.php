@@ -4,7 +4,7 @@ $archs = array('unknown', 'ppc', 'i386', 'x86_64');
 $program_keys = array('unknown', 'shoebox_pro', 'kavatunes', 'kavamovies', 'hyperimage', 'iconquer', 'curator', 'kavaservices');
 
 function convert_html_chars($string) {
-	if ($_GET['encode'] == "html") {
+	if (($_GET['encode'] ?? null) == "html") {
 		return htmlspecialchars($string);
 	} else {
 		$encoded_chars = array("&eacute;", "&egrave;", "&agrave;", "&uuml;");
@@ -48,8 +48,8 @@ function plist_key_value($key, $value, $tabs = 2) {
 }
 
 function version_plist($product_key) {
-	$lang = $_GET['lang'];
-	if (!$lang || strlen($lang) != 2 || $lang == 'it') $lang = 'en';
+	$lang = ($_GET['lang'] ?? null);
+	if (!in_array($lang, array('en', 'de', 'fr', 'nl'), true)) $lang = 'en';
 
 	include('../products.php');
 
@@ -59,14 +59,14 @@ function version_plist($product_key) {
 	if ($program == 'Shoebox Pro') $program = 'Shoebox';
 	$version = $product['version'];
 	$folder = $product['icon'];
-	$whatsnew = $product['whatsnew'];
+	$whatsnew = $product['whatsnew'] ?? '';
 	$price = null;
 	$image = null;
 	
-	$current = $_GET['current'];
+	$current = ($_GET['current'] ?? null);
 	if (!$current) $current = '';
 
-	$system = $_GET['system'];
+	$system = ($_GET['system'] ?? null);
 	if ($system) {
 		$system_parts = explode('.', $system);
 		$major = $system_parts[1]; // for 10.6.1, 6
@@ -76,11 +76,11 @@ function version_plist($product_key) {
 		$minor = 0;
 	}
 		
-	$architecture = $_GET['arch'];
+	$architecture = ($_GET['arch'] ?? null);
 	if (!$architecture) $architecture = 'unknown';
 	$arch = array_search($architecture, $GLOBALS['archs']);
 	
-	$resolution = $_GET['resolution'];
+	$resolution = ($_GET['resolution'] ?? null);
 	if (!$resolution) $resolution = 0;
 	
 	ini_set('date.timezone', 'America/Chicago');
@@ -88,15 +88,8 @@ function version_plist($product_key) {
 	
 	$show_site = true;
 	
-	$use_database = file_exists_ip('DB.php');
-	if ($use_database) {
-		require('DB.php');
-		$dbh = DB::connect('mysql://kavasoft_admin:KaVaDaTa@localhost/kavasoft_licenses');
-		$prh = $dbh->prepare('INSERT INTO versions (program,date_checked,version,arch,major,minor,resolution) VALUES (?,?,?,?,?,?,?)');
-		$sth = $dbh->execute($prh, array($product_id, $date_checked, $current, $arch, $major, $minor, $resolution));
-	}
 
-	$upgrade = $product['upgrade'];
+	$upgrade = $product['upgrade'] ?? null;
 	
 	// if the current version doesn't start with the version_prefix, show the major update
 	// if there's no current version, then it's really old

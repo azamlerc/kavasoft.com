@@ -1,6 +1,6 @@
 <?php
 
-include($doc_root . '../products.php');
+include(__DIR__ . '/../products.php');
 
 # Page title
 $page_name = 'home';
@@ -16,8 +16,8 @@ head($title, $folder);
 
 banner_table_1();
 
-$email = $_GET['email'];
-$favorite = $_GET['favorite'];
+$email = ($_GET['email'] ?? null);
+$favorite = ($_GET['favorite'] ?? null);
 
 /*if ($email && $favorite) {
 	$subject = 'KavaMovies';

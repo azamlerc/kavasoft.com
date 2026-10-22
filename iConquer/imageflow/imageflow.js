@@ -58,7 +58,7 @@ function ImageFlow ()
 		percentLandscape:   118,            /* Scale landscape format */
 		percentOther:       100,            /* Scale portrait and square format */
 		preloadImages:      true,           /* Toggles loading bar (false: requires img attributes height and width) */
-		reflections:        true,           /* Toggle reflections */
+		reflections:        false,           /* Toggle reflections */
 		reflectionGET:      '',             /* Pass variables via the GET method to the reflect_.php script */
 		reflectionP:        0.5,            /* Height of the reflection in percent of the source image */
 		reflectionPNG:      false,          /* Toggle reflect2.php or reflect3.php */

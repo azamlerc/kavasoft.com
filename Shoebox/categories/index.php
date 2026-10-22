@@ -78,4 +78,7 @@ foreach($all_categories as $type => $categories) {
 	box('text', $type, $stuff);
 }
 
+table_3();
+footer();
+
 ?>
