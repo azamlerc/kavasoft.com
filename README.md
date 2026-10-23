@@ -22,7 +22,16 @@ Check the logs for PHP warnings, deprecations, and fatal errors as well as the H
 
 ## Fly.io
 
-Use the existing Fly application's configuration with its internal HTTP port set to **80**, and deploy this Dockerfile with a fresh build. This checkout does not contain `fly.toml`; retain or retrieve the existing application's settings rather than creating another app. For example, from this directory, use `fly deploy --app <existing-app-name>` with your existing Fly configuration. Verify the deployed runtime is PHP 8.5.12 and rerun the smoke checks against the HTTPS domain after deployment.
+`fly.toml` targets the existing **kavasoft-com** app, builds the repository's Dockerfile, and routes HTTP traffic to Apache on port **80**. The EWR region and shared CPU with 256 MB RAM match the existing app's dashboard. Automatic start/stop and zero minimum running machines follow KavaFoto's configuration; these settings were not retrieved from the live KavaSoft app.
+
+### Deploy from the dashboard
+
+1. Commit and push `fly.toml` to the repository's `main` branch.
+2. Open the existing **kavasoft-com** app in Fly's dashboard and connect **azamlerc/kavasoft.com**, using the root `fly.toml`.
+3. Review the configuration against the app's current settings, then click **Deploy app**. Connecting the repository alone does not deploy a release.
+4. Check the new release in Activity, browse the site, and run `python3 tests/smoke.py https://kavasoft.com`.
+
+You can also deploy from this directory with `fly deploy`. Neither a Git push alone nor a restart updates a running machine unless an automatic deployment integration is configured. The configuration file does not create a new app or change domain certificates.
 
 ## Retired services
 
